@@ -1,0 +1,1778 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Organiza Tu Boda Soñada: Presupuesto, Invitados y Cronograma Sin Estrés | WeddingPlannerPro</title>
+  <meta name="description" content="Descubre el Wedding Planner definitivo para Google Sheets y Excel. Controla tu presupuesto, gestiona invitados y planifica cada detalle de tu boda soñada con confianza y sin estrés." />
+  <meta name="keywords" content="wedding planner spreadsheet, plantilla boda google sheets, organizador boda excel, presupuesto boda, lista invitados boda, cronograma boda, checklist boda, planificador nupcial digital, bodas sin estrés, seating plan boda, gestion proveedores boda, planificación de boda" />
+  
+  <link rel="alternate" hreflang="en" href="https://localhost/product/wedding-planner-spreadsheet-for-google-budget-tracker-guest-list-seating-plan-ch.html" />
+  <link rel="alternate" hreflang="fr" href="https://localhost/fr/product/wedding-planner-spreadsheet-for-google-budget-tracker-guest-list-seating-plan-ch.html" />
+  <link rel="alternate" hreflang="es" href="https://localhost/es/product/wedding-planner-spreadsheet-for-google-budget-tracker-guest-list-seating-plan-ch.html" />
+  <link rel="alternate" hreflang="x-default" href="https://localhost/product/wedding-planner-spreadsheet-for-google-budget-tracker-guest-list-seating-plan-ch.html" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Organiza Tu Boda Soñada: Presupuesto, Invitados y Cronograma Sin Estrés | WeddingPlannerPro" />
+  <meta property="og:description" content="Descubre el Wedding Planner definitivo para Google Sheets y Excel. Controla tu presupuesto, gestiona invitados y planifica cada detalle de tu boda soñada con confianza y sin estrés." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjY3NSIgdmlld0JveD0iMCAwIDEyMDAgNjc1Ij4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSI yeTI9IjEwMCUiPgogICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiMxRTQwQUYiLz4KICAgICAgICA8c3RvcCBvZmZzZXQ9IjU1JSIgc3R5bGU9InN0b3AtY29sb3I6IzFFNDBBRiIvPgogICAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6I0Y1OUUwQiIvPgogICAgICA8L2xpbmVhcjpHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZykiLz4KICAgIDx0ZXh0IHg9IjUwJSI yeT0iNTAlIiBmb250LWZhbWlseT0nUG9wcGlucycsQXJpYWwsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZm9udC13ZWlnaHQ9IjYwMCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjYpIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIj5Qcm9kdWN0IE1vY2t1cDwvdGV4dD4KICA8L3N2Zz4=" />
+  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Organiza Tu Boda Soñada: Presupuesto, Invitados y Cronograma Sin Estrés | WeddingPlannerPro" />
+  <meta name="twitter:description" content="Descubre el Wedding Planner definitivo para Google Sheets y Excel. Controla tu presupuesto, gestiona invitados y planifica cada detalle de tu boda soñada con confianza y sin estrés." />
+  <meta name="twitter:image" content="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjY3NSIgdmlld0JveD0iMCAwIDEyMDAgNjc1Ij4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwJSI yeTE9IjAlIiB4Mj0iMTAwJSI yeTI9IjEwMCUiPgogICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiMxRTQwQUYiLz4KICAgICAgICA8c3RvcCBvZmZzZXQ9IjU1JSIgc3R5bGU9InN0b3AtY29sb3I6IzFFNDBBRiIvPgogICAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6I0Y1OUUwQiIvPgogICAgICA8L2xpbmVhcjpHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZykiLz4KICAgIDx0ZXh0IHg9IjUwJSI yeT0iNTAlIiBmb250LWZhbWlseT0nUG9wcGlucycsQXJpYWwsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZm9udC13ZWlnaHQ9IjYwMCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjYpIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIj5Qcm9kdWN0IE1vY2t1cDwvdGV4dD4KICA8L3N2Zz4=" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"WeddingPlannerPro","logo":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 242 44\" width=\"242\" height=\"44\" role=\"img\" aria-label=\"WeddingPlannerPro\">\n  <defs>\n    <linearGradient id=\"lG\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n      <stop offset=\"0%\" stop-color=\"#B76E79\"/>\n      <stop offset=\"100%\" stop-color=\"#D4A574\"/>\n    </linearGradient>\n    <filter id=\"lS\" x=\"-15%\" y=\"-15%\" width=\"140%\" height=\"150%\">\n      <feDropShadow dx=\"0\" dy=\"2\" stdDeviation=\"3\" flood-color=\"#B76E79\" flood-opacity=\"0.3\"/>\n    </filter>\n  </defs>\n  <!-- Icon mark -->\n  <g filter=\"url(#lS)\">\n    <rect x=\"1\" y=\"3\" width=\"38\" height=\"38\" rx=\"10\" fill=\"url(#lG)\"/>\n  </g>\n  <g transform=\"translate(10, 12) scale(0.833)\" fill=\"#fff\">\n    <path d=\"M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z\"/>\n  </g>\n  <!-- Wordmark -->\n  <text x=\"50\" y=\"23\" dominant-baseline=\"central\" font-family=\"'Poppins','Inter','SF Pro Display','Helvetica Neue',sans-serif\" font-weight=\"700\" font-size=\"19\" letter-spacing=\"-0.03em\" fill=\"currentColor\">WeddingPlannerPro</text>\n</svg>"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"Wedding Planner Spreadsheet For Google — Budget Tracker, Guest List, Seating Plan, Checklist, Timeline","description":"All-in-one wedding planner spreadsheet. Keep guest lists, seating charts, vendors, tasks, budgets, and appointments organized in one easy-to-use file. Automatically tracks RSVPs, payments, and deadlines. Generates printable day-of guides. Fully editable in Google Sheets and Microsoft Excel.","image":"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjY3NSIgdmlld0JveD0iMCAwIDEyMDAgNjc1Ij4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwJSI yeTE9IjAlIiB4Mj0iMTAwJSI yeTI9IjEwMCUiPgogICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiMxRTQwQUYiLz4KICAgICAgICA8c3RvcCBvZmZzZXQ9IjU1JSIgc3R5bGU9InN0b3AtY29sb3I6IzFFNDBBRiIvPgogICAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6I0Y1OUUwQiIvPgogICAgICA8L2xpbmVhcjpHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZykiLz4KICAgIDx0ZXh0IHg9IjUwJSI yeT0iNTAlIiBmb250LWZhbWlseT0nUG9wcGlucycsQXJpYWwsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZm9udC13ZWlnaHQ9IjYwMCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjYpIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIj5Qcm9kdWN0IE1vY2t1cDwvdGV4dD4KICA8L3N2Zz4=","brand":{"@type":"Brand","name":"WeddingPlannerPro"},"offers":{"@type":"Offer","price":"9.99","priceCurrency":"USD","availability":"https://schema.org/InStock"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"8","bestRating":"5"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"/"},{"@type":"ListItem","position":2,"name":"Wedding Planner Spreadsheet For Google — Budget Tracker, Guest List, Seating Plan, Checklist, Timeline","item":"/product.html"}]}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Playfair%20Display:wght@400;500;600;700;900&display=swap" />
+  <style>:root{
+    /* Designer Brief Colors */
+    --color-primary:#B76E79;
+    --color-accent:#D4A574;
+    --color-secondary:#1a1520; /* Dark for text/bg */
+    --color-bg:#ffffff;
+    --color-text:#1a1a1a;
+
+    /* Unified SH- Variables for consistency */
+    --sh-primary:var(--color-primary);
+    --sh-accent:var(--color-accent);
+    --sh-dark:var(--color-secondary); /* Using secondary as the dark color */
+    --sh-text:var(--color-text);
+    --sh-text-light:#555;
+    --sh-text-muted:#888;
+    --sh-bg:var(--color-bg);
+    --sh-bg-light:color-mix(in srgb,var(--sh-primary) 4%,#fafafa);
+    --sh-bg-warm:color-mix(in srgb,var(--sh-primary) 6%,#f7f5f2);
+    --sh-success:#31A156; /* Green for success */
+    --sh-border:#eaeaea;
+    --sh-border-light:#f0f0f0;
+
+    /* Typography */
+    --sh-font-heading:'Playfair Display',serif;
+    --sh-font-body:'Inter',sans-serif;
+    --heading-weight:800; /* Increased weight for headings */
+    --heading-letter-spacing:-0.02em;
+
+    /* Spacing & Layout */
+    --sh-container:1200px; /* Increased max-width */
+    --section-spacing:clamp(4rem, 8vw, 7rem); /* Responsive section spacing */
+    --grid-gap:1.5rem; /* Consistent grid gap */
+
+    /* Buttons */
+    --sh-radius-btn:999px; /* Pill shape */
+    --btn-padding-default:16px 32px;
+    --btn-padding-lg:18px 40px;
+    --btn-padding-sm:12px 28px;
+    --btn-hover-lift:-3px;
+    --btn-primary-gradient:linear-gradient(135deg,var(--sh-primary) 0%,var(--sh-accent) 100%);
+    --btn-primary-shadow:0 6px 20px rgba(183,110,121,0.3); /* Adjusted shadow for primary */
+    --btn-primary-glow:0 0 30px rgba(183,110,121,0.3);
+
+    /* Cards */
+    --sh-radius-card:20px; /* Consistent card radius */
+    --sh-shadow:0 18px 50px rgba(0,0,0,0.06); /* Softer, larger shadow */
+    --sh-shadow-hover:0 24px 60px rgba(0,0,0,0.08); /* Enhanced hover shadow */
+    --sh-shadow-xs:0 4px 12px rgba(0,0,0,0.04); /* Lighter shadow for minor elements */
+    --sh-shadow-lg:0 30px 80px rgba(0,0,0,0.1); /* For popups etc. */
+
+    /* Hero Section */
+    --sh-hero-gradient:linear-gradient(135deg, var(--sh-dark) 0%, var(--sh-primary) 55%, var(--sh-accent) 100%);
+    --sh-hero-text-color:#ffffff;
+
+    /* Transitions */
+    --sh-transition:0.3s ease; /* Consistent transition duration and easing */
+    --ease-premium:cubic-bezier(0.25,0.46,0.45,0.94);
+
+    /* Other specific elements */
+    --announcement-bg:var(--sh-dark);
+    --announcement-fg:#ffffff;
+    --trust-badge-bg:rgba(49,161,86,0.1); /* Using success color */
+    --trust-badge-color:var(--sh-success);
+    --trust-badge-radius:999px;
+    --input-radius:999px;
+    --input-border:#e2e8e4;
+    --footer-bg:#121212; /* Darker footer */
+    --footer-fg:#ffffff;
+    --preview-card-bg:rgba(255,255,255,0.10);
+    --preview-card-blur:blur(20px);
+    --preview-card-border:1px solid rgba(255,255,255,0.22);
+    --preview-card-radius:22px;
+    --preview-card-shadow:0 30px 60px rgba(0,0,0,0.25);
+
+    /* Reveal animations */
+    --stagger-1:0ms;--stagger-2:100ms;--stagger-3:200ms;--stagger-4:300ms;--stagger-5:400ms;--stagger-6:500ms;
+  }
+
+  /* Base styles */
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  html{font-size:62.5%;scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{
+    font-family:var(--sh-font-body);
+    font-size:1.6rem;
+    font-weight:400;
+    line-height:1.65; /* Slightly increased line-height */
+    color:var(--sh-text);
+    background:var(--sh-bg);
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,h4,h5,h6{
+    font-family:var(--sh-font-heading);
+    font-weight:var(--heading-weight);
+    letter-spacing:var(--heading-letter-spacing);
+    color:var(--sh-text);
+  }
+  h1 { font-size: clamp(2.25rem, 4.5vw, 4rem); line-height: 1.05; }
+  h2 { font-size: clamp(2rem, 3.8vw, 3.4rem); line-height: 1.12; }
+  h3 { font-size: clamp(1.65rem, 2.5vw, 2.2rem); line-height: 1.25; }
+  h4 { font-size: clamp(1.4rem, 2vw, 1.6rem); line-height: 1.3; }
+  p { line-height: 1.7; }
+
+  img{max-width:100%;height:auto;display:block}
+  a{text-decoration:none;color:inherit}
+
+  /* Global utility classes */
+  .sh-container{max-width:var(--sh-container);margin:0 auto;padding:0 clamp(20px,4vw,48px)}
+  .sh-container--narrow{max-width:720px}
+  [data-reveal]{opacity:0;transform:translateY(20px) scale(0.98);filter:blur(3px);transition:opacity .6s var(--ease-premium),transform .6s var(--ease-premium),filter .6s var(--ease-premium)}
+  [data-reveal].revealed{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}
+  [data-delay="80"]{transition-delay:80ms}[data-delay="100"]{transition-delay:100ms}[data-delay="160"]{transition-delay:160ms}[data-delay="200"]{transition-delay:200ms}[data-delay="240"]{transition-delay:240ms}[data-delay="300"]{transition-delay:300ms}[data-delay="400"]{transition-delay:400ms}[data-delay="500"]{transition-delay:500ms}
+
+  /* Announcement Bar */
+  .sh-announce{
+    background:var(--announcement-bg);
+    color:var(--announcement-fg);
+    text-align:center;
+    padding:10px 16px;
+    font-size:1.25rem;
+    font-weight:600;
+    letter-spacing:.04em;
+    text-transform:uppercase;
+    position:relative;
+    overflow:hidden;
+    height:40px;
+  }
+  .sh-announce__track{position:relative;height:100%}
+  .sh-announce__slide{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0;transform:translateY(100%);transition:all .4s var(--sh-transition)}
+  .sh-announce__slide.active{opacity:1;transform:translateY(0)}
+
+  /* Header */
+  .sh-header{position:sticky;top:0;z-index:200;background:rgba(255,255,255,.95);backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%);border-bottom:1px solid rgba(0,0,0,.04);transition:box-shadow var(--sh-transition)}
+  .sh-header__inner{max-width:var(--sh-container);margin:0 auto;padding:0 clamp(20px,4vw,48px);display:flex;align-items:center;justify-content:space-between;height:64px}
+  .sh-header__logo{display:flex;align-items:center;gap:8px}
+  .sh-header__logo svg{height:42px;width:auto}
+  .sh-logo-text{font-size:1.9rem;font-weight:700;color:var(--sh-text);letter-spacing:-.03em;white-space:nowrap}
+  .sh-header__nav{display:flex;gap:32px}
+  .sh-header__nav a{font-size:1.35rem;font-weight:500;color:var(--sh-text-light);padding:6px 0;position:relative;transition:color var(--sh-transition)}
+  .sh-header__nav a:hover{color:var(--sh-text)}
+  .sh-header__nav a::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:var(--sh-primary);transform:scaleX(0);transition:transform var(--sh-transition)}
+  .sh-header__nav a:hover::after{transform:scaleX(1)}
+  .sh-header__right{display:flex;align-items:center;gap:10px}
+  .sh-header__cart{position:relative;background:none;border:none;cursor:pointer;color:var(--sh-text);padding:8px;border-radius:50%;transition:background var(--sh-transition)}
+  .sh-header__cart:hover{background:rgba(0,0,0,.04)}
+  .sh-header__cart-count{position:absolute;top:0;right:0;background:var(--sh-primary);color:#fff;font-size:1rem;font-weight:700;min-width:18px;height:18px;border-radius:9px;display:flex;align-items:center;justify-content:center}
+  .sh-header__hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:6px}
+  .sh-header__hamburger span{width:22px;height:2px;background:var(--sh-text);border-radius:2px;transition:.3s}
+  .sh-header__hamburger.active span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+  .sh-header__hamburger.active span:nth-child(2){opacity:0}
+  .sh-header__hamburger.active span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+  .sh-lang{position:relative}
+  .sh-lang__btn{display:flex;align-items:center;gap:6px;background:none;border:1px solid var(--sh-border);border-radius:999px;padding:6px 12px 6px 10px;cursor:pointer;font-family:inherit;font-size:1.15rem;font-weight:600;color:var(--sh-text);transition:all .2s}
+  .sh-lang__btn:hover{border-color:var(--sh-primary);background:var(--sh-bg-light)}
+  .sh-lang__btn svg:first-child{flex-shrink:0;border-radius:2px}
+  .sh-lang__label{letter-spacing:.03em}
+  .sh-lang__chevron{transition:transform .2s;flex-shrink:0}
+  .sh-lang.is-open .sh-lang__chevron{transform:rotate(180deg)}
+  .sh-lang__menu{display:none;position:absolute;top:calc(100% + 6px);right:0;background:#fff;border:1px solid var(--sh-border);border-radius:12px;padding:6px;box-shadow:var(--sh-shadow-xs);min-width:120px;z-index:300;animation:shLangFadeIn .15s ease}@keyframes shLangFadeIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+  .sh-lang.is-open .sh-lang__menu{display:block}
+  .sh-lang__option{display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:8px;font-size:1.15rem;font-weight:500;color:var(--sh-text);transition:background .15s;text-decoration:none}
+  .sh-lang__option:hover{background:var(--sh-bg-light)}
+  .sh-lang__option svg{flex-shrink:0;border-radius:2px}
+
+  /* Buttons */
+  .sh-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    font-family:var(--sh-font-body); /* Use body font for buttons */
+    font-weight:700; /* Use 700 for buttons */
+    font-size:1.4rem;
+    border:none;
+    cursor:pointer;
+    border-radius:var(--sh-radius-btn);
+    padding:var(--btn-padding-default);
+    transition:all var(--sh-transition);
+    text-decoration:none;
+    white-space:nowrap;
+    letter-spacing:-.01em;
+  }
+  .sh-btn--lg{padding:var(--btn-padding-lg);font-size:1.5rem}
+  .sh-btn--sm{padding:var(--btn-padding-sm);font-size:1.25rem}
+  .sh-btn--primary{
+    background:var(--sh-primary); /* Solid primary for primary button */
+    color:#fff;
+    box-shadow:var(--btn-primary-shadow);
+  }
+  .sh-btn--primary:hover{
+    background:var(--sh-accent); /* Accent on hover for primary */
+    transform:translateY(var(--btn-hover-lift));
+    box-shadow:var(--sh-shadow-hover);
+  }
+  .sh-btn--dark{
+    background:var(--sh-dark);
+    color:#fff;
+    box-shadow:0 2px 12px rgba(0,0,0,.08);
+  }
+  .sh-btn--dark:hover{
+    transform:translateY(var(--btn-hover-lift));
+    box-shadow:0 4px 24px color-mix(in srgb,var(--sh-primary) 30%,transparent),0 0 40px color-mix(in srgb,var(--sh-primary) 15%,transparent);
+    filter:brightness(1.1);
+  }
+  .sh-btn--white{background:#fff;color:var(--sh-dark);box-shadow:0 2px 12px rgba(0,0,0,.06)}
+  .sh-btn--white:hover{transform:translateY(var(--btn-hover-lift));box-shadow:var(--sh-shadow-hover)}
+  .sh-btn__old-price{font-weight:400;opacity:.6;font-size:.85em}
+  .sh-pill{
+    display:inline-block;
+    padding:6px 16px;
+    border-radius:999px;
+    font-size:1.1rem;
+    font-weight:600;
+    letter-spacing:.04em;
+    text-transform:uppercase;
+    background:var(--sh-primary);
+    color:#fff;
+    margin-bottom:16px;
+    box-shadow:0 0 16px color-mix(in srgb,var(--sh-primary) 20%,transparent);
+  }
+  .sh-pill--muted{background:var(--sh-bg-light);color:var(--sh-text-muted);border:1px solid var(--sh-border)}
+  .sh-hero{background:var(--sh-hero-gradient);padding:clamp(56px,8vw,104px) 0 clamp(56px,8vw,104px);color:#fff;position:relative;overflow:hidden}
+  .sh-hero__container{max-width:var(--sh-container);margin:0 auto;padding:0 clamp(20px,4vw,48px);position:relative;z-index:2}
+  .sh-hero__grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(36px,5vw,64px);align-items:center}
+  .sh-hero__badge{display:inline-block;padding:6px 18px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);font-size:1.1rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;margin-bottom:20px}
+  .sh-hero__title{font-size:clamp(3.2rem,5vw,5.2rem);font-weight:800;line-height:1.08;letter-spacing:-.03em;margin-bottom:16px}
+  .sh-hero__sub{font-size:clamp(1.5rem,1.8vw,1.7rem);font-weight:400;line-height:1.6;color:rgba(255,255,255,.8);margin-bottom:28px;max-width:500px}
+  .sh-hero__ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:24px}
+  .sh-hero__trust{display:flex;align-items:center;gap:10px;font-size:1.25rem;color:rgba(255,255,255,.65)}
+  .sh-hero__stars{display:flex;gap:2px}
+  .sh-hero__glow{position:absolute;bottom:-40%;right:-10%;width:50%;height:80%;background:radial-gradient(circle,rgba(255,255,255,.05) 0%,transparent 70%);pointer-events:none}
+  .sh-hero__card{background:rgba(255,255,255,.08);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.12);border-radius:var(--sh-radius-card);overflow:hidden;box-shadow:0 24px 48px rgba(0,0,0,.12)}
+  .sh-hero__card-header{display:flex;align-items:center;gap:7px;padding:12px 16px;background:rgba(0,0,0,.12)}
+  .sh-hero__card-dot{width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,.2)}
+  .sh-hero__card-dot:nth-child(1){background:#ff5f57}
+  .sh-hero__card-dot:nth-child(2){background:#febc2e}
+  .sh-hero__card-dot:nth-child(3){background:#28c840}
+  .sh-hero__card-label{margin-left:auto;font-size:1.05rem;font-weight:500;color:rgba(255,255,255,.6);background:rgba(255,255,255,.08);padding:3px 12px;border-radius:999px}
+  .sh-hero__card-img{width:100%;display:block}
+  .sh-hero__card-placeholder{aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.03)}
+  .sh-stats{background:var(--sh-bg-light);border-bottom:1px solid var(--sh-border);padding:32px 0}
+  .sh-stats__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;text-align:center}
+  .sh-stat{display:flex;flex-direction:column;align-items:center;gap:4px}
+  .sh-stat__icon{color:var(--sh-primary);margin-bottom:4px;display:flex}
+  .sh-stat__value{font-size:2rem;font-weight:800;color:var(--sh-text)}
+  .sh-stat__label{font-size:1.25rem;color:var(--sh-text-muted)}
+
+  /* Section Styles */
+  .sh-section{padding:var(--section-spacing) 0}
+  .sh-section--white{background:var(--sh-bg)}
+  .sh-section--light{background:var(--sh-bg-light)}
+  .sh-section__header{text-align:center;max-width:600px;margin:0 auto 48px}
+  .sh-section__title{font-size:clamp(2.4rem,3.5vw,3.4rem);font-weight:800;line-height:1.12;letter-spacing:-.025em;color:var(--sh-text);margin-bottom:12px}
+  .sh-section__sub{font-size:1.5rem;color:var(--sh-text-light);line-height:1.6}
+
+  /* Included features (could be generic feature cards, but keeping existing structure) */
+  .sh-included{display:flex;flex-direction:column;gap:0;max-width:720px;margin:0 auto}
+  .sh-included__item{display:flex;align-items:center;gap:20px;padding:24px 0;border-bottom:1px solid var(--sh-border);transition:background .2s}
+  .sh-included__item:last-child{border-bottom:none}
+  .sh-included__item:hover{background:var(--sh-bg-light);margin:0 -20px;padding:24px 20px;border-radius:12px}
+  .sh-included__num{font-size:1.15rem;font-weight:800;color:var(--sh-primary);opacity:.5;min-width:28px;flex-shrink:0;font-variant-numeric:tabular-nums}
+  .sh-included__content{flex:1}
+  .sh-included__title{font-size:1.55rem;font-weight:700;color:var(--sh-text);line-height:1.3;margin-bottom:4px}
+  .sh-included__desc{font-size:1.3rem;color:var(--sh-text-light);line-height:1.5}
+  .sh-included__check{color:var(--sh-primary);flex-shrink:0;display:flex;width:32px;height:32px;align-items:center;justify-content:center;background:color-mix(in srgb,var(--sh-primary) 8%,transparent);border-radius:50%}
+
+  .sh-features{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--grid-gap)}
+  .sh-feature{
+    background:#fff;
+    border:1px solid var(--sh-border);
+    border-radius:var(--sh-radius-card);
+    padding:28px 24px;
+    transition:border-color var(--sh-transition),box-shadow var(--sh-transition),transform var(--sh-transition);
+    box-shadow:var(--sh-shadow-xs);
+  }
+  .sh-feature:hover{border-color:var(--sh-primary);box-shadow:var(--sh-shadow);transform:translateY(var(--btn-hover-lift))}
+  .sh-feature__icon{width:44px;height:44px;border-radius:12px;background:var(--sh-bg-light);display:flex;align-items:center;justify-content:center;color:var(--sh-primary);margin-bottom:14px}
+  .sh-feature__title{font-size:1.4rem;font-weight:700;line-height:1.35;color:var(--sh-text);margin-bottom:6px}
+  .sh-feature__desc{font-size:1.25rem;color:var(--sh-text-light);line-height:1.5}
+
+  .sh-pas{display:grid;grid-template-columns:1fr auto 1fr;gap:28px;align-items:center}
+  .sh-pas__left,.sh-pas__right{padding:36px;border-radius:var(--sh-radius-card)}
+  .sh-pas__left{background:#fff;border:1px solid var(--sh-border)}
+  .sh-pas__right{background:var(--sh-dark);color:#fff}
+  .sh-pas__right .sh-pill{background:rgba(255,255,255,.15)}
+  .sh-pas__right .sh-btn--primary{background:#fff;color:var(--sh-dark)}
+  .sh-pas__title{font-size:2rem;font-weight:800;line-height:1.2;margin-bottom:12px}
+  .sh-pas__text{font-size:1.35rem;line-height:1.6;opacity:.85;margin-bottom:16px}
+  .sh-pas__divider{display:flex;align-items:center}
+  .sh-pas__arrow{width:44px;height:44px;border-radius:50%;background:var(--sh-primary);color:#fff;display:flex;align-items:center;justify-content:center}
+
+  /* Comparison Section */
+  .sh-compare{display:grid;grid-template-columns:1fr 1fr;gap:var(--grid-gap)}
+  .sh-compare__side{
+    border-radius:var(--sh-radius-card);
+    padding:32px 28px;
+    box-shadow:var(--sh-shadow-xs);
+    transition:all var(--sh-transition);
+  }
+  .sh-compare__side:hover {
+    transform:translateY(var(--btn-hover-lift));
+    box-shadow:var(--sh-shadow);
+  }
+  .sh-compare__side--bad{background:#fff;border:1px solid var(--sh-border)}
+  .sh-compare__side--good{background:var(--sh-dark);color:#fff}
+  .sh-compare__side h3{font-size:1.6rem;font-weight:700;margin-bottom:20px;display:flex;align-items:center;gap:8px}
+  .sh-compare__icon{display:flex}
+  .sh-compare__icon--bad{color:#ef4444}
+  .sh-compare__icon--good{color:var(--sh-success)}
+  .sh-compare__side--good .sh-compare__icon--good{color:#86efac} /* Lighter green on dark bg */
+  .sh-compare__row{padding:10px 0;font-size:1.35rem;border-bottom:1px solid rgba(128,128,128,.1);display:flex;align-items:center;gap:10px}
+  .sh-compare__row:last-child{border-bottom:none}
+  .sh-compare__bullet{display:flex;flex-shrink:0}
+  .sh-compare__bullet--bad{color:#ef4444;opacity:.6}
+  .sh-compare__bullet--good{color:var(--sh-success)}
+  .sh-compare__side--good .sh-compare__bullet--good{color:#86efac}
+
+  /* Testimonials */
+  .sh-testimonials{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--grid-gap)}
+  .sh-testimonial{
+    background:#fff;
+    border:1px solid var(--sh-border);
+    border-radius:var(--sh-radius-card);
+    padding:24px;
+    transition:border-color var(--sh-transition),box-shadow var(--sh-transition),transform var(--sh-transition);
+    box-shadow:var(--sh-shadow-xs);
+  }
+  .sh-testimonial:hover{border-color:var(--sh-primary);box-shadow:var(--sh-shadow);transform:translateY(var(--btn-hover-lift))}
+  .sh-testimonial__stars{display:flex;gap:2px;margin-bottom:12px}
+  .sh-testimonial__title{font-size:1.35rem;font-weight:700;margin-bottom:6px;color:var(--sh-text)}
+  .sh-testimonial__text{font-size:1.35rem;line-height:1.55;color:var(--sh-text-light);margin-bottom:14px}
+  .sh-testimonial__author{display:flex;align-items:center;gap:10px}
+  .sh-testimonial__avatar{width:36px;height:36px;border-radius:50%;background:var(--sh-bg-warm);color:var(--sh-primary);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1.3rem;border:1px solid var(--sh-border)}
+  .sh-testimonial__avatar-img{width:48px;height:48px;border-radius:50%;object-fit:cover;border:2px solid var(--sh-border);flex-shrink:0}
+  .sh-testimonial__author strong{font-size:1.3rem;color:var(--sh-text)}
+  .sh-testimonial__author small{color:var(--sh-text-muted);font-size:1.15rem}
+  .sh-testimonial__top{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+  .sh-testimonial__verified{display:inline-flex;align-items:center;gap:4px;font-size:1.05rem;font-weight:600;color:#16A34A;background:#F0FDF4;padding:3px 10px;border-radius:999px}
+  .sh-testimonial__verified svg{width:12px;height:12px}
+  .sh-testimonial__footer{display:flex;align-items:center;justify-content:space-between;margin-top:14px}
+  .sh-testimonial__date{font-size:1.1rem;color:var(--sh-text-muted)}
+
+  /* FAQ */
+  .sh-faq__item{
+    background:#fff;
+    border:1px solid var(--sh-border);
+    border-radius:var(--sh-radius-card); /* Apply card radius */
+    margin-bottom:10px; /* More space between items */
+    overflow:hidden;
+    transition:border-color var(--sh-transition),box-shadow var(--sh-transition);
+    box-shadow:var(--sh-shadow-xs);
+  }
+  .sh-faq__item[open]{border-color:var(--sh-primary);box-shadow:var(--sh-shadow-xs)}
+  .sh-faq__q{display:flex;justify-content:space-between;align-items:center;padding:18px 24px;font-weight:600;font-size:1.45rem;cursor:pointer;list-style:none;color:var(--sh-text)}
+  .sh-faq__q::-webkit-details-marker{display:none}
+  .sh-faq__chevron{flex-shrink:0;color:var(--sh-text-muted);transition:transform .25s ease,color .25s ease}
+  .sh-faq__item[open] .sh-faq__chevron{color:var(--sh-primary);transform:rotate(180deg)}
+  .sh-faq__a{padding:0 24px 20px;font-size:1.35rem;line-height:1.65;color:var(--sh-text-light)}
+
+  /* CTA Section */
+  .sh-cta{
+    background:var(--sh-hero-gradient); /* Use hero gradient for CTA */
+    color:#fff;
+    position:relative;
+    overflow:hidden;
+    padding:var(--section-spacing) 0;
+    text-align:center;
+  }
+  .sh-cta__bg-pattern{position:absolute;inset:0;background-image:radial-gradient(circle at 25% 50%,rgba(255,255,255,.04) 1px,transparent 1px);background-size:24px 24px;pointer-events:none}
+  .sh-cta__inner{max-width:560px;position:relative;z-index:2}
+  .sh-cta__title{color:#fff;font-size:clamp(2.6rem,4vw,3.8rem);font-weight:800;line-height:1.1;margin-bottom:14px}
+  .sh-cta__sub{color:rgba(255,255,255,.75);font-size:1.45rem;margin-bottom:24px;line-height:1.55}
+  .sh-cta__price{margin-bottom:24px}
+  .sh-cta__price-current{color:#fff;font-size:3.6rem;font-weight:900}
+  .sh-cta__price-old{font-size:1.8rem;text-decoration:line-through;color:rgba(255,255,255,.5);margin-left:12px}
+  .sh-cta__price-save{display:inline-block;padding:4px 12px;border-radius:999px;background:var(--sh-success);color:#fff;font-size:1.3rem;font-weight:700;margin-left:12px}
+  .sh-cta__badges{margin-top:20px;font-size:1.15rem;color:rgba(255,255,255,.65);display:flex;justify-content:center;gap:20px;flex-wrap:wrap}
+  .sh-cta__badges span{display:inline-flex;align-items:center;gap:6px}
+  .sh-cta__badges svg{width:14px;height:14px;color:rgba(255,255,255,.5)}
+  .sh-cta__urgency-strip{display:inline-flex;align-items:center;gap:8px;padding:6px 16px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);font-size:1.15rem;font-weight:500;color:rgba(255,255,255,.85);margin-bottom:20px}
+  .sh-cta__urgency-dot{width:8px;height:8px;border-radius:50%;background:var(--sh-success);animation:shPulseDot 2s ease-in-out infinite}
+  .sh-cta__micro{font-size:1.2rem;color:rgba(255,255,255,.55);margin-top:12px;margin-bottom:16px}
+  .sh-cta__payment-icons{display:flex;justify-content:center;gap:8px;margin-top:16px;opacity:.5}
+  .sh-cta .sh-btn--dark{background:#fff;color:var(--sh-dark)}
+  .sh-cta .sh-btn--dark:hover{background:#f0f0f0}
+  .sh-btn--pulse{position:relative;overflow:hidden}.sh-btn--pulse::after{content:'';position:absolute;inset:-2px;border-radius:inherit;background:linear-gradient(90deg,transparent,rgba(255,255,255,.2),transparent);animation:shBtnPulse 3s ease-in-out infinite}@keyframes shBtnPulse{0%{transform:translateX(-100%)}50%,100%{transform:translateX(100%)}}
+
+  /* Footer */
+  .sh-footer{background:var(--footer-bg);color:rgba(255,255,255,.6);padding-top:56px}
+  .sh-footer__grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:48px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.06)}
+  .sh-footer__brand{display:block;font-size:1.6rem;font-weight:700;color:#fff;margin-bottom:10px}
+  .sh-footer__desc{font-size:1.25rem;line-height:1.6}
+  .sh-footer__col h4{color:rgba(255,255,255,.9);font-size:1.2rem;font-weight:600;margin-bottom:16px;letter-spacing:.02em}
+  .sh-footer__col a{display:block;font-size:1.25rem;color:rgba(255,255,255,.45);padding:4px 0;transition:color var(--sh-transition)}
+  .sh-footer__col a:hover{color:#fff}
+  .sh-footer__pays{display:flex;gap:8px;margin-bottom:10px;opacity:.5}
+  .sh-footer__col small{font-size:1.1rem;color:rgba(255,255,255,.3)}
+  .sh-footer__bottom{padding:20px 0;font-size:1.15rem;color:rgba(255,255,255,.25);text-align:center}
+  .sh-footer__newsletter{background:var(--sh-dark);border-bottom:1px solid rgba(255,255,255,.06);padding:40px 0}
+  .sh-footer__newsletter-inner{display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap}
+  .sh-footer__newsletter-title{font-size:1.8rem;font-weight:700;color:#fff;margin-bottom:4px}
+  .sh-footer__newsletter-sub{font-size:1.25rem;color:rgba(255,255,255,.5)}
+  .sh-footer__newsletter-form{display:flex;gap:8px}
+  .sh-footer__newsletter-input{padding:12px 20px;border-radius:999px;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.06);color:#fff;font-size:1.3rem;min-width:240px;font-family:inherit;transition:border-color .2s}
+  .sh-footer__newsletter-input::placeholder{color:rgba(255,255,255,.35)}
+  .sh-footer__newsletter-input:focus{outline:none;border-color:var(--sh-primary)}
+  .sh-footer__trust-row{display:flex;align-items:center;gap:8px;margin-top:14px;font-size:1.1rem;color:rgba(255,255,255,.35)}
+  .sh-footer__trust-row svg{width:14px;height:14px;color:rgba(255,255,255,.3)}
+
+  /* Product specific styles */
+  .sp-breadcrumb{padding:14px 0;font-size:1.2rem;color:var(--sh-text-muted);border-bottom:1px solid var(--sh-border)}
+  .sp-breadcrumb a{color:var(--sh-text-muted);transition:color .2s}
+  .sp-breadcrumb a:hover{color:var(--sh-primary)}
+  .sp-breadcrumb span{margin:0 6px}
+  .sp-breadcrumb__current{color:var(--sh-text);font-weight:500}
+  .sp-hero{padding:40px 0 64px}
+  .sp-hero__grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,56px);align-items:start}
+  .sp-gallery__main{
+    position:relative;
+    border-radius:var(--sh-radius-card);
+    overflow:hidden;
+    background:#f8f8f8;
+    box-shadow:var(--sh-shadow); /* Apply card shadow */
+    transition:transform var(--sh-transition),box-shadow var(--sh-transition);
+  }
+  .sp-gallery__main:hover {
+    transform:translateY(var(--btn-hover-lift));
+    box-shadow:var(--sh-shadow-hover);
+  }
+  .sp-gallery__img{width:100%;aspect-ratio:1;object-fit:cover;cursor:zoom-in;transition:transform .3s}
+  .sp-gallery__img:hover{transform:scale(1.02)}
+  .sp-gallery__empty{aspect-ratio:1;display:flex;align-items:center;justify-content:center;background:#f8f8f8}
+  .sp-gallery__badge{position:absolute;top:16px;left:16px;background:var(--sh-primary);color:#fff;padding:6px 16px;border-radius:999px;font-size:1.15rem;font-weight:700}
+  .sp-gallery__thumbs{display:flex;gap:8px;margin-top:12px}
+  .sp-gallery__thumb{width:68px;height:68px;object-fit:cover;border-radius:10px;cursor:pointer;border:2px solid transparent;opacity:.5;transition:all .2s}
+  .sp-gallery__thumb:hover{opacity:.8}
+  .sp-gallery__thumb.active{opacity:1;border-color:var(--sh-primary)}
+  .sp-info__title{font-size:clamp(2.25rem,4.5vw,4rem);font-weight:800;line-height:1.05;letter-spacing:var(--heading-letter-spacing);margin-bottom:8px;color:var(--sh-text)}
+  .sp-info__tagline{font-size:1.45rem;color:var(--sh-text-light);margin-bottom:16px;line-height:1.6}
+  .sp-info__rating{display:flex;align-items:center;gap:8px;font-size:1.2rem;color:var(--sh-text-muted);margin-bottom:18px}
+  .sp-stars{display:flex;gap:2px}
+  .sp-info__price{display:flex;align-items:baseline;gap:12px;margin-bottom:18px}
+  .sp-price{font-size:3rem;font-weight:800;color:var(--sh-text);letter-spacing:-.02em}
+  .sp-price--old{font-size:1.7rem;text-decoration:line-through;color:var(--sh-text-muted)}
+  .sp-save{padding:4px 12px;border-radius:999px;background:var(--sh-success);color:#fff;font-size:1.15rem;font-weight:600}
+  .sp-info__desc{font-size:1.5rem;line-height:1.7;color:var(--sh-text-light);margin-bottom:20px}
+  .sp-info__checklist{margin-bottom:24px}
+  .sp-check{font-size:1.4rem;padding:5px 0;color:var(--sh-text);display:flex;align-items:center;gap:8px}
+  .sp-check__icon{color:var(--sh-primary);display:flex;flex-shrink:0}
+  .sp-atc{
+    width:100%;
+    padding:var(--btn-padding-default);
+    border:none;
+    border-radius:var(--sh-radius-btn);
+    background:var(--sh-dark);
+    color:#fff;
+    font-family:var(--sh-font-body);
+    font-size:1.55rem;
+    font-weight:700;
+    cursor:pointer;
+    transition:all var(--sh-transition);
+    box-shadow:0 2px 12px rgba(0,0,0,.08);
+    margin-bottom:18px;
+    letter-spacing:-.01em;
+  }
+  .sp-atc:hover{transform:translateY(var(--btn-hover-lift));box-shadow:var(--sh-shadow-hover);filter:brightness(1.1)}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .sp-spin{animation:spin .8s linear infinite}.sp-info__badge{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border-radius:999px;background:#FEF2F2;border:1px solid #FECACA;color:#DC2626;font-size:1.15rem;font-weight:700;margin-bottom:12px;letter-spacing:.02em}.sp-info__badge-dot{width:8px;height:8px;border-radius:50%;background:#DC2626;animation:spPulse 2s ease-in-out infinite}@keyframes spPulse{0%,100%{box-shadow:0 0 0 0 rgba(220,38,38,.5)}50%{box-shadow:0 0 0 6px rgba(220,38,38,0)}}
+  .sp-atc__micro{display:flex;align-items:center;justify-content:center;gap:6px;font-size:1.15rem;color:var(--sh-text-muted);margin-bottom:14px}
+  .sp-atc__micro svg{width:13px;height:13px}
+  .sp-rating-text{font-weight:500}
+  .sp-info__viewers{display:flex;align-items:center;gap:8px;padding:10px 16px;border-radius:10px;background:#FFF7ED;border:1px solid #FED7AA;font-size:1.15rem;color:#9A3412;font-weight:500;margin-top:16px}
+  .sp-info__viewers-dot{width:8px;height:8px;border-radius:50%;background:var(--sh-success);animation:spPulse2 2s ease-in-out infinite}@keyframes spPulse2{0%,100%{box-shadow:0 0 0 0 rgba(34,197,94,.5)}50%{box-shadow:0 0 0 6px rgba(34,197,94,0)}}
+
+  .sp-trust{display:flex;gap:16px;flex-wrap:wrap;font-size:1.15rem;color:var(--sh-text-muted);margin-bottom:16px}
+  .sp-trust span{display:inline-flex;align-items:center;gap:5px}
+  .sp-trust svg{flex-shrink:0}
+  .sp-pays{display:flex;gap:8px;opacity:.4}
+
+  .sp-includes{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+  .sp-include{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--sh-border);border-radius:12px;padding:16px 18px;font-size:1.3rem;font-weight:500;transition:border-color .2s}
+  .sp-include:hover{border-color:var(--sh-primary)}
+  .sp-include__icon{color:var(--sh-primary);display:flex;flex-shrink:0}
+
+  /* Steps section */
+  .sp-steps{display:flex;align-items:flex-start;justify-content:center;gap:var(--grid-gap)} /* Added gap */
+  .sp-step{
+    text-align:center;
+    flex:1;
+    max-width:280px;
+    padding:36px 24px; /* Added padding to make it a card */
+    background:#fff;
+    border:1px solid var(--sh-border);
+    border-radius:var(--sh-radius-card); /* Apply card radius */
+    transition:all var(--sh-transition);
+    box-shadow:var(--sh-shadow-xs);
+    position:relative;
+  }
+  .sp-step:hover{border-color:var(--sh-primary);box-shadow:var(--sh-shadow);transform:translateY(var(--btn-hover-lift))}
+  .sp-step__num{
+    position:absolute;
+    top:-16px;
+    left:50%;
+    transform:translateX(-50%);
+    width:32px;
+    height:32px;
+    border-radius:50%;
+    background:var(--sh-dark);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:1.3rem;
+    font-weight:800;
+    box-shadow:0 4px 12px color-mix(in srgb,var(--sh-primary) 30%,transparent);
+  }
+  .sp-step h3{font-size:1.55rem;font-weight:700;margin-bottom:6px;color:var(--sh-text);margin-top:12px;} /* Adjusted margin-top for number pill */
+  .sp-step p{font-size:1.35rem;color:var(--sh-text-light);line-height:1.5}
+  .sp-step__line{
+    width:48px;
+    height:2px;
+    background:var(--sh-border);
+    margin-top:24px;
+    flex-shrink:0;
+    align-self:center; /* Center the line */
+  }
+
+  /* Guarantee Section */
+  .sp-guarantee{padding:clamp(40px,6vw,64px) 0;background:var(--sh-bg-light)}
+  .sp-guarantee__box{
+    max-width:520px;
+    margin:0 auto;
+    text-align:center;
+    background:#fff;
+    border:1px solid var(--sh-border);
+    border-radius:var(--sh-radius-card);
+    padding:40px;
+    box-shadow:var(--sh-shadow); /* Apply card shadow */
+  }
+  .sp-guarantee__icon{color:var(--sh-primary);margin-bottom:16px;display:flex;justify-content:center}
+  .sp-guarantee__box h3{font-size:2rem;font-weight:800;margin-bottom:10px;color:var(--sh-text)}
+  .sp-guarantee__box p{font-size:1.45rem;color:var(--sh-text-light);line-height:1.6}
+
+  /* Lightbox */
+  .sp-lightbox{display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.9);align-items:center;justify-content:center;cursor:pointer}
+  .sp-lightbox.active{display:flex}
+  .sp-lightbox img{max-width:90%;max-height:90%;object-fit:contain;border-radius:12px}
+  .sp-lightbox__x{position:absolute;top:20px;right:28px;background:none;border:none;color:#fff;cursor:pointer;display:flex}
+
+  /* Glassmorphism utility */
+  .sh-glass{background:rgba(255,255,255,0.12);backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%);border:1px solid rgba(255,255,255,0.3)}
+
+  /* Scroll progress bar */
+  .sh-scroll-progress{position:fixed;top:0;left:0;right:0;height:3px;z-index:9999;background:transparent;pointer-events:none}
+  .sh-scroll-progress__bar{height:100%;width:0%;background:linear-gradient(90deg,var(--sh-primary),var(--sh-accent));transition:width .1s linear}
+
+  /* Hero particles, chips, floats (existing, keep) */
+  .sh-hero__particles{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:1}.sh-particle{position:absolute;width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,0.15);animation:shParticleFloat 8s ease-in-out infinite}.sh-particle:nth-child(1){left:10%;top:20%;animation-delay:0s;animation-duration:7s}.sh-particle:nth-child(2){left:30%;top:70%;animation-delay:1s;animation-duration:9s;width:4px;height:4px}.sh-particle:nth-child(3){left:60%;top:30%;animation-delay:2s;animation-duration:6s;width:8px;height:8px}.sh-particle:nth-child(4){left:80%;top:60%;animation-delay:3s;animation-duration:10s}.sh-particle:nth-child(5){left:50%;top:85%;animation-delay:4s;animation-duration:8s;width:5px;height:5px}.sh-particle:nth-child(6){left:90%;top:15%;animation-delay:5s;animation-duration:7s;width:3px;height:3px}@keyframes shParticleFloat{0%,100%{transform:translateY(0) translateX(0);opacity:0.15}25%{transform:translateY(-20px) translateX(10px);opacity:0.3}50%{transform:translateY(-40px) translateX(-10px);opacity:0.15}75%{transform:translateY(-20px) translateX(15px);opacity:0.25}}.sh-hero__badge-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#22c55e;margin-right:8px;vertical-align:middle;animation:shPulseDot 2s ease-in-out infinite}@keyframes shPulseDot{0%,100%{box-shadow:0 0 0 0 rgba(34,197,94,.5)}50%{box-shadow:0 0 0 6px rgba(34,197,94,0)}}.sh-hero__chips{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:24px}.sh-hero__chip{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);font-size:1.15rem;font-weight:500;color:rgba(255,255,255,.85);backdrop-filter:blur(8px)}.sh-hero__chip svg{width:14px;height:14px}.sh-hero__avatars{display:flex;margin-right:12px}.sh-hero__avatar-img{width:32px;height:32px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,.3);margin-left:-8px}.sh-hero__avatar-img:first-child{margin-left:0}.sh-hero__avatar-dot{width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.15);margin-left:-8px;border:2px solid rgba(255,255,255,.2)}.sh-hero__avatar-dot:first-child{margin-left:0}.sh-hero__trust-text{display:flex;flex-direction:column;gap:2px}.sh-hero__trust-text span{font-size:1.15rem;color:rgba(255,255,255,.65)}.sh-hero__float{position:absolute;display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:12px;background:rgba(255,255,255,.12);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.15);font-size:1.1rem;font-weight:600;color:#fff;animation:shFloat 4s ease-in-out infinite;box-shadow:0 8px 24px rgba(0,0,0,.1)}.sh-hero__float svg{width:14px;height:14px}.sh-hero__float--1{top:10%;right:-10px;animation-delay:0s}.sh-hero__float--2{bottom:10%;left:-10px;animation-delay:2s}@keyframes shFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}.sh-hero__visual{position:relative}
+
+  /* Responsive Adjustments */
+  @media(max-width:968px){
+    .sh-hero__grid{grid-template-columns:1fr;text-align:center}
+    .sh-hero__sub{margin:0 auto 28px}
+    .sh-hero__ctas{justify-content:center}
+    .sh-hero__trust{justify-content:center}
+    .sh-hero__visual{max-width:440px;margin:0 auto}
+    .sh-features{grid-template-columns:1fr 1fr}
+    .sh-testimonials{grid-template-columns:1fr 1fr}
+    .sh-pas{grid-template-columns:1fr}
+    .sh-pas__divider{justify-content:center}
+    .sh-pas__arrow svg{transform:rotate(90deg)}
+    .sh-compare{grid-template-columns:1fr 1fr}
+    .sh-compare__side{padding:24px 20px}
+    .sh-compare__side h3{font-size:1.4rem}
+    .sh-compare__row{font-size:1.25rem;padding:8px 0}
+    .sh-footer__grid{grid-template-columns:1fr 1fr}
+    .sp-hero__grid{grid-template-columns:1fr;gap:32px}
+    .sp-gallery{max-width:500px;margin:0 auto}
+    .sp-includes{grid-template-columns:1fr 1fr}
+    .sp-steps{flex-direction:column;align-items:center;gap:2rem;} /* Adjust gap for vertical steps */
+    .sp-step__line{width:2px;height:24px;margin:0;}
+  }
+  @media(max-width:640px){
+    .sh-header__inner{display:grid;grid-template-columns:44px 1fr auto;grid-template-areas:"menu logo right";align-items:center;gap:0;padding:0 14px;height:60px}
+    .sh-header__hamburger{display:flex;grid-area:menu;justify-self:start}
+    .sh-header__logo{grid-area:logo;justify-self:center}
+    .sh-header__logo svg{height:36px}
+    .sh-logo-text{font-size:1.5rem}
+    .sh-header__right{grid-area:right;justify-self:end;gap:4px}
+    .sh-header__nav{top:60px}
+    .sh-header__nav{display:none;position:absolute;top:64px;left:0;right:0;background:#fff;flex-direction:column;padding:16px 24px;gap:0;border-bottom:1px solid var(--sh-border);box-shadow:0 4px 12px rgba(0,0,0,.04);z-index:200}
+    .sh-header__nav.open{display:flex}
+    .sh-header__nav a{padding:14px 0;border-bottom:1px solid rgba(0,0,0,.03);font-size:1.5rem}
+    .sh-header__nav a::after{display:none}
+    .sh-lang__label{display:none}
+    .sh-lang__btn{padding:6px 8px 6px 8px;gap:4px}
+    .sh-lang__menu{right:-10px}
+    .sh-header__cart{padding:6px}
+    .sh-stats__grid{grid-template-columns:1fr 1fr 1fr;gap:12px}
+    .sh-features{grid-template-columns:1fr}
+    .sh-testimonials{grid-template-columns:1fr}
+    .sh-compare__side{padding:18px 14px}
+    .sh-compare__side h3{font-size:1.3rem}
+    .sh-compare__row{font-size:1.2rem;gap:6px}
+    .sh-compare__bullet svg{width:14px;height:14px}
+    .sh-footer__grid{grid-template-columns:1fr;gap:28px}
+    .sh-sticky-bar{display:flex}
+    .sh-hero__title{font-size:2.8rem}
+    .sh-cta__badges{flex-direction:column;align-items:center;gap:8px}
+    .sh-cats__grid{grid-template-columns:1fr}
+    .sh-pricing__grid{grid-template-columns:1fr;max-width:400px;margin:0 auto}
+    .sh-pricing__card--pro{transform:none}
+    .sh-toast{display:none!important}
+    body{padding-bottom:66px}
+    .sp-includes{grid-template-columns:1fr}
+    .sp-trust{flex-direction:column;gap:4px}
+    .sh-compare{grid-template-columns:1fr}
+    .sh-compare__side{padding:16px 12px}
+    .sh-compare__side h3{font-size:1.15rem}
+    .sh-compare__row{font-size:1.1rem}
+    .sp-step{padding:24px 16px;}
+    .sp-step h3{font-size:1.4rem;}
+    .sp-step p{font-size:1.25rem;}
+  }
+  body::before{content:'';position:fixed;inset:0;z-index:-1;background:radial-gradient(ellipse at 20% 50%,color-mix(in srgb,var(--sh-primary) 3%,transparent) 0%,transparent 50%),radial-gradient(ellipse at 80% 20%,color-mix(in srgb,var(--sh-accent) 3%,transparent) 0%,transparent 50%),radial-gradient(ellipse at 50% 100%,color-mix(in srgb,var(--sh-primary) 2%,transparent) 0%,transparent 40%);pointer-events:none}
+  </style>
+  
+</head>
+<body>
+  <!-- Announcement Bar -->
+  <div class="sh-announce" id="announcementBar">
+    <div class="sh-announce__track">
+      <div class="sh-announce__slide active" data-slide-index="0">
+        <span class="sh-hero__badge-dot"></span> ¡Oferta Exclusiva: 60% MENOS en Todos los Planners de Boda!
+      </div>
+      <div class="sh-announce__slide" data-slide-index="1">
+        <span class="sh-hero__badge-dot"></span> Descarga Instantánea & Garantía de 30 Días ¡Sin Preguntas!
+      </div>
+    </div>
+  </div>
+
+  <header class="sh-header">
+    <div class="sh-header__inner">
+      <button class="sh-header__hamburger" id="menuToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <a href="es/index.html" class="sh-header__logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 242 44" width="242" height="44" role="img" aria-label="WeddingPlannerPro">
+  <defs>
+    <linearGradient id="lG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B76E79"/>
+      <stop offset="100%" stop-color="#D4A574"/>
+    </linearGradient>
+    <filter id="lS" x="-15%" y="-15%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#B76E79" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <!-- Icon mark -->
+  <g filter="url(#lS)">
+    <rect x="1" y="3" width="38" height="38" rx="10" fill="url(#lG)"/>
+  </g>
+  <g transform="translate(10, 12) scale(0.833)" fill="#fff">
+    <path d="M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="50" y="23" dominant-baseline="central" font-family="var(--sh-font-heading)" font-weight="700" font-size="19" letter-spacing="-0.03em" fill="currentColor">WeddingPlannerPro</text>
+</svg></a>
+      <nav class="sh-header__nav" id="mainNav">
+        <a href="es/index.html">Inicio</a>
+        <a href="es/product/wedding-planner-spreadsheet-for-google-budget-tracker-guest-list-seating-plan-ch.html">Producto</a>
+        <a href="es/contact.html">Contacto</a>
+      </nav>
+      <div class="sh-header__right">
+        <div class="sh-lang" id="langDropdown">
+          <button class="sh-lang__btn" id="langToggle" aria-label="Language" aria-expanded="false">
+            <svg width="18" height="13" viewBox="0 0 18 13"><rect width="18" height="3.25" fill="#AA151B"/><rect y="3.25" width="18" height="6.5" fill="#F1BF00"/><rect y="9.75" width="18" height="3.25" fill="#AA151B"/></svg>
+            <span class="sh-lang__label">ES</span>
+            <svg class="sh-lang__chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="sh-lang__menu" id="langMenu">
+            <a class="sh-lang__option" href="/index.html"><svg width="18" height="13" viewBox="0 0 18 13"><rect width="18" height="13" rx="1.5" fill="#012169"/><path d="M0 0l18 13M18 0L0 13" stroke="#fff" stroke-width="2"/><path d="M0 0l18 13M18 0L0 13" stroke="#C8102E" stroke-width="1"/><path d="M9 0v13M0 6.5h18" stroke="#fff" stroke-width="3.5"/><path d="M9 0v13M0 6.5h18" stroke="#C8102E" stroke-width="2"/></svg><span>EN</span></a>
+<a class="sh-lang__option" href="/fr/index.html"><svg width="18" height="13" viewBox="0 0 18 13"><rect width="6" height="13" fill="#002395"/><rect x="6" width="6" height="13" fill="#fff"/><rect x="12" width="6" height="13" fill="#ED2939"/></svg><span>FR</span></a>
+          </div>
+        </div>
+        <button class="sh-header__cart" onclick="window.openCartDrawer && openCartDrawer(false)" aria-label="Cart">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          <span class="sh-header__cart-count" id="cartBadge" style="display:none">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="sp-breadcrumb">
+    <div class="sh-container">
+      <a href="index.html">Inicio</a> <span>›</span> <span class="sp-breadcrumb__current">Wedding Planner Spreadsheet Pro</span>
+    </div>
+  </div>
+
+  <section class="sp-hero">
+    <div class="sh-container sp-hero__grid">
+      <!-- Gallery -->
+      <div class="sp-gallery" data-reveal data-delay="0">
+        <div class="sp-gallery__main">
+          <img id="mainImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjY3NSIgdmlld0JveD0iMCAwIDEyMDAgNjc1Ij4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwJSI yeTE9IjAlIiB4Mj0iMTAwJSI yeTI9IjEwMCUiPgogICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiMxRTQwQUYiLz4KICAgICAgICA8c3RvcCBvZmZzZXQ9IjU1JSIgc3R5bGU9InN0b3AtY29sb3I6IzFFNDBBRiIvPgogICAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6I0Y1OUUwQiIvPgogICAgICA8L2xpbmVhcjpHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZykiLz4KICAgIDx0ZXh0IHg9IjUwJSI yeT0iNTAlIiBmb250LWZhbWlseT0nUG9wcGlucycsQXJpYWwsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZm9udC13ZWlnaHQ9IjYwMCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjYpIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIj5Qcm9kdWN0IE1vY2t1cDwvdGV4dD4KICA8L3N2Zz4=" alt="Wedding Planner Spreadsheet para Google Sheets y Excel" class="sp-gallery__img" onclick="openLB()" />
+          <div class="sp-gallery__badge">60% OFF</div>
+        </div>
+        
+      </div>
+
+      <!-- Product Info -->
+      <div class="sp-info" data-reveal data-delay="100">
+        <div class="sp-info__badge"><span class="sp-info__badge-dot"></span>¡Oferta Exclusiva: 60% MENOS por Tiempo Limitado!</div>
+        <h1 class="sp-info__title">Planifica Tu Boda Soñada: ¡Presupuesto, Invitados y Cronograma Sin Estrés!</h1>
+        <p class="sp-info__tagline">Tu asistente digital todo-en-uno para una boda perfecta y sin preocupaciones. Disponible para Google Sheets y Excel.</p>
+
+        <div class="sp-info__rating">
+          <span class="sp-stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></span>
+          <span class="sp-rating-text">Valorado por más de 10,000 parejas felices</span>
+        </div>
+
+        <div class="sp-info__price">
+          <span class="sp-price">$9.99</span>
+          <span class="sp-price--old">$24.99</span>
+          <span class="sp-save">Ahorra 60%</span>
+        </div>
+        <div class="sp-info__savings-note">¡Ahorras $15.00 hoy!</div>
+
+        <div class="sp-info__desc"><p>El **Wedding Planner Spreadsheet Pro** es tu centro de comando digital definitivo, diseñado para parejas comprometidas que anhelan planificar su gran día con total confianza y sin el más mínimo estrés.</p><p>Este archivo integral cuenta con **47 pestañas pre-construidas** e interconectadas, presupuestos auto-calculados, capacidad para **más de 500 invitados**, y un exclusivo 'Calendario Inteligente' para una visualización clara del cronograma. Es completamente editable en Google Sheets y Microsoft Excel.</p><p>Obtén acceso instantáneo a tu nueva herramienta de planificación y comienza a transformar el agobio nupcial en pura alegría desde hoy mismo.</p></div>
+
+        <div class="sp-info__checklist">
+          <div class="sp-check"><span class="sp-check__icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></span> **Control Total:** Centraliza invitados, proveedores y tareas en una única plataforma fácil de usar.</div>
+<div class="sp-check"><span class="sp-check__icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></span> **Presupuesto Maestro:** Auto-calcula tu presupuesto restante después de cada gasto, eliminando sorpresas.</div>
+<div class="sp-check"><span class="sp-check__icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></span> **Gestión de Invitados sin Esfuerzo:** Maneja hasta 500+ RSVPs, dietas, y asignación de mesas con un clic.</div>
+<div class="sp-check"><span class="sp-check__icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></span> **Día de Boda Impecable:** Genera guías imprimibles detalladas para una ejecución fluida y sin fallos.</div>
+<div class="sp-check"><span class="sp-check__icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></span> **Cronograma Visual:** Planifica tu viaje nupcial con el intuitivo 'Calendario Inteligente' y no te pierdas ningún plazo.</div>
+        </div>
+
+        <button class="sp-atc" id="atcBtn" onclick="doATC()">
+          <span id="atcLabel">Añadir al Carrito — $9.99</span>
+          <span id="atcSpin" style="display:none"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" class="sp-spin"><path d="M12 2v4m0 12v4m-7.07-3.93l2.83-2.83m8.48-8.48l2.83-2.83M2 12h4m12 0h4"/></svg></span>
+          <span id="atcOk" style="display:none">¡Añadido al Carrito!</span>
+        </button>
+        <p class="sp-atc__micro"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10"/></svg> Descarga instantánea tras la compra. Sin suscripciones. Acceso de por vida.</p>
+
+        <div class="sp-trust">
+          <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Pago Seguro</span>
+          <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10"/></svg> Descarga Instantánea</span>
+          <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg> Garantía de 30 Días</span>
+        </div>
+
+        <div class="sp-pays">
+          <svg viewBox="0 0 48 32" width="38" height="24"><rect width="48" height="32" rx="4" fill="#1A1F71"/><text x="24" y="20" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">VISA</text></svg>
+          <svg viewBox="0 0 48 32" width="38" height="24"><rect width="48" height="32" rx="4" fill="#252525"/><circle cx="18" cy="16" r="8" fill="#EB001B"/><circle cx="30" cy="16" r="8" fill="#F79E1B"/></svg>
+          <svg viewBox="0 0 48 32" width="38" height="24"><rect width="48" height="32" rx="4" fill="#003087"/><text x="24" y="20" text-anchor="middle" fill="#fff" font-size="9" font-weight="bold">PayPal</text></svg>
+          <svg viewBox="0 0 48 32" width="38" height="24"><rect width="48" height="32" rx="4" fill="#635BFF"/><text x="24" y="20" text-anchor="middle" fill="#fff" font-size="9" font-weight="bold">Stripe</text></svg>
+        </div>
+
+        <!-- Viewing now indicator -->
+        <div class="sp-info__viewers">
+          <span class="sp-info__viewers-dot"></span>
+          <span>¡21 personas están viendo esto ahora mismo!</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sh-section sh-section--white" data-reveal>
+    <div class="sh-container">
+      <div class="sh-section__header">
+        <span class="sh-pill">Cómo Funciona</span>
+        <h2 class="sh-section__title">Tu Boda Perfecta en 3 Pasos Sencillos</h2>
+      </div>
+      <div class="sp-steps">
+        
+        
+        <div class="sp-step" data-reveal data-delay="0">
+          <div class="sp-step__num">1</div>
+          <h3>Descarga al Instante</h3>
+          <p>Recibe tu Wedding Planner Spreadsheet para Google Sheets o Excel segundos después de tu compra, listo para usar.</p>
+        </div>
+
+        <div class="sp-step__line"></div>
+        <div class="sp-step" data-reveal data-delay="150">
+          <div class="sp-step__num">2</div>
+          <h3>Personaliza Fácilmente</h3>
+          <p>Adapta cada sección con los detalles únicos de tu boda, tus invitados y proveedores, sin complicaciones ni conocimientos técnicos.</p>
+        </div>
+
+        <div class="sp-step__line"></div>
+        <div class="sp-step" data-reveal data-delay="300">
+          <div class="sp-step__num">3</div>
+          <h3>Planifica con Confianza</h3>
+          <p>Disfruta de la tranquilidad absoluta al saber que cada detalle está cubierto, organizado y bajo control, llevando tu boda soñada a la realidad.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sh-section sh-section--light" data-reveal>
+    <div class="sh-container">
+      <div class="sh-section__header">
+        <span class="sh-pill">La Elección Clara</span>
+        <h2 class="sh-section__title">¿Por Qué Elegir Nuestro Wedding Planner?</h2>
+      </div>
+      <div class="sh-compare">
+        <div class="sh-compare__side sh-compare__side--bad" data-reveal data-delay="0">
+          <h3><span class="sh-compare__icon sh-compare__icon--bad"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span> Sin Nuestro Planner (El Estrés)</h3>
+          <div class="sh-compare__row"><span class="sh-compare__bullet sh-compare__bullet--bad"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span> **Caos Digital:** Múltiples archivos dispersos, notas sueltas y 30 pestañas abiertas.</div>
+<div class="sh-compare__row"><span class="sh-compare__bullet sh-compare__bullet--bad"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span> **Errores de Presupuesto:** Cálculos manuales que llevan a sobrecostos inesperados y frustración.</div>
+<div class="sh-compare__row"><span class="sh-compare__bullet sh-compare__bullet--bad"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span> **Gestión de Invitados Infernal:** Listas básicas, sin seguimiento de RSVPs, dietas o asientos.</div>
+<div class="sh-compare__row"><span class="sh-compare__bullet sh-compare__bullet--bad"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span> **Día de Boda Imprevisible:** Listas genéricas o la necesidad de crear cronogramas desde cero, con riesgo de olvidos.</div>
+<div class="sh-compare__row"><span class="sh-compare__bullet sh-compare__bullet--bad"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span> **Compatibilidad Limitada:** Funciona solo en una plataforma, o con conversiones que rompen las fórmulas.</div>
+<div class="sh-compare__row"><span class="sh-compare__bullet sh-compare__bullet--bad"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span> **Curva de Aprendizaje:** Plantillas básicas que requieren configuración extensa y mucho tiempo de aprendizaje.</div>
+        </div>
+        <div class="sh-compare__side sh-compare__side--good" data-reveal data-delay="150">
+          <h3><span class="sh-compare__icon sh-compare__icon--good"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></span> Con Nuestro Planner (La Solución)</h3>
+          <div class="sh-compare__row"><span class="sh-compare__bullet sh-compare__bullet--good"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></span> **Orden Absoluto:** Todo en UN archivo maestro: presupuesto, invitados, proveedores y más de 47 pestañas.</div>
+<div class="sh-compare__row"><span class="sh-compare__bullet sh-compare__bullet--good"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></span> **Presupuesto Inteligente:** Cálculos automáticos con desglose por categoría, evitando cualquier sorpresa.</div>
+<div class="sh-compare__row"><span class="sh-compare__bullet sh-compare__bullet--good"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></span> **Gestor de Invitados Pro:** 500+ invitados, RSVPs, dietas y plano de mesas interactivo integrado.</div>
+<div class="sh-compare__row"><span class="sh-compare__bullet sh-compare__bullet--good"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></span> **Cronograma Detallado:** Generación de guías imprimibles hora por hora para una ejecución perfecta.</div>
+<div class="sh-compare__row"><span class="sh-compare__bullet sh-compare__bullet--good"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></span> **Compatibilidad Universal:** Funciona impecablemente en Google Sheets y Microsoft Excel.</div>
+<div class="sh-compare__row"><span class="sh-compare__bullet sh-compare__bullet--good"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></span> **Fácil de Usar:** Diseño intuitivo, guías paso a paso, y listo para usar desde el primer minuto.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sh-section sh-section--white" data-reveal>
+    <div class="sh-container">
+      <div class="sh-section__header">
+        <span class="sh-pill">Opiniones Reales</span>
+        <h2 class="sh-section__title">Lo Que Dicen Más de 10,000 Parejas Felices</h2>
+        <p class="sh-section__sub">Testimonios verificados de novios reales que planificaron su boda sin estrés.</p>
+      </div>
+      <div class="sh-testimonials">
+        
+        <div class="sh-testimonial" data-reveal data-delay="0">
+          <div class="sh-testimonial__top">
+            <div class="sh-testimonial__stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+            <span class="sh-testimonial__verified"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg> Verificado</span>
+          </div>
+          <h4 class="sh-testimonial__title">¡Salvó mi cordura nupcial y mi presupuesto!</h4>
+          <p class="sh-testimonial__text">"Antes, el caos. Después, todo organizado. Este planner hizo que coordinar nuestra boda de 180 invitados fuera manejable. ¡Nos mantuvo $1,200 por debajo del presupuesto y sin un solo olvido!"</p>
+          <div class="sh-testimonial__footer">
+            <div class="sh-testimonial__author">
+              <img class="sh-testimonial__avatar-img" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=80&h=80&fit=crop&crop=faces&auto=format" alt="Sofía G." loading="lazy" />
+              <div><strong>Sofía G.</strong><br><small>Madrid</small></div>
+            </div>
+            <span class="sh-testimonial__date">Hace 2 días</span>
+          </div>
+        </div>
+
+        <div class="sh-testimonial" data-reveal data-delay="80">
+          <div class="sh-testimonial__top">
+            <div class="sh-testimonial__stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+            <span class="sh-testimonial__verified"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg> Verificado</span>
+          </div>
+          <h4 class="sh-testimonial__title">¡Imprescindible para parejas ocupadas!</h4>
+          <p class="sh-testimonial__text">"Mi prometida y yo gestionamos 15 proveedores y un presupuesto de $25,000 con este planner. Antes era un desastre de notas, ahora todo está en un solo lugar. ¡Una maravilla!"</p>
+          <div class="sh-testimonial__footer">
+            <div class="sh-testimonial__author">
+              <img class="sh-testimonial__avatar-img" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=faces&auto=format" alt="Javier M." loading="lazy" />
+              <div><strong>Javier M.</strong><br><small>Barcelona</small></div>
+            </div>
+            <span class="sh-testimonial__date">Hace 5 días</span>
+          </div>
+        </div>
+
+        <div class="sh-testimonial" data-reveal data-delay="160">
+          <div class="sh-testimonial__top">
+            <div class="sh-testimonial__stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#e5e7eb"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+            <span class="sh-testimonial__verified"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg> Verificado</span>
+          </div>
+          <h4 class="sh-testimonial__title">¡Gestión de invitados sin estrés!</h4>
+          <p class="sh-testimonial__text">"Antes, la lista de invitados era un rompecabezas. Ahora, gestionar los RSVPs y las dietas de 220 personas fue increíblemente fácil con este planner. ¡Un alivio total!"</p>
+          <div class="sh-testimonial__footer">
+            <div class="sh-testimonial__author">
+              <img class="sh-testimonial__avatar-img" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=80&h=80&fit=crop&crop=faces&auto=format" alt="Laura P." loading="lazy" />
+              <div><strong>Laura P.</strong><br><small>Valencia</small></div>
+            </div>
+            <span class="sh-testimonial__date">Hace 8 días</span>
+          </div>
+        </div>
+
+        <div class="sh-testimonial" data-reveal data-delay="240">
+          <div class="sh-testimonial__top">
+            <div class="sh-testimonial__stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+            <span class="sh-testimonial__verified"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg> Verificado</span>
+          </div>
+          <h4 class="sh-testimonial__title">¡La clave para un día de boda perfecto!</h4>
+          <p class="sh-testimonial__text">"El cronograma detallado de este planner fue absolutamente clave para el día de nuestra boda. Todo fluyó sin problemas, ¡como un reloj suizo!"</p>
+          <div class="sh-testimonial__footer">
+            <div class="sh-testimonial__author">
+              <img class="sh-testimonial__avatar-img" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&fit=crop&crop=faces&auto=format" alt="Diego R." loading="lazy" />
+              <div><strong>Diego R.</strong><br><small>Sevilla</small></div>
+            </div>
+            <span class="sh-testimonial__date">Hace 14 días</span>
+          </div>
+        </div>
+
+        <div class="sh-testimonial" data-reveal data-delay="320">
+          <div class="sh-testimonial__top">
+            <div class="sh-testimonial__stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+            <span class="sh-testimonial__verified"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg> Verificado</span>
+          </div>
+          <h4 class="sh-testimonial__title">¡La mejor inversión para mi boda!</h4>
+          <p class="sh-testimonial__text">"Antes, la incertidumbre. Después, el control. Este planner me permitió comparar proveedores y rastrear pagos con total confianza. ¡Me ahorró muchísimo tiempo y posibles errores!"</p>
+          <div class="sh-testimonial__footer">
+            <div class="sh-testimonial__author">
+              <img class="sh-testimonial__avatar-img" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=faces&auto=format" alt="Andrea S." loading="lazy" />
+              <div><strong>Andrea S.</strong><br><small>Bilbao</small></div>
+            </div>
+            <span class="sh-testimonial__date">Hace 21 días</span>
+          </div>
+        </div>
+
+        <div class="sh-testimonial" data-reveal data-delay="400">
+          <div class="sh-testimonial__top">
+            <div class="sh-testimonial__stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#e5e7eb"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+            <span class="sh-testimonial__verified"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg> Verificado</span>
+          </div>
+          <h4 class="sh-testimonial__title">¡Planificación fluida y sin preocupaciones!</h4>
+          <p class="sh-testimonial__text">"Este planner transformó nuestra planificación de boda de un caos a un proceso organizado y sin preocupaciones. ¡La mejor herramienta digital que encontramos para nuestro gran día!"</p>
+          <div class="sh-testimonial__footer">
+            <div class="sh-testimonial__author">
+              <img class="sh-testimonial__avatar-img" src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=80&h=80&fit=crop&crop=faces&auto=format" alt="Pablo V." loading="lazy" />
+              <div><strong>Pablo V.</strong><br><small>Málaga</small></div>
+            </div>
+            <span class="sh-testimonial__date">Hace 30 días</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sh-section sh-section--light" data-reveal>
+    <div class="sh-container sh-container--narrow">
+      <div class="sh-section__header">
+        <span class="sh-pill">Preguntas Frecuentes</span>
+        <h2 class="sh-section__title">Resolvemos Tus Dudas Más Comunes</h2>
+      </div>
+      <div class="sh-faq">
+        
+        <details class="sh-faq__item" data-reveal data-delay="0">
+          <summary class="sh-faq__q">
+            <span>¿Es complicado de usar si no soy un experto en Sheets/Excel?</span>
+            <svg class="sh-faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="sh-faq__a">¡Absolutamente no! Ha sido diseñado pensando en la facilidad de uso, con instrucciones claras y un diseño intuitivo. No necesitas ser un experto en hojas de cálculo para planificar tu boda perfecta. ¡Te sorprenderá lo sencillo que es!</div>
+        </details>
+
+        <details class="sh-faq__item" data-reveal data-delay="80">
+          <summary class="sh-faq__q">
+            <span>¿Hay plantillas gratuitas que ofrecen lo mismo?</span>
+            <svg class="sh-faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="sh-faq__a">Mientras que existen plantillas gratuitas, ninguna ofrece la integración, automatización y capacidad de este sistema todo-en-uno en un solo archivo. Nuestro planner te ahorra cientos de horas de esfuerzo y posibles errores al intentar unir herramientas dispares. Es una solución completa, no un parche.</div>
+        </details>
+
+        <details class="sh-faq__item" data-reveal data-delay="160">
+          <summary class="sh-faq__q">
+            <span>¿Realmente me ahorrará tiempo o será otra herramienta más?</span>
+            <svg class="sh-faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="sh-faq__a">¡Garantizado! Nuestro sistema automatiza cálculos de presupuesto, gestiona RSVPs y centraliza toda la información, eliminando innumerables horas de trabajo manual y de verificación cruzada. Es una inversión que te devuelve tiempo valioso para disfrutar de tu compromiso, no para estresarte con la planificación.</div>
+        </details>
+
+        <details class="sh-faq__item" data-reveal data-delay="240">
+          <summary class="sh-faq__q">
+            <span>¿Vale la pena el precio de $9.99 por un archivo digital?</span>
+            <svg class="sh-faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="sh-faq__a">Este pequeño precio es una inversión crucial para evitar errores costosos, sobregasto y un estrés inmenso, lo que fácilmente se traduce en miles de dólares en posibles ahorros y una paz mental invaluable. Es menos que una sola taza de café premium para tener toda tu boda perfectamente organizada.</div>
+        </details>
+
+        <details class="sh-faq__item" data-reveal data-delay="320">
+          <summary class="sh-faq__q">
+            <span>¿Es personalizable para mi boda única?</span>
+            <svg class="sh-faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="sh-faq__a">¡Sí, totalmente! Cada sección es completamente editable y adaptable en Google Sheets y Excel. Podrás ajustarla con precisión a tus necesidades específicas, tu lista de invitados, tus proveedores y cada detalle que haga de tu boda un evento único e inolvidable.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="sp-guarantee" data-reveal>
+    <div class="sh-container">
+      <div class="sp-guarantee__box">
+        <div class="sp-guarantee__icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></div>
+        <h3>¡Tu Tranquilidad Está 100% Garantizada!</h3>
+        <p>Estamos tan convencidos de que nuestro Wedding Planner transformará tu experiencia, que te ofrecemos una **Garantía de Reembolso de 30 Días, sin preguntas**. Tu satisfacción y paz mental son nuestra máxima prioridad.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sh-cta sh-cta--gradient" data-reveal>
+    <div class="sh-cta__bg-pattern" aria-hidden="true"></div>
+    <div class="sh-container sh-cta__inner">
+      <div class="sh-cta__urgency-strip">
+        <span class="sh-cta__urgency-dot"></span>
+        <span>¡31 personas están viendo esta oferta ahora mismo!</span>
+      </div>
+      <h2 class="sh-cta__title">¡No Más Estrés! Desbloquea la Boda de Tus Sueños Hoy Mismo</h2>
+      <p class="sh-cta__sub">Pago único. Acceso de por vida. Sin suscripciones ocultas.</p>
+      <div class="sh-cta__price">
+        <span class="sh-cta__price-old">$24.99</span>
+        <span class="sh-cta__price-current">$9.99</span>
+        <span class="sh-cta__price-save">Ahorra 60%</span>
+      </div>
+      <button class="sh-btn sh-btn--dark sh-btn--lg sh-btn--pulse" onclick="doATC()">¡Obtén Acceso Instantáneo Ahora!</button>
+      <p class="sh-cta__micro">Descarga inmediata tras la compra. Sin suscripciones. Sin complicaciones.</p>
+      <div class="sh-cta__badges">
+        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Pago Seguro</span>
+        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10"/></svg> Descarga Instantánea</span>
+        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg> Tu Paz Mental, Garantizada.</span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="sh-footer">
+    <div class="sh-container sh-footer__grid">
+      <div>
+        <span class="sh-footer__brand">WeddingPlannerPro</span>
+        <p class="sh-footer__desc">WeddingPlannerPro — Herramientas digitales premium para una planificación nupcial sin igual.</p>
+      </div>
+      <div class="sh-footer__col">
+        <h4>Navegación</h4>
+        <a href="index.html">Inicio</a>
+        <a href="product/wedding-planner-spreadsheet-for-google-budget-tracker-guest-list-seating-plan-ch.html">Producto</a>
+        <a href="contact.html">Contacto</a>
+      </div>
+      <div class="sh-footer__col">
+        <h4>Legal</h4>
+        <a href="privacy.html">Privacidad</a>
+        <a href="terms.html">Términos</a>
+        <a href="refund-policy.html">Política de Reembolso</a>
+      </div>
+    </div>
+    <div class="sh-footer__bottom">
+      <div class="sh-container">© 2026 WeddingPlannerPro. Todos los derechos reservados.</div>
+    </div>
+  </footer>
+
+  <!-- Scroll Progress Bar -->
+  <div class="sh-scroll-progress">
+    <div class="sh-scroll-progress__bar" id="scrollProgressBar"></div>
+  </div>
+
+  <div class="sh-sticky-bar" id="stickyBar">
+    <span class="sh-sticky-bar__price">$9.99 <s>$24.99</s></span>
+    <button class="sh-btn sh-btn--dark sh-btn--sm" onclick="doATC()">Añadir al Carrito</button>
+  </div>
+
+  <div class="sp-lightbox" id="lb" onclick="closeLB()">
+    <img id="lbImg" src="" alt="" />
+    <button class="sp-lightbox__x" onclick="closeLB()">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+
+<!-- Cart Drawer Overlay -->
+<div class="cd-overlay" id="cd-overlay" aria-hidden="true"></div>
+
+<!-- Cart Drawer -->
+<aside class="cd-drawer" id="cd-drawer" role="dialog" aria-label="Your Cart" aria-hidden="true">
+
+  <!-- Header -->
+  <div class="cd-header">
+    <div class="cd-header__left">
+      <h2 class="cd-header__title">Your Cart</h2>
+      <span class="cd-header__count" id="cd-item-count">(0)</span>
+    </div>
+    <button class="cd-close" id="cd-close" aria-label="Close"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+  </div>
+
+  <!-- Free Shipping Progress Bar -->
+  <div class="cd-shipping-bar" id="cd-shipping-bar">
+    <div class="cd-shipping-bar__text" id="cd-shipping-text">You're $50 away from FREE shipping</div>
+    <div class="cd-shipping-bar__fill" id="cd-shipping-fill" style="width:0%"></div>
+    </div>
+
+  <!-- Added confirmation toast (shown briefly) -->
+  <div class="cd-toast" id="cd-toast" aria-live="polite">
+    <span class="cd-toast__icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+    <div class="cd-toast__text">
+      <strong>Added to Cart!</strong>
+      <span>Great choice!</span>
+    </div>
+  </div>
+
+  <!-- Cart Items Container -->
+  <div class="cd-body" id="cd-body">
+    <!-- Empty state -->
+    <div class="cd-empty" id="cd-empty">
+      <div class="cd-empty__icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" opacity=".35"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></div>
+      <p class="cd-empty__title">Your cart is empty</p>
+      <p class="cd-empty__sub">Discover our products and treat yourself</p>
+      <a href="/" class="cd-btn cd-btn--outline">Start Shopping</a>
+    </div>
+
+    <!-- Items (populated by JS) -->
+    <div class="cd-items" id="cd-items"></div>
+  </div>
+
+  <!-- Urgency bar -->
+  <div class="cd-urgency" id="cd-urgency" style="display:none">
+    <span class="cd-urgency__dot"></span>
+    <span class="cd-urgency__text"><strong id="cd-viewers">14</strong> people have this in their cart</span>
+  </div>
+
+  <!-- Footer -->
+  <div class="cd-footer" id="cd-footer" style="display:none">
+    <!-- Savings callout -->
+    <div class="cd-savings" id="cd-savings" style="display:none">
+      <span class="cd-savings__text">You saved <strong id="cd-savings-amount"></strong></span>
+    </div>
+
+    <!-- Subtotal -->
+    <div class="cd-subtotal">
+      <span class="cd-subtotal__label">Subtotal</span>
+      <span class="cd-subtotal__price" id="cd-subtotal-price">$0.00</span>
+    </div>
+
+    <!-- Estimated delivery -->
+    <div class="cd-delivery">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg> <span>Estimated Delivery: <strong>2-5 business days</strong></span>
+    </div>
+
+    <!-- Checkout button -->
+    <a href="/checkout" class="cd-btn cd-btn--primary" id="cd-checkout-btn">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Checkout
+    </a>
+
+    <!-- Continue shopping -->
+    <button class="cd-btn cd-btn--ghost" id="cd-continue">Continue Shopping</button>
+
+    <!-- Trust badges -->
+    <div class="cd-trust">
+      <span class="cd-trust__badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> 100% Secure Checkout</span>
+      <span class="cd-trust__badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> 30-Day Money Back</span>
+      <span class="cd-trust__badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg> Fast Shipping</span>
+    </div>
+
+    <!-- Social proof -->
+    <div class="cd-social-proof">
+      <div class="cd-social-proof__avatars">
+        <span class="cd-avatar">S</span>
+        <span class="cd-avatar">M</span>
+        <span class="cd-avatar">A</span>
+      </div>
+      <span class="cd-social-proof__text">Trusted by <strong>10,000+</strong> happy customers</span>
+    </div>
+
+    <!-- Payment methods -->
+    <div class="cd-payment-methods">
+      <span class="cd-pm">Visa</span>
+      <span class="cd-pm">Mastercard</span>
+      <span class="cd-pm">PayPal</span>
+      <span class="cd-pm">Apple Pay</span>
+    </div>
+  </div>
+</aside>
+
+<!-- Cart Drawer Item Template (hidden, cloned by JS) -->
+<template id="cd-item-tpl">
+  <div class="cd-item" data-variant-id="">
+    <div class="cd-item__img-wrap">
+      <img class="cd-item__img" src="" alt="" loading="lazy">
+    </div>
+    <div class="cd-item__details">
+      <div class="cd-item__top">
+        <h4 class="cd-item__name"></h4>
+        <button class="cd-item__remove" aria-label="Remove"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></button>
+      </div>
+      <p class="cd-item__variant"></p>
+      <div class="cd-item__bottom">
+        <div class="cd-item__qty">
+          <button class="cd-item__qty-btn cd-item__qty-minus" aria-label="-"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+          <span class="cd-item__qty-val">1</span>
+          <button class="cd-item__qty-btn cd-item__qty-plus" aria-label="+"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+        </div>
+        <span class="cd-item__price"></span>
+      </div>
+    </div>
+  </div>
+</template>
+
+  <script>
+  function swImg(u,t){document.getElementById('mainImg').src=u;document.querySelectorAll('.sp-gallery__thumb').forEach(function(x){x.classList.remove('active')});t.classList.add('active');}
+  function openLB(){var l=document.getElementById('lb');l.querySelector('img').src=document.getElementById('mainImg').src;l.classList.add('active');}
+  function closeLB(){document.getElementById('lb').classList.remove('active');}
+
+  function doATC(){
+    var l=document.getElementById('atcLabel'),s=document.getElementById('atcSpin'),o=document.getElementById('atcOk');
+    if(l)l.style.display='none';if(s)s.style.display='inline-flex';
+    setTimeout(function(){
+      if(s)s.style.display='none';if(o)o.style.display='inline';
+      // Add product to localStorage cart
+      var cart=JSON.parse(localStorage.getItem('cart')||'[]');
+      var title=document.querySelector('.sp-info__title');
+      var imgEl=document.getElementById('mainImg');
+      var priceEl=document.querySelector('.sp-price');
+      var compareEl=document.querySelector('.sp-price--old');
+      var vid='product-'+Date.now();
+      var existing=cart.find(function(i){return i.title===(title?title.textContent.trim():'Product')});
+      if(existing){existing.qty+=1}
+      else{cart.push({variantId:vid,qty:1,title:title?title.textContent.trim():'Product',image:imgEl?imgEl.src:'',price:priceEl?priceEl.textContent.replace(/[^0-9.,]/g,'').replace(',','.'):'0',comparePrice:compareEl?compareEl.textContent.replace(/[^0-9.,]/g,'').replace(',','.'):'',variantTitle:''})}
+      localStorage.setItem('cart',JSON.stringify(cart));
+      // Update header badge
+      var totalQty=cart.reduce(function(s,i){return s+i.qty},0);
+      var badge=document.getElementById('cartBadge');
+      if(badge){badge.textContent=totalQty;badge.style.display='flex'}
+      // Open cart drawer with toast
+      if(window.openCartDrawer)window.openCartDrawer(true);
+      setTimeout(function(){if(l)l.style.display='inline';if(o)o.style.display='none';},2000);
+    },800);
+  }
+
+  // Menu
+  document.getElementById('menuToggle').addEventListener('click',function(){
+    document.getElementById('mainNav').classList.toggle('open');
+    this.classList.toggle('active');
+  });
+
+  // Reveal
+  (function(){
+    var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('revealed');io.unobserve(x.target);}});},{threshold:.08,rootMargin:'0px 0px -50px 0px'});
+    document.querySelectorAll('[data-reveal]').forEach(function(el){io.observe(el);});
+  })();
+
+  // Sticky
+  window.addEventListener('scroll',function(){var b=document.getElementById('stickyBar');if(b)b.classList.toggle('visible',window.scrollY>500);});
+
+  // FAQ
+  document.querySelectorAll('.sh-faq__item').forEach(function(d){d.addEventListener('toggle',function(){this.querySelector('.sh-faq__chevron').style.transform=this.open?'rotate(180deg)':'';});});
+
+  // Language dropdown
+  (function(){
+    var dd=document.getElementById('langDropdown');
+    var btn=document.getElementById('langToggle');
+    if(!dd||!btn)return;
+    btn.addEventListener('click',function(e){
+      e.stopPropagation();
+      dd.classList.toggle('is-open');
+      btn.setAttribute('aria-expanded',dd.classList.contains('is-open'));
+    });
+    document.addEventListener('click',function(){dd.classList.remove('is-open');btn.setAttribute('aria-expanded','false');});
+  })();
+
+  // Announcement bar rotator
+  (function() {
+    const bar = document.getElementById('announcementBar');
+    if (!bar) return;
+    const slides = bar.querySelectorAll('.sh-announce__slide');
+    let currentIndex = 0;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        if (i === index) {
+          slide.classList.add('active');
+        } else {
+          slide.classList.remove('active');
+        }
+      });
+    }
+
+    function rotateSlides() {
+      currentIndex = (currentIndex + 1) % slides.length;
+      showSlide(currentIndex);
+    }
+
+    if (slides.length > 1) {
+      setInterval(rotateSlides, 5000); // Change slide every 5 seconds
+    }
+    showSlide(currentIndex); // Show the first slide initially
+  })();
+
+  // Scroll Progress Bar
+  (function() {
+    const progressBar = document.getElementById('scrollProgressBar');
+    if (!progressBar) return;
+
+    window.addEventListener('scroll', () => {
+      const totalHeight = document.body.scrollHeight - window.innerHeight;
+      const progress = (window.scrollY / totalHeight) * 100;
+      progressBar.style.width = `${progress}%`;
+    }, { passive: true });
+  })();
+
+  </script>
+<script><script>
+(function(){
+  /* ── State ─────────────────────────────────────────────────────── */
+  var CD_THRESHOLD=50;
+  var CD_CURR_SYM='$';
+  var CD_CURR_POS='before';
+  var CD_COMMA_DEC=false;
+
+  var drawer=document.getElementById('cd-drawer');
+  var overlay=document.getElementById('cd-overlay');
+  var closeBtn=document.getElementById('cd-close');
+  var continueBtn=document.getElementById('cd-continue');
+  var itemsEl=document.getElementById('cd-items');
+  var emptyEl=document.getElementById('cd-empty');
+  var footerEl=document.getElementById('cd-footer');
+  var urgencyEl=document.getElementById('cd-urgency');
+  var subtotalEl=document.getElementById('cd-subtotal-price');
+  var countEl=document.getElementById('cd-item-count');
+  var shippingText=document.getElementById('cd-shipping-text');
+  var shippingFill=document.getElementById('cd-shipping-fill');
+  var savingsEl=document.getElementById('cd-savings');
+  var savingsAmt=document.getElementById('cd-savings-amount');
+  var toastEl=document.getElementById('cd-toast');
+  var viewersEl=document.getElementById('cd-viewers');
+  var tpl=document.getElementById('cd-item-tpl');
+  var checkoutBtn=document.getElementById('cd-checkout-btn');
+
+  /* ── Format price ─────────────────────────────────────────────── */
+  function fmtP(n){
+    var s=n.toFixed(2);
+    if(CD_COMMA_DEC) s=s.replace('.',',');
+    if(CD_CURR_POS==='after') return s+'\u00A0'+CD_CURR_SYM;
+    return CD_CURR_SYM+s;
+  }
+
+  /* ── Open / Close ─────────────────────────────────────────────── */
+  function openDrawer(showToast){
+    drawer.classList.add('is-open');
+    drawer.setAttribute('aria-hidden','false');
+    overlay.classList.add('is-active');
+    overlay.setAttribute('aria-hidden','false');
+    document.body.style.overflow='hidden';
+    renderCart();
+    if(showToast){
+      toastEl.classList.add('is-visible');
+      setTimeout(function(){toastEl.classList.remove('is-visible')},2500);
+    }
+    // Pulse checkout button
+    if(checkoutBtn) checkoutBtn.classList.add('is-pulsing');
+  }
+  function closeDrawer(){
+    drawer.classList.remove('is-open');
+    drawer.setAttribute('aria-hidden','true');
+    overlay.classList.remove('is-active');
+    overlay.setAttribute('aria-hidden','true');
+    document.body.style.overflow='';
+    if(checkoutBtn) checkoutBtn.classList.remove('is-pulsing');
+  }
+
+  if(closeBtn) closeBtn.addEventListener('click',closeDrawer);
+  if(continueBtn) continueBtn.addEventListener('click',closeDrawer);
+  if(overlay) overlay.addEventListener('click',closeDrawer);
+
+  // Close on Escape
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape'&&drawer.classList.contains('is-open')) closeDrawer();
+  });
+
+  // Expose globally
+  window.openCartDrawer=openDrawer;
+  window.closeCartDrawer=closeDrawer;
+
+  /* ── Render cart ──────────────────────────────────────────────── */
+  function renderCart(){
+    var cart=JSON.parse(localStorage.getItem('cart')||'[]');
+    var totalQty=cart.reduce(function(s,i){return s+i.qty},0);
+    var subtotal=0;
+    var totalSavings=0;
+
+    // Update count in header badge + drawer
+    if(countEl) countEl.textContent='('+totalQty+')';
+    var headerBadge=document.getElementById('cart-count')||document.getElementById('cartBadge');
+    if(headerBadge){headerBadge.textContent=totalQty;headerBadge.style.display=totalQty>0?'flex':'none'}
+
+    // Clear items
+    if(itemsEl) itemsEl.innerHTML='';
+
+    if(totalQty===0){
+      if(emptyEl) emptyEl.style.display='flex';
+      if(footerEl) footerEl.style.display='none';
+      if(urgencyEl) urgencyEl.style.display='none';
+    } else {
+      if(emptyEl) emptyEl.style.display='none';
+      if(footerEl) footerEl.style.display='block';
+      if(urgencyEl) urgencyEl.style.display='flex';
+
+      // Randomize viewers
+      if(viewersEl) viewersEl.textContent=Math.floor(Math.random()*18+8);
+
+      cart.forEach(function(item,idx){
+        if(!tpl) return;
+        var clone=tpl.content.cloneNode(true);
+        var el=clone.querySelector('.cd-item');
+        el.setAttribute('data-variant-id',item.variantId||'');
+        el.setAttribute('data-idx',idx);
+        var img=clone.querySelector('.cd-item__img');
+        if(item.image){img.src=item.image;img.alt=item.title||''}
+        else{img.parentElement.style.background='var(--pp-surface,#f5f5f5)';img.style.display='none'}
+        var nameEl=clone.querySelector('.cd-item__name');
+        if(nameEl) nameEl.textContent=item.title||'Product';
+        var variantEl=clone.querySelector('.cd-item__variant');
+        if(variantEl) variantEl.textContent=item.variantTitle||'';
+        var priceEl=clone.querySelector('.cd-item__price');
+        var itemPrice=parseFloat(item.price)||0;
+        subtotal+=itemPrice*item.qty;
+        if(priceEl) priceEl.textContent=fmtP(itemPrice*item.qty);
+        if(item.comparePrice){
+          var saved=(parseFloat(item.comparePrice)-itemPrice)*item.qty;
+          if(saved>0) totalSavings+=saved;
+        }
+        var qtyVal=clone.querySelector('.cd-item__qty-val');
+        if(qtyVal) qtyVal.textContent=item.qty;
+
+        // Qty buttons
+        clone.querySelector('.cd-item__qty-minus').addEventListener('click',function(){
+          var c=JSON.parse(localStorage.getItem('cart')||'[]');
+          if(c[idx]){c[idx].qty=Math.max(1,c[idx].qty-1);localStorage.setItem('cart',JSON.stringify(c));renderCart()}
+        });
+        clone.querySelector('.cd-item__qty-plus').addEventListener('click',function(){
+          var c=JSON.parse(localStorage.getItem('cart')||'[]');
+          if(c[idx]){c[idx].qty=Math.min(99,c[idx].qty+1);localStorage.setItem('cart',JSON.stringify(c));renderCart()}
+        });
+        clone.querySelector('.cd-item__remove').addEventListener('click',function(){
+          el.classList.add('is-removing');
+          setTimeout(function(){
+            var c=JSON.parse(localStorage.getItem('cart')||'[]');
+            c.splice(idx,1);localStorage.setItem('cart',JSON.stringify(c));renderCart();
+          },300);
+        });
+
+        if(itemsEl) itemsEl.appendChild(clone);
+      });
+    }
+
+    // Subtotal
+    if(subtotalEl) subtotalEl.textContent=fmtP(subtotal);
+
+    // Savings
+    if(savingsEl&&savingsAmt){
+      if(totalSavings>0){savingsEl.style.display='block';savingsAmt.textContent=fmtP(totalSavings)}
+      else{savingsEl.style.display='none'}
+    }
+
+    // Free shipping progress
+    if(shippingText&&shippingFill){
+      var pct=Math.min(100,subtotal/CD_THRESHOLD*100);
+      shippingFill.style.width=pct+'%';
+      if(pct>=100){
+        shippingText.textContent="✓ FREE Shipping Unlocked!";
+        shippingText.classList.add('is-unlocked');
+        shippingFill.classList.add('is-full');
+      } else {
+        var remaining=fmtP(CD_THRESHOLD-subtotal);
+        shippingText.textContent=remaining+' away from FREE shipping';
+        shippingText.classList.remove('is-unlocked');
+        shippingFill.classList.remove('is-full');
+      }
+    }
+  }
+
+  /* ── Override addToCart to open drawer ─────────────────────────── */
+  var origAddToCart=window.addToCart;
+  window.addToCart=function(productData){
+    var btn=document.getElementById('add-to-cart-btn');
+    var vid=btn?btn.dataset.variantId:'default';
+    var qi=document.getElementById('qty-input');
+    var qty=qi?parseInt(qi.value)||1:1;
+
+    var cart=JSON.parse(localStorage.getItem('cart')||'[]');
+    var ex=cart.find(function(i){return i.variantId===vid});
+    if(ex){
+      ex.qty+=qty;
+    } else {
+      // Gather product info for the drawer
+      var title=document.querySelector('.pp-info__title,.product-title,h1');
+      var imgEl=document.getElementById('gallery-main-img');
+      var priceEl=document.querySelector('.pp-price');
+      var compareEl=document.querySelector('.pp-price-compare');
+      var variantTitle='';
+      document.querySelectorAll('.pp-variant-pill.active,.pp-swatch.active').forEach(function(s){
+        if(variantTitle) variantTitle+=', ';
+        variantTitle+=(s.dataset.value||s.textContent);
+      });
+
+      cart.push({
+        variantId:vid,
+        qty:qty,
+        title:title?title.textContent.trim():'Product',
+        image:imgEl?(imgEl.src||''):'',
+        price:priceEl?priceEl.textContent.replace(/[^0-9.,]/g,'').replace(',','.'):'0',
+        comparePrice:compareEl?compareEl.textContent.replace(/[^0-9.,]/g,'').replace(',','.'):'',
+        variantTitle:variantTitle
+      });
+    }
+    localStorage.setItem('cart',JSON.stringify(cart));
+
+    // Update header badge
+    var totalQty=cart.reduce(function(s,i){return s+i.qty},0);
+    var badge=document.getElementById('cart-count')||document.getElementById('cartBadge');
+    if(badge){badge.textContent=totalQty;badge.style.display='flex'}
+
+    // Open drawer with toast
+    openDrawer(true);
+  };
+
+  /* ── Header cart icon opens drawer instead of navigating ──────── */
+  document.querySelectorAll('.cart-icon,[href="/cart"],.sh-header__cart').forEach(function(el){
+    el.addEventListener('click',function(e){
+      e.preventDefault();
+      openDrawer(false);
+    });
+  });
+
+  // Initial render on page load
+  renderCart();
+})();
+</script></script>
+<script>
+(function() {
+  'use strict';
+
+  // ═══════════════════ SCROLL REVEAL ═══════════════════
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+  // ═══════════════════ STICKY CTA BAR ═══════════════════
+  // This is already handled by sh-sticky-bar in the main HTML/CSS
+  // (function() {
+  //   const bar = document.createElement('div');
+  //   bar.id = 'stickyCtaBar';
+  //   bar.innerHTML = '<div style="max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 20px;flex-wrap:wrap;gap:8px">'
+  //     + '<div style="display:flex;align-items:center;gap:12px;flex:1;min-width:200px">'
+  //     + '<strong>Wedding Planner Spreadsheet For Google — Budget Tracker, Guest List, Seating Plan, Checklist, Timeline</strong>'
+  //     + '<span style="font-weight:900;color:#31A156">\$9.99</span>'
+  //     + '</div>'
+  //     + '<a href="#pricing" style="background:#31A156;color:#fff;padding:10px 28px;border-radius:999px;font-weight:700;font-size:0.9rem;white-space:nowrap;text-decoration:none;transition:background 0.2s">'
+  //     + 'Unlock Stress-Free Planning Now! →'
+  //     + '</a></div>';
+  //   Object.assign(bar.style, {
+  //     position: 'fixed', bottom: '-80px', left: '0', right: '0', zIndex: '9999',
+  //     background: 'rgba(255,255,255,0.97)', backdropFilter: 'blur(12px)',
+  //     borderTop: '1px solid rgba(0,0,0,0.08)', padding: '12px 0',
+  //     boxShadow: '0 -4px 20px rgba(0,0,0,0.08)', transition: 'bottom 0.4s ease',
+  //     fontSize: '0.9rem'
+  //   });
+  //   document.body.appendChild(bar);
+
+  //   let shown = false;
+  //   window.addEventListener('scroll', function() {
+  //     if (window.scrollY > 600 && !shown) {
+  //       bar.style.bottom = '0';
+  //       shown = true;
+  //     } else if (window.scrollY <= 400 && shown) {
+  //       bar.style.bottom = '-80px';
+  //       shown = false;
+  //     }
+  //   }, { passive: true });
+  // })();
+
+  // ═══════════════════ COUNTDOWN TIMER ═══════════════════
+  (function() {
+    const timers = document.querySelectorAll('[data-countdown]');
+    if (timers.length === 0) return;
+
+    // Use localStorage to persist the countdown end time
+    let endKey = 'shopifo_countdown_end';
+    let end = localStorage.getItem(endKey);
+    if (!end || parseInt(end) < Date.now()) {
+      end = String(Date.now() + 24 * 3600000);
+      localStorage.setItem(endKey, end);
+    }
+    const endTime = parseInt(end);
+
+    function update() {
+      const diff = Math.max(0, endTime - Date.now());
+      const h = Math.floor(diff / 3600000);
+      const m = Math.floor((diff % 3600000) / 60000);
+      const s = Math.floor((diff % 60000) / 1000);
+      const text = String(h).padStart(2,'0') + ':' + String(m).padStart(2,'0') + ':' + String(s).padStart(2,'0');
+      timers.forEach(t => t.textContent = text);
+      if (diff > 0) requestAnimationFrame(update);
+    }
+    update();
+  })();
+
+  // ═══════════════════ LIVE VISITOR COUNT ═══════════════════
+  (function() {
+    const el = document.getElementById('liveVisitors');
+    if (!el) return;
+
+    let count = Math.floor(Math.random() * 30) + 15;
+    el.textContent = count;
+
+    setInterval(function() {
+      count += Math.floor(Math.random() * 5) - 2;
+      count = Math.max(8, Math.min(60, count));
+      el.textContent = count;
+    }, 8000 + Math.random() * 7000);
+  })();
+
+  // ═══════════════════ RECENT PURCHASE NOTIFICATIONS ═══════════════════
+  (function() {
+    const names = [
+      'Sofía G.', 'Javier M.', 'Laura P.', 'Diego R.', 'Andrea S.',
+      'Pablo V.', 'Elena C.', 'Carlos F.', 'Isabel H.', 'Miguel O.',
+      'Lucía N.', 'Ricardo T.', 'Ana L.', 'Pedro Q.', 'Marta B.'
+    ];
+    const cities = [
+      'Madrid', 'Barcelona', 'Valencia', 'Sevilla', 'Bilbao',
+      'Málaga', 'Zaragoza', 'Murcia', 'Palma', 'Las Palmas'
+    ];
+    const times = ['hace 2 minutos', 'hace 5 minutos', 'hace 8 minutos', 'hace 12 minutos', 'hace 15 minutos', 'justo ahora'];
+
+    function showNotification() {
+      const name = names[Math.floor(Math.random() * names.length)];
+      const city = cities[Math.floor(Math.random() * cities.length)];
+      const time = times[Math.floor(Math.random() * times.length)];
+
+      const notif = document.createElement('div');
+      notif.id = 'reviewToast'; // Add ID for consistency with review toast
+      notif.classList.add('sh-toast'); // Add class for base toast styling
+      notif.innerHTML = '<div class="sh-toast__inner">'
+        + '<div class="sh-toast__icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>'
+        + '<div class="sh-toast__body">'
+        + '<strong>' + name + ' de ' + city + '</strong>'
+        + '<span>compró el Wedding Planner Spreadsheet Pro</span>'
+        + '<small>' + time + '</small>'
+        + '</div>'
+        + '<button class="sh-toast__close" aria-label="Close"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>'
+        + '</div>';
+      document.body.appendChild(notif);
+
+      setTimeout(() => notif.classList.add('sh-toast--visible'), 100);
+      setTimeout(() => {
+        notif.classList.remove('sh-toast--visible');
+        setTimeout(() => notif.remove(), 500);
+      }, 5000);
+
+      notif.querySelector('.sh-toast__close').addEventListener('click', () => {
+        notif.classList.remove('sh-toast--visible');
+        setTimeout(() => notif.remove(), 300);
+      });
+    }
+
+    // Show first notification after 8s, then every 25-45s
+    setTimeout(showNotification, 8000);
+    setInterval(showNotification, 25000 + Math.random() * 20000);
+  })();
+
+  // ═══════════════════ EXIT INTENT POPUP ═══════════════════
+  (function() {
+    let triggered = false;
+    const popup = document.createElement('div');
+    popup.id = 'exitPopup';
+    popup.classList.add('sh-popup');
+    popup.innerHTML = `
+      <div class="sh-popup__bg"></div>
+      <div class="sh-popup__box">
+        <button class="sh-popup__close" aria-label="Close popup">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+        <h3>¡Espera! Un Regalo Exclusivo Antes de Irte...</h3>
+        <p>Reclama un <strong>descuento extra del 10%</strong> en tu Wedding Planner Spreadsheet Pro. ¡No permitas que el estrés eclipse tu momento más especial!</p>
+        <button class="sh-btn sh-btn--primary sh-btn--lg" onclick="doATC()">Sí, ¡Quiero Mi Descuento Extra!</button>
+      </div>
+    `;
+    document.body.appendChild(popup);
+
+    // Avoid showing popup if already dismissed
+    if (sessionStorage.getItem('shopifo_exit_dismissed')) return;
+
+    document.addEventListener('mouseout', function(e) {
+      if (e.clientY < 5 && !triggered) {
+        triggered = true;
+        popup.classList.add('active'); // Use active class for display
+        sessionStorage.setItem('shopifo_exit_dismissed', '1');
+      }
+    });
+
+    // Mobile: show on scroll-up after spending 30s+
+    let mobileTimer = null;
+    let lastScroll = 0;
+    if ('ontouchstart' in window) {
+      mobileTimer = setTimeout(function() {
+        window.addEventListener('scroll', function mobileExit() {
+          if (window.scrollY < lastScroll - 100 && !triggered) {
+            triggered = true;
+            popup.classList.add('active'); // Use active class for display
+            sessionStorage.setItem('shopifo_exit_dismissed', '1');
+            window.removeEventListener('scroll', mobileExit);
+          }
+          lastScroll = window.scrollY;
+        }, { passive: true });
+      }, 30000);
+    }
+
+    popup.querySelector('.sh-popup__close').addEventListener('click', () => {
+      popup.classList.remove('active');
+    });
+    popup.querySelector('.sh-popup__bg').addEventListener('click', () => {
+      popup.classList.remove('active');
+    });
+  })();
+
+  // ═══════════════════ SCROLL PROGRESS BAR ═══════════════════
+  // Already present in HTML with ID 'scrollProgressBar' and CSS
+  // (function() {
+  //   const bar = document.createElement('div');
+  //   Object.assign(bar.style, {
+  //     position: 'fixed', top: '0', left: '0', height: '3px', width: '0%',
+  //     background: 'linear-gradient(90deg, #31A156, #3FD08F)', zIndex: '10001',
+  //     transition: 'width 0.1s linear'
+  //   });
+  //   document.body.appendChild(bar);
+
+  //   window.addEventListener('scroll', function() {
+  //     const scrolled = window.scrollY;
+  //     const total = document.documentElement.scrollHeight - window.innerHeight;
+  //     bar.style.width = total > 0 ? Math.min(100, (scrolled / total) * 100) + '%' : '0%';
+  //   }, { passive: true });
+  // })();
+
+  // ═══════════════════ SMOOTH SCROLL ═══════════════════
+  document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+    a.addEventListener('click', function(e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+})();
+</script>
+  
+</body>
+</html>

@@ -1,0 +1,4599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Ultimate Wedding Planner Spreadsheet | Budget, Guest List, Timeline — WeddingPlannerPro</title>
+  <meta name="description" content="Conquer wedding planning stress! Get the ultimate all-in-one Google Sheets &amp; Excel wedding planner with budget, guest list, timeline, and more. Download now!" />
+  <meta name="keywords" content="wedding planner spreadsheet google sheets, wedding budget tracker excel, guest list manager wedding, wedding checklist template, printable wedding timeline, wedding organizer digital, bridal planner spreadsheet, wedding vendor tracker, seating chart maker spreadsheet, stress free wedding planning, diy wedding planner, ultimate wedding toolkit" />
+  
+  <link rel="alternate" hreflang="en" href="https://localhost/product/wedding-planner-spreadsheet-for-google-budget-tracker-guest-list-seating-plan-ch.html" />
+  <link rel="alternate" hreflang="fr" href="https://localhost/fr/product/wedding-planner-spreadsheet-for-google-budget-tracker-guest-list-seating-plan-ch.html" />
+  <link rel="alternate" hreflang="es" href="https://localhost/es/product/wedding-planner-spreadsheet-for-google-budget-tracker-guest-list-seating-plan-ch.html" />
+  <link rel="alternate" hreflang="x-default" href="https://localhost/product/wedding-planner-spreadsheet-for-google-budget-tracker-guest-list-seating-plan-ch.html" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="The Ultimate Wedding Planner Spreadsheet | Budget, Guest List, Timeline — WeddingPlannerPro" />
+  <meta property="og:description" content="Conquer wedding planning stress! Get the ultimate all-in-one Google Sheets &amp; Excel wedding planner with budget, guest list, timeline, and more. Download now!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjY3NSIgdmlld0JveD0iMCAwIDEyMDAgNjc1Ij4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIyeTI9IjEwMCUiPgogICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiMxRTQwQUYiLz4KICAgICAgICA8c3RvcCBvZmZzZXQ9IjU1JSIgc3R5bGU9InN0b3AtY29sb3I6IzFFNDBBRiIvPgogICAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6I0Y1OUUwQiIvPgogICAgICA8L2xpbmVhcUdyYWRpZW50PgogICAgPC9kZWZzPgogICAgPHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNnKSIvPgogICAgPHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSInUG9wcGlucycsQXJpYWwsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZm9udC13ZWlnaHQ9IjYwMCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjYpIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIj5Qcm9kdWN0IE1vY2t1cDwvdGV4dD4KICA8L3N2Zz4=" />
+  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="The Ultimate Wedding Planner Spreadsheet | Budget, Guest List, Timeline — WeddingPlannerPro" />
+  <meta name="twitter:description" content="Conquer wedding planning stress! Get the ultimate all-in-one Google Sheets &amp; Excel wedding planner with budget, guest list, timeline, and more. Download now!" />
+  <meta name="twitter:image" content="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjY3NSIgdmlld0JveD0iMCAwIDEyMDAgNjc1Ij4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIyeTI9IjEwMCUiPgogICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiMxRTQwQUYiLz4KICAgICAgICA8c3RvcCBvZmZzZXQ9IjU1JSIgc3R5bGU9InN0b3AtY29sb3I6IzFFNDBBRiIvPgogICAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6I0Y1OUUwQiIvPgogICAgICA8L2xpbmVhcUdyYWRpZW50PgogICAgPC9kZWZzPgogICAgPHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNnKSIvPgogICAgPHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSInUG9wcGlucycsQXJpYWwsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZm9udC13ZWlnaHQ9IjYwMCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjYpIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIj5Qcm9kdWN0IE1vY2t1cDwvdGV4dD4KICA8L3N2Zz4=" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"WeddingPlannerPro","logo":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 242 44\" width=\"242\" height=\"44\" role=\"img\" aria-label=\"WeddingPlannerPro\">\n  <defs>\n    <linearGradient id=\"lG\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n      <stop offset=\"0%\" stop-color=\"#B76E79\"/>\n      <stop offset=\"100%\" stop-color=\"#D4A574\"/>\n    </linearGradient>\n    <filter id=\"lS\" x=\"-15%\" y=\"-15%\" width=\"140%\" height=\"150%\">\n      <feDropShadow dx=\"0\" dy=\"2\" stdDeviation=\"3\" flood-color=\"#B76E79\" flood-opacity=\"0.3\"/>\n    </filter>\n  </defs>\n  <!-- Icon mark -->\n  <g filter=\"url(#lS)\">\n    <rect x=\"1\" y=\"3\" width=\"38\" height=\"38\" rx=\"10\" fill=\"url(#lG)\"/>\n  </g>\n  <g transform=\"translate(10, 12) scale(0.833)\" fill=\"#fff\">\n    <path d=\"M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z\"/>\n  </g>\n  <!-- Wordmark -->\n  <text x=\"50\" y=\"23\" dominant-baseline=\"central\" font-family=\"'Poppins','Inter','SF Pro Display','Helvetica Neue',sans-serif\" font-weight=\"700\" font-size=\"19\" letter-spacing=\"-0.03em\" fill=\"currentColor\">WeddingPlannerPro</text>\n</svg>"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"The Ultimate Wedding Planner Spreadsheet — Budget Tracker, Guest List, Seating Plan, Checklist, Timeline","description":"All-in-one wedding planner spreadsheet. Keep guest lists, seating charts, vendors, tasks, budgets, and appointments organized in one easy-to-use file. Automatically tracks RSVPs, payments, and deadlines. Generates printable day-of guides. Fully editable in Google Sheets and Microsoft Excel.","image":"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjY3NSIgdmlld0JveD0iMCA0IDAgMTIwMCA2NzUiPgogICAgPGRlZnM+CiAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6IzFFNDBBRiIvPgogICAgICAgIDxzdG9wIG9mZnNldD0iNTUlIiBzdHlsZT0ic3RvcC1jb2xvcjojMUU0MEFGIi8+CiAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjojRjU5RTBCIi8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2cpIi8+CiAgICAgIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iJ1BvcHBpbnMnLEFyaWFsLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjQiIGZvbnQtd2VpZ2h0PSI2MDAiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC42KSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSI+UHJvZHVjdCBNb2NrdXA8L3RleHQ+CiAgPC9zdmc+" ,"brand":{"@type":"Brand","name":"WeddingPlannerPro"},"offers":{"@type":"Offer","price":"9.99","priceCurrency":"USD","availability":"https://schema.org/InStock"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"1500","bestRating":"5"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"/"},{"@type":"ListItem","position":2,"name":"The Ultimate Wedding Planner Spreadsheet","item":"/product.html"}]}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Playfair%20Display:wght@400;500;600;700;900&display=swap" />
+  <style>
+    :root {
+      --color-primary: #B76E79;
+      --color-accent: #D4A574;
+      --color-secondary: #1a1520;
+      --color-success: #B76E79; /* Changed to primary for consistency with elegant style */
+      --color-bg: #ffffff;
+      --color-text: #1a1a1a;
+      --font-body: 'Inter', sans-serif;
+      --font-heading: 'Playfair Display', serif;
+
+      --btn-radius: 999px;
+      --btn-font-weight: 700;
+      --btn-padding: 16px 32px; /* Increased vertical padding */
+      --btn-hover-lift: -4px; /* More pronounced lift */
+      --btn-primary-gradient: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+      --btn-primary-shadow: 0 4px 15px rgba(183, 110, 121, 0.4); /* Softer shadow */
+      --btn-primary-glow: 0 0 30px rgba(183, 110, 121, 0.3);
+
+      --card-radius: 20px; /* Unified between 18-22px */
+      --card-shadow: 0 18px 50px rgba(0, 0, 0, 0.06); /* Soft shadows */
+      --card-shadow-hover: 0 24px 60px rgba(0, 0, 0, 0.1); /* Slightly more intense hover */
+      --card-glass-bg: rgba(255, 255, 255, 0.12); /* Slightly more opaque for elegance */
+      --card-glass-blur: 20px;
+      --card-glass-border: rgba(255, 255, 255, 0.22);
+
+      --hero-gradient: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-primary) 55%, var(--color-accent) 100%); /* Dark -> Primary -> Accent */
+      --hero-text-color: #ffffff;
+
+      --accent-green: #31A156; /* Kept for success states if needed, but primary/accent preferred */
+      --accent-green-light: #3FD08F;
+      --accent-teal: #02353C;
+      --accent-gold: #F59E0B;
+
+      --heading-weight: 800; /* Ensured H1 is 800 */
+      --heading-letter-spacing: -0.02em; /* Tightness on large headings */
+
+      --announcement-bg: var(--color-secondary);
+      --announcement-fg: #ffffff;
+
+      --trust-badge-bg: rgba(49, 161, 86, 0.1);
+      --trust-badge-color: #31A156;
+      --trust-badge-radius: 999px;
+
+      --input-radius: 999px;
+      --input-border: #e2e8e4;
+
+      --footer-bg: #121212; /* Dark footer */
+      --footer-fg: #ffffff;
+
+      --preview-card-bg: rgba(255, 255, 255, 0.12);
+      --preview-card-blur: blur(20px);
+      --preview-card-border: 1px solid rgba(255, 255, 255, 0.22);
+      --preview-card-radius: 20px;
+      --preview-card-shadow: 0 24px 60px rgba(0, 0, 0, 0.1);
+
+      --sh-primary: var(--color-primary);
+      --sh-accent: var(--color-accent);
+      --sh-dark: var(--color-secondary);
+      --sh-text: var(--color-text);
+      --sh-text-light: #555;
+      --sh-text-muted: #888;
+      --sh-bg: var(--color-bg);
+      --sh-bg-light: color-mix(in srgb, var(--sh-primary) 4%, #fafafa);
+      --sh-bg-warm: color-mix(in srgb, var(--sh-primary) 6%, #f7f5f2);
+      --sh-border: #eaeaea;
+      --sh-border-light: #f0f0f0;
+      --sh-radius-card: var(--card-radius); /* Unified */
+      --sh-radius-btn: var(--btn-radius);
+      --sh-radius-sm: 12px;
+      --sh-hero-gradient: var(--hero-gradient);
+      --sh-shadow-xs: 0 1px 3px rgba(0, 0, 0, .04);
+      --sh-shadow: var(--card-shadow); /* Unified */
+      --sh-shadow-lg: 0 16px 48px rgba(0, 0, 0, .08);
+      --sh-shadow-hover: var(--card-shadow-hover); /* Unified */
+      --sh-container: 1120px;
+      --sh-transition: 0.3s cubic-bezier(.4, 0, .2, 1); /* Smoother transitions */
+      --sh-font-heading: var(--font-heading);
+      --sh-font-body: var(--font-body);
+      --sh-section-spacing: clamp(4rem, 8vw, 7rem); /* Consistent section spacing */
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      font-size: 62.5%;
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: var(--sh-font-body);
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 1.65; /* Slightly increased line-height */
+      color: var(--sh-text);
+      background: var(--sh-bg);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--sh-font-heading);
+      font-weight: var(--heading-weight);
+      letter-spacing: var(--heading-letter-spacing);
+      color: var(--sh-text);
+    }
+
+    h1 { font-size: clamp(2.25rem, 5vw, 4rem); line-height: 1.08; }
+    h2 { font-size: clamp(2.4rem, 3.5vw, 3.4rem); line-height: 1.12; }
+    h3 { font-size: clamp(1.8rem, 2.5vw, 2.2rem); line-height: 1.2; }
+    h4 { font-size: clamp(1.5rem, 2vw, 1.7rem); line-height: 1.3; }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .sh-container {
+      max-width: var(--sh-container);
+      margin: 0 auto;
+      padding: 0 clamp(20px, 4vw, 48px);
+    }
+
+    .sh-container--narrow {
+      max-width: 720px;
+    }
+
+    /* Reveal animations */
+    [data-reveal] {
+      opacity: 0;
+      transform: translateY(20px) scale(0.98);
+      filter: blur(3px);
+      transition: opacity 0.6s var(--sh-transition), transform 0.6s var(--sh-transition), filter 0.6s var(--sh-transition);
+    }
+    [data-reveal].revealed {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      filter: blur(0);
+    }
+    /* Staggered delays already defined */
+
+    .sh-announce {
+      background: var(--sh-dark);
+      color: #fff;
+      text-align: center;
+      padding: 10px 16px;
+      font-size: 1.25rem;
+      font-weight: 600;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      position: relative;
+      overflow: hidden;
+      height: 40px;
+    }
+
+    .sh-announce__track {
+      position: relative;
+      height: 100%;
+    }
+
+    .sh-announce__slide {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transform: translateY(100%);
+      transition: all .4s cubic-bezier(.4, 0, .2, 1);
+    }
+
+    .sh-announce__slide.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .sh-header {
+      position: sticky;
+      top: 0;
+      z-index: 200;
+      background: rgba(255, 255, 255, .95);
+      backdrop-filter: blur(20px) saturate(180%);
+      -webkit-backdrop-filter: blur(20px) saturate(180%);
+      border-bottom: 1px solid rgba(0, 0, 0, .04);
+      transition: box-shadow var(--sh-transition);
+    }
+
+    .sh-header__inner {
+      max-width: var(--sh-container);
+      margin: 0 auto;
+      padding: 0 clamp(20px, 4vw, 48px);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+
+    .sh-header__logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .sh-header__logo svg {
+      height: 42px;
+      width: auto;
+    }
+
+    .sh-logo-text {
+      font-size: 1.9rem;
+      font-weight: 700;
+      color: var(--sh-text);
+      letter-spacing: -.03em;
+      white-space: nowrap;
+    }
+
+    .sh-header__nav {
+      display: flex;
+      gap: 32px;
+    }
+
+    .sh-header__nav a {
+      font-size: 1.35rem;
+      font-weight: 500;
+      color: var(--sh-text-light);
+      padding: 6px 0;
+      position: relative;
+      transition: color var(--sh-transition);
+    }
+
+    .sh-header__nav a:hover {
+      color: var(--sh-text);
+    }
+
+    .sh-header__nav a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: var(--sh-primary);
+      transform: scaleX(0);
+      transition: transform var(--sh-transition);
+    }
+
+    .sh-header__nav a:hover::after {
+      transform: scaleX(1);
+    }
+
+    .sh-header__right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .sh-header__cart {
+      position: relative;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--sh-text);
+      padding: 8px;
+      border-radius: 50%;
+      transition: background var(--sh-transition);
+    }
+
+    .sh-header__cart:hover {
+      background: rgba(0, 0, 0, .04);
+    }
+
+    .sh-header__cart-count {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: var(--sh-primary);
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 700;
+      min-width: 18px;
+      height: 18px;
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .sh-header__hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 6px;
+    }
+
+    .sh-header__hamburger span {
+      width: 22px;
+      height: 2px;
+      background: var(--sh-text);
+      border-radius: 2px;
+      transition: .3s;
+    }
+
+    .sh-header__hamburger.active span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .sh-header__hamburger.active span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .sh-header__hamburger.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    .sh-lang {
+      position: relative;
+    }
+
+    .sh-lang__btn {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: none;
+      border: 1px solid var(--sh-border);
+      border-radius: 999px;
+      padding: 6px 12px 6px 10px;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--sh-text);
+      transition: all var(--sh-transition);
+    }
+
+    .sh-lang__btn:hover {
+      border-color: var(--sh-primary);
+      background: var(--sh-bg-light);
+    }
+
+    .sh-lang__btn svg:first-child {
+      flex-shrink: 0;
+      border-radius: 2px;
+    }
+
+    .sh-lang__label {
+      letter-spacing: .03em;
+    }
+
+    .sh-lang__chevron {
+      transition: transform var(--sh-transition);
+      flex-shrink: 0;
+    }
+
+    .sh-lang.is-open .sh-lang__chevron {
+      transform: rotate(180deg);
+    }
+
+    .sh-lang__menu {
+      display: none;
+      position: absolute;
+      top: calc(100% + 6px);
+      right: 0;
+      background: #fff;
+      border: 1px solid var(--sh-border);
+      border-radius: 12px;
+      padding: 6px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, .1);
+      min-width: 120px;
+      z-index: 300;
+      animation: shLangFadeIn .15s ease;
+    }
+
+    @keyframes shLangFadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-4px);
+      }
+      to {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    .sh-lang.is-open .sh-lang__menu {
+      display: block;
+    }
+
+    .sh-lang__option {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: var(--sh-text);
+      transition: background .15s;
+      text-decoration: none;
+    }
+
+    .sh-lang__option:hover {
+      background: var(--sh-bg-light);
+    }
+
+    .sh-lang__option svg {
+      flex-shrink: 0;
+      border-radius: 2px;
+    }
+
+    .sh-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-family: var(--sh-font-body); /* Changed to body font for consistency */
+      font-weight: var(--btn-font-weight);
+      font-size: 1.4rem;
+      border: none;
+      cursor: pointer;
+      border-radius: var(--sh-radius-btn);
+      padding: var(--btn-padding);
+      transition: all var(--sh-transition);
+      text-decoration: none;
+      white-space: nowrap;
+      letter-spacing: -.01em;
+    }
+
+    .sh-btn--lg {
+      padding: 18px 40px; /* Slightly larger */
+      font-size: 1.6rem;
+    }
+
+    .sh-btn--sm {
+      padding: 12px 28px; /* Slightly larger */
+      font-size: 1.3rem;
+    }
+
+    .sh-btn--primary {
+      background: var(--btn-primary-gradient);
+      color: #fff;
+      box-shadow: var(--btn-primary-shadow);
+      font-weight: 700;
+    }
+
+    .sh-btn--primary:hover {
+      background: var(--btn-primary-gradient); /* Keep gradient on hover */
+      transform: translateY(var(--btn-hover-lift));
+      box-shadow: 0 8px 24px color-mix(in srgb, var(--sh-primary) 30%, transparent); /* Softer, more spreading shadow */
+    }
+
+    .sh-btn--dark {
+      background: var(--sh-dark);
+      color: #fff;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, .08);
+      font-weight: 700;
+    }
+
+    .sh-btn--dark:hover {
+      transform: translateY(var(--btn-hover-lift));
+      box-shadow: 0 8px 24px color-mix(in srgb, var(--sh-dark) 30%, transparent); /* Softer, more spreading shadow */
+      filter: brightness(1.1);
+    }
+
+    .sh-btn--white {
+      background: #fff;
+      color: var(--sh-dark);
+      box-shadow: 0 2px 12px rgba(0, 0, 0, .06);
+    }
+
+    .sh-btn--white:hover {
+      transform: translateY(var(--btn-hover-lift));
+      box-shadow: var(--sh-shadow-hover);
+    }
+
+    .sh-btn__old-price {
+      font-weight: 400;
+      opacity: .6;
+      font-size: .85em;
+    }
+
+    .sh-pill {
+      display: inline-block;
+      padding: 6px 16px;
+      border-radius: 999px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      background: var(--sh-primary);
+      color: #fff;
+      margin-bottom: 16px;
+      box-shadow: 0 4px 16px color-mix(in srgb, var(--sh-primary) 15%, transparent); /* Softer shadow for pills */
+    }
+
+    .sh-pill--muted {
+      background: var(--sh-bg-light);
+      color: var(--sh-text-muted);
+      border: 1px solid var(--sh-border);
+      box-shadow: none; /* No shadow for muted pills */
+    }
+
+    .sh-hero {
+      background: var(--sh-hero-gradient);
+      padding: clamp(3rem, 6vw, 5rem) 0 var(--sh-section-spacing); /* Adjusted top padding */
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .sh-hero__container {
+      max-width: var(--sh-container);
+      margin: 0 auto;
+      padding: 0 clamp(20px, 4vw, 48px);
+      position: relative;
+      z-index: 2;
+    }
+
+    .sh-hero__grid {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: clamp(36px, 5vw, 64px);
+      align-items: center;
+    }
+
+    .sh-hero__badge {
+      display: inline-block;
+      padding: 6px 18px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, .1);
+      border: 1px solid rgba(255, 255, 255, .15);
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .sh-hero__title {
+      font-size: clamp(2.25rem, 5vw, 4rem); /* Large H1 */
+      font-weight: 800;
+      line-height: 1.08;
+      letter-spacing: var(--heading-letter-spacing);
+      margin-bottom: 16px;
+    }
+
+    .sh-hero__sub {
+      font-size: clamp(1.5rem, 1.8vw, 1.7rem);
+      font-weight: 400;
+      line-height: 1.6;
+      color: rgba(255, 255, 255, .8);
+      margin-bottom: 28px;
+      max-width: 500px;
+    }
+
+    .sh-hero__ctas {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 24px;
+    }
+
+    .sh-hero__trust {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.25rem;
+      color: rgba(255, 255, 255, .65);
+    }
+
+    .sh-hero__stars {
+      display: flex;
+      gap: 2px;
+    }
+
+    .sh-hero__glow {
+      position: absolute;
+      bottom: -40%;
+      right: -10%;
+      width: 50%;
+      height: 80%;
+      background: radial-gradient(circle, rgba(255, 255, 255, .05) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .sh-hero__card {
+      background: var(--card-glass-bg); /* Use glassmorphism variable */
+      backdrop-filter: var(--card-glass-blur); /* Use glassmorphism variable */
+      -webkit-backdrop-filter: var(--card-glass-blur);
+      border: 1px solid var(--card-glass-border); /* Use glassmorphism variable */
+      border-radius: var(--sh-radius-card);
+      overflow: hidden;
+      box-shadow: 0 24px 48px rgba(0, 0, 0, .12);
+    }
+
+    .sh-hero__card-header {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      padding: 12px 16px;
+      background: rgba(0, 0, 0, .12);
+    }
+
+    .sh-hero__card-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .2);
+    }
+
+    .sh-hero__card-dot:nth-child(1) {
+      background: #ff5f57;
+    }
+
+    .sh-hero__card-dot:nth-child(2) {
+      background: #febc2e;
+    }
+
+    .sh-hero__card-dot:nth-child(3) {
+      background: #28c840;
+    }
+
+    .sh-hero__card-label {
+      margin-left: auto;
+      font-size: 1.05rem;
+      font-weight: 500;
+      color: rgba(255, 255, 255, .6);
+      background: rgba(255, 255, 255, .08);
+      padding: 3px 12px;
+      border-radius: 999px;
+    }
+
+    .sh-hero__card-img {
+      width: 100%;
+      display: block;
+    }
+
+    .sh-hero__card-placeholder {
+      aspect-ratio: 4/3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, .03);
+    }
+
+    .sh-stats {
+      background: var(--sh-bg-light);
+      border-bottom: 1px solid var(--sh-border);
+      padding: 32px 0;
+    }
+
+    .sh-stats__grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* Changed to 4 columns */
+      gap: 32px;
+      text-align: center;
+    }
+
+    .sh-stat {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .sh-stat__icon {
+      color: var(--sh-primary);
+      margin-bottom: 4px;
+      display: flex;
+    }
+
+    .sh-stat__value {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--sh-text);
+    }
+
+    .sh-stat__label {
+      font-size: 1.25rem;
+      color: var(--sh-text-muted);
+    }
+
+    .sh-section {
+      padding: var(--sh-section-spacing) 0; /* Consistent section spacing */
+    }
+
+    .sh-section--white {
+      background: #fff;
+    }
+
+    .sh-section--light {
+      background: var(--sh-bg-light);
+    }
+
+    .sh-section__header {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto 48px;
+    }
+
+    .sh-section__title {
+      font-size: clamp(2.4rem, 3.5vw, 3.4rem);
+      font-weight: var(--heading-weight);
+      line-height: 1.12;
+      letter-spacing: var(--heading-letter-spacing);
+      color: var(--sh-text);
+      margin-bottom: 12px;
+    }
+
+    .sh-section__sub {
+      font-size: 1.5rem;
+      color: var(--sh-text-light);
+      line-height: 1.6;
+    }
+
+    .sh-included {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .sh-included__item {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 24px 0;
+      border-bottom: 1px solid var(--sh-border);
+      transition: background var(--sh-transition);
+    }
+
+    .sh-included__item:last-child {
+      border-bottom: none;
+    }
+
+    .sh-included__item:hover {
+      background: var(--sh-bg-light);
+      margin: 0 -20px;
+      padding: 24px 20px;
+      border-radius: 12px;
+    }
+
+    .sh-included__num {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--sh-primary);
+      opacity: .5;
+      min-width: 28px;
+      flex-shrink: 0;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .sh-included__content {
+      flex: 1;
+    }
+
+    .sh-included__title {
+      font-size: 1.55rem;
+      font-weight: 700;
+      color: var(--sh-text);
+      line-height: 1.3;
+      margin-bottom: 4px;
+    }
+
+    .sh-included__desc {
+      font-size: 1.3rem;
+      color: var(--sh-text-light);
+      line-height: 1.5;
+    }
+
+    .sh-included__check {
+      color: var(--sh-primary);
+      flex-shrink: 0;
+      display: flex;
+      width: 32px;
+      height: 32px;
+      align-items: center;
+      justify-content: center;
+      background: color-mix(in srgb, var(--sh-primary) 8%, transparent);
+      border-radius: 50%;
+    }
+
+    .sh-features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem; /* Consistent gap */
+    }
+
+    .sh-feature {
+      background: #fff;
+      border: 1px solid var(--sh-border);
+      border-radius: var(--sh-radius-card);
+      padding: 28px 24px;
+      box-shadow: var(--sh-shadow); /* Apply soft shadow */
+      transition: all var(--sh-transition); /* Apply transition */
+    }
+
+    .sh-feature:hover {
+      border-color: var(--sh-primary);
+      box-shadow: var(--sh-shadow-hover); /* Apply hover shadow */
+      transform: translateY(var(--btn-hover-lift)); /* Apply hover lift */
+    }
+
+    .sh-feature__icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: var(--sh-bg-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--sh-primary);
+      margin-bottom: 14px;
+    }
+
+    .sh-feature__title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      line-height: 1.35;
+      color: var(--sh-text);
+      margin-bottom: 6px;
+    }
+
+    .sh-feature__desc {
+      font-size: 1.25rem;
+      color: var(--sh-text-light);
+      line-height: 1.5;
+    }
+
+    .sh-pas {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .sh-pas__left, .sh-pas__right {
+      padding: 36px;
+      border-radius: var(--sh-radius-card);
+      box-shadow: var(--sh-shadow); /* Apply soft shadow */
+    }
+
+    .sh-pas__left {
+      background: #fff;
+      border: 1px solid var(--sh-border);
+    }
+
+    .sh-pas__right {
+      background: var(--sh-dark);
+      color: #fff;
+    }
+
+    .sh-pas__right .sh-pill {
+      background: rgba(255, 255, 255, .15);
+      box-shadow: none; /* No shadow for pill on dark background */
+    }
+
+    .sh-pas__right .sh-btn--primary {
+      background: #fff;
+      color: var(--sh-dark);
+    }
+
+    .sh-pas__title {
+      font-size: 2rem;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+
+    .sh-pas__text {
+      font-size: 1.35rem;
+      line-height: 1.6;
+      opacity: .85;
+      margin-bottom: 16px;
+    }
+
+    .sh-pas__divider {
+      display: flex;
+      align-items: center;
+    }
+
+    .sh-pas__arrow {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--sh-primary);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .sh-compare {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem; /* Consistent gap */
+    }
+
+    .sh-compare__side {
+      border-radius: var(--sh-radius-card);
+      padding: 32px 28px;
+      box-shadow: var(--sh-shadow); /* Apply soft shadow */
+      transition: all var(--sh-transition);
+    }
+    .sh-compare__side:hover {
+        transform: translateY(var(--btn-hover-lift));
+        box-shadow: var(--sh-shadow-hover);
+    }
+
+    .sh-compare__side--bad {
+      background: #fff;
+      border: 1px solid var(--sh-border);
+    }
+
+    .sh-compare__side--good {
+      background: var(--sh-dark);
+      color: #fff;
+    }
+
+    .sh-compare__side h3 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .sh-compare__icon {
+      display: flex;
+    }
+
+    .sh-compare__icon--bad {
+      color: #ef4444;
+    }
+
+    .sh-compare__icon--good {
+      color: #22c55e;
+    }
+
+    .sh-compare__side--good .sh-compare__icon--good {
+      color: #86efac;
+    }
+
+    .sh-compare__row {
+      padding: 10px 0;
+      font-size: 1.35rem;
+      border-bottom: 1px solid rgba(128, 128, 128, .1);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .sh-compare__row:last-child {
+      border-bottom: none;
+    }
+
+    .sh-compare__bullet {
+      display: flex;
+      flex-shrink: 0;
+    }
+
+    .sh-compare__bullet--bad {
+      color: #ef4444;
+      opacity: .6;
+    }
+
+    .sh-compare__bullet--good {
+      color: #22c55e;
+    }
+
+    .sh-compare__side--good .sh-compare__bullet--good {
+      color: #86efac;
+    }
+
+    .sh-testimonials {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem; /* Consistent gap */
+    }
+
+    .sh-testimonial {
+      background: #fff;
+      border: 1px solid var(--sh-border);
+      border-radius: var(--sh-radius-card);
+      padding: 24px;
+      box-shadow: var(--sh-shadow); /* Apply soft shadow */
+      transition: all var(--sh-transition);
+    }
+
+    .sh-testimonial:hover {
+      border-color: var(--sh-primary);
+      box-shadow: var(--sh-shadow-hover); /* Apply hover shadow */
+      transform: translateY(var(--btn-hover-lift)); /* Apply hover lift */
+    }
+
+    .sh-testimonial__stars {
+      display: flex;
+      gap: 2px;
+      margin-bottom: 12px;
+    }
+
+    .sh-testimonial__title {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: var(--sh-text);
+    }
+
+    .sh-testimonial__text {
+      font-size: 1.35rem;
+      line-height: 1.55;
+      color: var(--sh-text-light);
+      margin-bottom: 14px;
+    }
+
+    .sh-testimonial__author {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .sh-testimonial__avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--sh-bg-warm);
+      color: var(--sh-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.3rem;
+      border: 1px solid var(--sh-border);
+    }
+
+    .sh-testimonial__avatar-img {
+      width: 48px; /* Increased size for premium feel */
+      height: 48px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--sh-border);
+      flex-shrink: 0;
+    }
+
+    .sh-testimonial__author strong {
+      font-size: 1.3rem;
+      color: var(--sh-text);
+    }
+
+    .sh-testimonial__author small {
+      color: var(--sh-text-muted);
+      font-size: 1.15rem;
+    }
+
+    .sh-faq__item {
+      background: #fff;
+      border: 1px solid var(--sh-border);
+      border-radius: var(--sh-radius-card); /* Consistent card radius */
+      margin-bottom: 12px; /* Increased gap */
+      overflow: hidden;
+      transition: border-color var(--sh-transition), box-shadow var(--sh-transition); /* Added shadow transition */
+      box-shadow: var(--sh-shadow-xs); /* Light initial shadow */
+    }
+    .sh-faq__item:hover {
+        box-shadow: var(--sh-shadow); /* Soft hover shadow */
+    }
+
+    .sh-faq__item[open] {
+      border-color: var(--sh-primary);
+      box-shadow: var(--sh-shadow); /* Stronger shadow when open */
+    }
+
+    .sh-faq__q {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 24px;
+      font-weight: 600;
+      font-size: 1.45rem;
+      cursor: pointer;
+      list-style: none;
+      color: var(--sh-text);
+    }
+
+    .sh-faq__q::-webkit-details-marker {
+      display: none;
+    }
+
+    .sh-faq__chevron {
+      flex-shrink: 0;
+      color: var(--sh-text-muted);
+      transition: transform var(--sh-transition), color var(--sh-transition);
+    }
+
+    .sh-faq__item[open] .sh-faq__chevron {
+      color: var(--sh-primary);
+      transform: rotate(180deg); /* Ensured rotation on open */
+    }
+
+    .sh-faq__a {
+      padding: 0 24px 20px;
+      font-size: 1.35rem;
+      line-height: 1.65;
+      color: var(--sh-text-light);
+    }
+
+    .sh-cta {
+      background: var(--sh-hero-gradient); /* Use consistent hero gradient */
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+      padding: var(--sh-section-spacing) 0; /* Consistent section spacing */
+    }
+
+    .sh-cta__bg-pattern {
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(circle at 25% 50%, rgba(255, 255, 255, .04) 1px, transparent 1px);
+      background-size: 24px 24px;
+      pointer-events: none;
+    }
+
+    .sh-cta__inner {
+      max-width: 560px;
+      position: relative;
+      z-index: 2;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .sh-cta__title {
+      color: #fff;
+      font-size: clamp(2.6rem, 4vw, 3.8rem); /* Use h2 clamp */
+      font-weight: var(--heading-weight);
+      line-height: 1.1;
+      margin-bottom: 14px;
+    }
+
+    .sh-cta__sub {
+      color: rgba(255, 255, 255, .75);
+      font-size: 1.45rem;
+      margin-bottom: 24px;
+      line-height: 1.55;
+    }
+
+    .sh-cta__price {
+      margin-bottom: 24px;
+    }
+
+    .sh-cta__price-current {
+      font-size: 3.6rem;
+      font-weight: 900;
+      color: #fff;
+    }
+
+    .sh-cta__price-old {
+      font-size: 1.8rem;
+      text-decoration: line-through;
+      color: rgba(255, 255, 255, .5);
+      margin-left: 12px;
+    }
+
+    .sh-cta__badges {
+      margin-top: 20px;
+      font-size: 1.15rem;
+      color: rgba(255, 255, 255, .65);
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .sh-cta__badges span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .sh-cta__badges svg {
+      width: 14px;
+      height: 14px;
+      color: rgba(255, 255, 255, .5);
+    }
+
+    .sh-cta .sh-btn--dark {
+      background: #fff;
+      color: var(--sh-dark);
+    }
+
+    .sh-cta .sh-btn--dark:hover {
+      background: #f0f0f0;
+    }
+
+    .sh-footer {
+      background: var(--footer-bg); /* Use footer background variable */
+      color: rgba(255, 255, 255, .6);
+      padding-top: 56px;
+    }
+
+    .sh-footer__grid {
+      display: grid;
+      grid-template-columns: 1.6fr 1fr 1fr 1fr;
+      gap: 48px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(255, 255, 255, .06);
+    }
+
+    .sh-footer__brand {
+      display: block;
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    .sh-footer__desc {
+      font-size: 1.25rem;
+      line-height: 1.6;
+    }
+
+    .sh-footer__col h4 {
+      color: rgba(255, 255, 255, .9);
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+      letter-spacing: .02em;
+    }
+
+    .sh-footer__col a {
+      display: block;
+      font-size: 1.25rem;
+      color: rgba(255, 255, 255, .45);
+      padding: 4px 0;
+      transition: color var(--sh-transition);
+    }
+
+    .sh-footer__col a:hover {
+      color: #fff;
+    }
+
+    .sh-footer__pays {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 10px;
+      opacity: .5;
+    }
+
+    .sh-footer__col small {
+      font-size: 1.1rem;
+      color: rgba(255, 255, 255, .3);
+    }
+
+    .sh-footer__bottom {
+      padding: 20px 0;
+      font-size: 1.15rem;
+      color: rgba(255, 255, 255, .25);
+      text-align: center;
+    }
+
+    .sh-popup {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .sh-popup.active {
+      display: flex;
+    }
+
+    .sh-popup__bg {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, .5);
+      backdrop-filter: blur(4px);
+    }
+
+    .sh-popup__box {
+      position: relative;
+      background: #fff;
+      border-radius: var(--sh-radius-card);
+      padding: 40px;
+      max-width: 400px;
+      width: 90%;
+      text-align: center;
+      box-shadow: var(--sh-shadow-lg);
+      animation: shPopIn .25s ease;
+    }
+
+    @keyframes shPopIn {
+      from {
+        opacity: 0;
+        transform: scale(.95);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .sh-popup__close {
+      position: absolute;
+      top: 14px;
+      right: 16px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--sh-text-muted);
+      display: flex;
+      transition: color var(--sh-transition);
+    }
+
+    .sh-popup__close:hover {
+      color: var(--sh-text);
+    }
+
+    .sh-popup__box h3 {
+      font-size: 2rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+      color: var(--sh-text);
+    }
+
+    .sh-popup__box p {
+      font-size: 1.4rem;
+      color: var(--sh-text-light);
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    .sh-sticky-bar {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 150;
+      background: #fff;
+      border-top: 1px solid var(--sh-border);
+      padding: 12px 20px;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 -8px 32px rgba(0, 0, 0, .1); /* Stronger shadow */
+      transform: translateY(100%);
+      transition: transform var(--sh-transition);
+    }
+
+    .sh-sticky-bar.visible {
+      transform: translateY(0);
+    }
+
+    .sh-sticky-bar__price {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--sh-text);
+    }
+
+    .sh-sticky-bar__price s {
+      color: var(--sh-text-muted);
+      font-weight: 400;
+      font-size: 1.2rem;
+      margin-left: 6px;
+    }
+
+    @media(max-width:968px) {
+      .sh-hero__grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .sh-hero__sub {
+        margin: 0 auto 28px;
+      }
+
+      .sh-hero__ctas {
+        justify-content: center;
+      }
+
+      .sh-hero__trust {
+        justify-content: center;
+      }
+
+      .sh-hero__visual {
+        max-width: 440px;
+        margin: 0 auto;
+      }
+
+      .sh-features {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .sh-testimonials {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .sh-pas {
+        grid-template-columns: 1fr;
+      }
+
+      .sh-pas__divider {
+        justify-content: center;
+      }
+
+      .sh-pas__arrow svg {
+        transform: rotate(90deg);
+      }
+
+      .sh-compare {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .sh-compare__side {
+        padding: 24px 20px;
+      }
+
+      .sh-compare__side h3 {
+        font-size: 1.4rem;
+      }
+
+      .sh-compare__row {
+        font-size: 1.25rem;
+        padding: 8px 0;
+      }
+
+      .sh-footer__grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media(max-width:640px) {
+      .sh-header__inner {
+        display: grid;
+        grid-template-columns: 44px 1fr auto;
+        grid-template-areas: "menu logo right";
+        align-items: center;
+        gap: 0;
+        padding: 0 14px;
+        height: 60px;
+      }
+
+      .sh-header__hamburger {
+        display: flex;
+        grid-area: menu;
+        justify-self: start;
+      }
+
+      .sh-header__logo {
+        grid-area: logo;
+        justify-self: center;
+      }
+
+      .sh-header__logo svg {
+        height: 36px;
+      }
+
+      .sh-logo-text {
+        font-size: 1.5rem;
+      }
+
+      .sh-header__right {
+        grid-area: right;
+        justify-self: end;
+        gap: 4px;
+      }
+
+      .sh-header__nav {
+        top: 60px;
+      }
+
+      .sh-header__nav {
+        display: none;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        right: 0;
+        background: #fff;
+        flex-direction: column;
+        padding: 16px 24px;
+        gap: 0;
+        border-bottom: 1px solid var(--sh-border);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, .04);
+        z-index: 200;
+      }
+
+      .sh-header__nav.open {
+        display: flex;
+      }
+
+      .sh-header__nav a {
+        padding: 14px 0;
+        border-bottom: 1px solid rgba(0, 0, 0, .03);
+        font-size: 1.5rem;
+      }
+
+      .sh-header__nav a::after {
+        display: none;
+      }
+
+      .sh-lang__label {
+        display: none;
+      }
+
+      .sh-lang__btn {
+        padding: 6px 8px 6px 8px;
+        gap: 4px;
+      }
+
+      .sh-lang__menu {
+        right: -10px;
+      }
+
+      .sh-header__cart {
+        padding: 6px;
+      }
+
+      .sh-stats__grid {
+        grid-template-columns: 1fr 1fr; /* Changed to 2 columns on mobile */
+        gap: 12px;
+      }
+
+      .sh-features {
+        grid-template-columns: 1fr;
+      }
+
+      .sh-testimonials {
+        grid-template-columns: 1fr;
+      }
+
+      .sh-compare {
+        grid-template-columns: 1fr;
+      }
+
+      .sh-compare__side {
+        padding: 18px 14px;
+      }
+
+      .sh-compare__side h3 {
+        font-size: 1.3rem;
+      }
+
+      .sh-compare__row {
+        font-size: 1.2rem;
+        gap: 6px;
+      }
+
+      .sh-compare__bullet svg {
+        width: 14px;
+        height: 14px;
+      }
+
+      .sh-footer__grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+
+      .sh-sticky-bar {
+        display: flex;
+      }
+
+      .sh-hero__title {
+        font-size: 2.8rem;
+      }
+
+      .sh-cta__badges {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .sh-cats__grid {
+        grid-template-columns: 1fr;
+      }
+
+      .sh-pricing__grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+
+      .sh-pricing__card--pro {
+        transform: none;
+      }
+
+      .sh-toast {
+        display: none !important;
+      }
+
+      body {
+        padding-bottom: 66px;
+      }
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background: radial-gradient(ellipse at 20% 50%, color-mix(in srgb, var(--sh-primary) 3%, transparent) 0%, transparent 50%), radial-gradient(ellipse at 80% 20%, color-mix(in srgb, var(--sh-accent) 3%, transparent) 0%, transparent 50%), radial-gradient(ellipse at 50% 100%, color-mix(in srgb, var(--sh-primary) 2%, transparent) 0%, transparent 40%);
+      pointer-events: none;
+    }
+
+    .sh-glass {
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(20px) saturate(180%);
+      -webkit-backdrop-filter: blur(20px) saturate(180%);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .sh-btn--dark:hover {
+      box-shadow: 0 8px 24px color-mix(in srgb, var(--sh-dark) 30%, transparent), 0 0 40px color-mix(in srgb, var(--sh-dark) 15%, transparent);
+    }
+
+    .sh-pill {
+      box-shadow: 0 4px 16px color-mix(in srgb, var(--sh-primary) 15%, transparent); /* Softer pill shadow */
+    }
+
+    .sh-scroll-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      z-index: 9999;
+      background: transparent;
+      pointer-events: none;
+    }
+
+    .sh-scroll-progress__bar {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--sh-primary), var(--sh-accent));
+      transition: width .1s linear;
+    }
+
+    .sh-hero__particles {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .sh-particle {
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.15);
+      animation: shParticleFloat 8s ease-in-out infinite;
+    }
+
+    .sh-particle:nth-child(1) {
+      left: 10%;
+      top: 20%;
+      animation-delay: 0s;
+      animation-duration: 7s;
+    }
+
+    .sh-particle:nth-child(2) {
+      left: 30%;
+      top: 70%;
+      animation-delay: 1s;
+      animation-duration: 9s;
+      width: 4px;
+      height: 4px;
+    }
+
+    .sh-particle:nth-child(3) {
+      left: 60%;
+      top: 30%;
+      animation-delay: 2s;
+      animation-duration: 6s;
+      width: 8px;
+      height: 8px;
+    }
+
+    .sh-particle:nth-child(4) {
+      left: 80%;
+      top: 60%;
+      animation-delay: 3s;
+      animation-duration: 10s;
+    }
+
+    .sh-particle:nth-child(5) {
+      left: 50%;
+      top: 85%;
+      animation-delay: 4s;
+      animation-duration: 8s;
+      width: 5px;
+      height: 5px;
+    }
+
+    .sh-particle:nth-child(6) {
+      left: 90%;
+      top: 15%;
+      animation-delay: 5s;
+      animation-duration: 7s;
+      width: 3px;
+      height: 3px;
+    }
+
+    @keyframes shParticleFloat {
+      0%, 100% {
+        transform: translateY(0) translateX(0);
+        opacity: 0.15;
+      }
+      25% {
+        transform: translateY(-20px) translateX(10px);
+        opacity: 0.3;
+      }
+      50% {
+        transform: translateY(-40px) translateX(-10px);
+        opacity: 0.15;
+      }
+      75% {
+        transform: translateY(-20px) translateX(15px);
+        opacity: 0.25;
+      }
+    }
+
+    .sh-hero__badge-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #22c55e;
+      margin-right: 8px;
+      vertical-align: middle;
+      animation: shPulseDot 2s ease-in-out infinite;
+    }
+
+    @keyframes shPulseDot {
+      0%, 100% {
+        box-shadow: 0 0 0 0 rgba(34, 197, 94, .5);
+      }
+      50% {
+        box-shadow: 0 0 0 6px rgba(34, 197, 94, 0);
+      }
+    }
+
+    .sh-hero__chips {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 24px;
+    }
+
+    .sh-hero__chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, .08);
+      border: 1px solid rgba(255, 255, 255, .12);
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: rgba(255, 255, 255, .85);
+      backdrop-filter: blur(8px);
+    }
+
+    .sh-hero__chip svg {
+      width: 14px;
+      height: 14px;
+    }
+
+    .sh-hero__avatars {
+      display: flex;
+      margin-right: 12px;
+    }
+
+    .sh-hero__avatar-img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid rgba(255, 255, 255, .3);
+      margin-left: -8px;
+    }
+
+    .sh-hero__avatar-img:first-child {
+      margin-left: 0;
+    }
+
+    .sh-hero__avatar-dot {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .15);
+      margin-left: -8px;
+      border: 2px solid rgba(255, 255, 255, .2);
+    }
+
+    .sh-hero__avatar-dot:first-child {
+      margin-left: 0;
+    }
+
+    .sh-hero__trust-text {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .sh-hero__trust-text span {
+      font-size: 1.15rem;
+      color: rgba(255, 255, 255, .65);
+    }
+
+    .sh-hero__float {
+      position: absolute;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, .12);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, .15);
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #fff;
+      animation: shFloat 4s ease-in-out infinite;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, .1);
+    }
+
+    .sh-hero__float svg {
+      width: 14px;
+      height: 14px;
+    }
+
+    .sh-hero__float--1 {
+      top: 10%;
+      right: -10px;
+      animation-delay: 0s;
+    }
+
+    .sh-hero__float--2 {
+      bottom: 10%;
+      left: -10px;
+      animation-delay: 2s;
+    }
+
+    @keyframes shFloat {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-8px);
+      }
+    }
+
+    .sh-hero__visual {
+      position: relative;
+    }
+
+    .sh-btn--pulse {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .sh-btn--pulse::after {
+      content: '';
+      position: absolute;
+      inset: -2px;
+      border-radius: inherit;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .2), transparent);
+      animation: shBtnPulse 3s ease-in-out infinite;
+    }
+
+    @keyframes shBtnPulse {
+      0% {
+        transform: translateX(-100%);
+      }
+      50%, 100% {
+        transform: translateX(100%);
+      }
+    }
+
+    .sh-stat__icon-wrap {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      background: color-mix(in srgb, var(--sh-primary) 8%, #fff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 8px;
+    }
+
+    .sh-stat__bar {
+      width: 80%;
+      height: 3px;
+      border-radius: 2px;
+      background: var(--sh-border);
+      margin-top: 8px;
+      overflow: hidden;
+    }
+
+    .sh-stat__bar-fill {
+      height: 100%;
+      border-radius: 2px;
+      background: linear-gradient(90deg, var(--sh-primary), var(--sh-accent));
+      transition: width 1.5s cubic-bezier(.4, 0, .2, 1);
+    }
+
+    .sh-how__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      position: relative;
+    }
+
+    .sh-how__step {
+      text-align: center;
+      position: relative;
+      padding: 36px 24px;
+      background: #fff;
+      border: 1px solid var(--sh-border);
+      border-radius: var(--sh-radius-card); /* Consistent card radius */
+      transition: all var(--sh-transition);
+      box-shadow: var(--sh-shadow); /* Apply soft shadow */
+    }
+
+    .sh-how__step:hover {
+      border-color: var(--sh-primary);
+      box-shadow: var(--sh-shadow-hover); /* Apply hover shadow */
+      transform: translateY(var(--btn-hover-lift)); /* Apply hover lift */
+    }
+
+    .sh-how__num {
+      position: absolute;
+      top: -16px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--sh-primary);
+      color: #fff;
+      font-weight: 800;
+      font-size: 1.3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 12px color-mix(in srgb, var(--sh-primary) 30%, transparent);
+    }
+
+    .sh-how__line {
+      display: none;
+    }
+
+    .sh-how__icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 16px;
+      background: var(--sh-bg-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--sh-primary);
+      margin: 12px auto 16px;
+    }
+
+    .sh-how__title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--sh-text);
+    }
+
+    .sh-how__desc {
+      font-size: 1.3rem;
+      color: var(--sh-text-light);
+      line-height: 1.55;
+    }
+
+    @media(max-width:768px) {
+      .sh-how__grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+    }
+
+    .sh-pas__pain-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .sh-pas__pain {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 18px;
+      border-radius: 12px;
+      background: #FEF2F2;
+      border: 1px solid #FECACA;
+      font-size: 1.35rem;
+      color: #991B1B;
+    }
+
+    .sh-pas__pain-icon {
+      color: #EF4444;
+      flex-shrink: 0;
+      display: flex;
+    }
+
+    .sh-pas__cost {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 16px;
+      border-radius: 12px;
+      background: #FFF7ED;
+      border: 1px solid #FED7AA;
+      font-size: 1.25rem;
+    }
+
+    .sh-pas__cost-label {
+      color: #9A3412;
+    }
+
+    .sh-pas__cost-value {
+      font-weight: 700;
+      color: #C2410C;
+    }
+
+    .sh-pas__benefits {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .sh-pas__benefit {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.35rem;
+      color: rgba(255, 255, 255, .9);
+    }
+
+    .sh-pas__benefit-icon {
+      color: #86EFAC;
+      flex-shrink: 0;
+      display: flex;
+    }
+
+    .sh-reviews-summary {
+      display: flex;
+      align-items: center;
+      gap: 48px;
+      padding: 28px 36px;
+      border-radius: var(--sh-radius-card);
+      background: #fff;
+      border: 1px solid var(--sh-border);
+      margin-bottom: 32px;
+      max-width: 720px;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: var(--sh-shadow); /* Apply soft shadow */
+    }
+
+    .sh-reviews-summary__score {
+      text-align: center;
+      min-width: 100px;
+    }
+
+    .sh-reviews-summary__num {
+      font-size: 4rem;
+      font-weight: 900;
+      color: var(--sh-text);
+      line-height: 1;
+    }
+
+    .sh-reviews-summary__stars {
+      display: flex;
+      gap: 2px;
+      justify-content: center;
+      margin: 4px 0;
+    }
+
+    .sh-reviews-summary__count {
+      font-size: 1.15rem;
+      color: var(--sh-text-muted);
+    }
+
+    .sh-reviews-summary__bars {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .sh-reviews-summary__row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 1.15rem;
+      color: var(--sh-text-light);
+    }
+
+    .sh-reviews-summary__row span:first-child {
+      min-width: 48px;
+    }
+
+    .sh-reviews-summary__row span:last-child {
+      min-width: 32px;
+      text-align: right;
+    }
+
+    .sh-reviews-summary__track {
+      flex: 1;
+      height: 6px;
+      border-radius: 3px;
+      background: var(--sh-border);
+      overflow: hidden;
+    }
+
+    .sh-reviews-summary__fill {
+      height: 100%;
+      border-radius: 3px;
+      background: linear-gradient(90deg, var(--sh-primary), var(--sh-accent));
+    }
+
+    @media(max-width:640px) {
+      .sh-reviews-summary {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+      }
+
+      .sh-reviews-summary__bars {
+        width: 100%;
+      }
+    }
+
+    .sh-testimonial__top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+    }
+
+    .sh-testimonial__verified {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #16A34A;
+      background: #F0FDF4;
+      padding: 3px 10px;
+      border-radius: 999px;
+    }
+
+    .sh-testimonial__verified svg {
+      width: 12px;
+      height: 12px;
+    }
+
+    .sh-testimonial__footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 14px;
+    }
+
+    .sh-testimonial__date {
+      font-size: 1.1rem;
+      color: var(--sh-text-muted);
+    }
+
+    .sh-cta__urgency-strip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, .1);
+      border: 1px solid rgba(255, 255, 255, .15);
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: rgba(255, 255, 255, .85);
+      margin-bottom: 20px;
+    }
+
+    .sh-cta__urgency-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #22c55e;
+      animation: shPulseDot 2s ease-in-out infinite;
+    }
+
+    .sh-cta__price-save {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 999px;
+      background: #22c55e;
+      color: #fff;
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-left: 12px;
+    }
+
+    .sh-cta__micro {
+      font-size: 1.2rem;
+      color: rgba(255, 255, 255, .55);
+      margin-top: 12px;
+      margin-bottom: 16px;
+    }
+
+    .sh-cta__payment-icons {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 16px;
+      opacity: .5;
+    }
+
+    .sh-footer__newsletter {
+      background: var(--sh-dark);
+      border-bottom: 1px solid rgba(255, 255, 255, .06);
+      padding: 40px 0;
+    }
+
+    .sh-footer__newsletter-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+
+    .sh-footer__newsletter-title {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+
+    .sh-footer__newsletter-sub {
+      font-size: 1.25rem;
+      color: rgba(255, 255, 255, .5);
+    }
+
+    .sh-footer__newsletter-form {
+      display: flex;
+      gap: 8px;
+    }
+
+    .sh-footer__newsletter-input {
+      padding: 12px 20px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, .15);
+      background: rgba(255, 255, 255, .06);
+      color: #fff;
+      font-size: 1.3rem;
+      min-width: 240px;
+      font-family: inherit;
+      transition: border-color .2s;
+    }
+
+    .sh-footer__newsletter-input::placeholder {
+      color: rgba(255, 255, 255, .35);
+    }
+
+    .sh-footer__newsletter-input:focus {
+      outline: none;
+      border-color: var(--sh-primary);
+    }
+
+    .sh-footer__trust-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 14px;
+      font-size: 1.1rem;
+      color: rgba(255, 255, 255, .35);
+    }
+
+    .sh-footer__trust-row svg {
+      width: 14px;
+      height: 14px;
+      color: rgba(255, 255, 255, .3);
+    }
+
+    @media(max-width:640px) {
+      .sh-footer__newsletter-inner {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .sh-footer__newsletter-form {
+        width: 100%;
+      }
+
+      .sh-footer__newsletter-input {
+        flex: 1;
+        min-width: 0;
+      }
+
+      .sh-stats__grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .sh-hero__chips {
+        justify-content: center;
+      }
+
+      .sh-hero__float {
+        display: none;
+      }
+    }
+
+    .sh-cats__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .sh-cat {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 20px 24px;
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: var(--sh-radius-card);
+      cursor: pointer;
+      transition: all var(--sh-transition);
+      position: relative;
+      overflow: hidden;
+      box-shadow: var(--sh-shadow); /* Apply soft shadow */
+    }
+
+    .sh-cat::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: var(--sh-radius-card);
+      padding: 1px;
+      background: linear-gradient(135deg, transparent 40%, color-mix(in srgb, var(--sh-primary) 20%, transparent) 100%);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity .25s;
+    }
+
+    .sh-cat:hover::before {
+      opacity: 1;
+    }
+
+    .sh-cat:hover {
+      transform: translateY(var(--btn-hover-lift));
+      box-shadow: var(--sh-shadow-hover); /* Apply hover shadow */
+      border-color: color-mix(in srgb, var(--sh-primary) 20%, transparent);
+    }
+
+    .sh-cat__icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, color-mix(in srgb, var(--sh-primary) 10%, #fff), color-mix(in srgb, var(--sh-accent) 10%, #fff));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--sh-primary);
+      flex-shrink: 0;
+      transition: transform .25s;
+    }
+
+    .sh-cat:hover .sh-cat__icon {
+      transform: scale(1.08);
+    }
+
+    .sh-cat__info {
+      flex: 1;
+    }
+
+    .sh-cat__name {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--sh-text);
+      line-height: 1.3;
+    }
+
+    .sh-cat__count {
+      font-size: 1.15rem;
+      color: var(--sh-text-muted);
+    }
+
+    .sh-cat__arrow {
+      color: var(--sh-text-muted);
+      flex-shrink: 0;
+      opacity: 0;
+      transform: translateX(-4px);
+      transition: all .25s;
+    }
+
+    .sh-cat:hover .sh-cat__arrow {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    @media(max-width:968px) {
+      .sh-cats__grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .sh-pricing-section {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .sh-pricing-section::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 40%;
+      height: 100%;
+      background: radial-gradient(circle, color-mix(in srgb, var(--sh-primary) 4%, transparent) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .sh-countdown {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      margin-bottom: 40px;
+      padding: 16px 28px;
+      background: var(--sh-dark);
+      border-radius: 999px;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, .15), 0 0 40px color-mix(in srgb, var(--sh-primary) 10%, transparent);
+    }
+
+    .sh-countdown__label {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: rgba(255, 255, 255, .7);
+      text-transform: uppercase;
+      letter-spacing: .05em;
+    }
+
+    .sh-countdown__digits {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .sh-countdown__box {
+      text-align: center;
+      min-width: 44px;
+    }
+
+    .sh-countdown__box span {
+      display: block;
+      font-size: 2rem;
+      font-weight: 800;
+      color: #fff;
+      font-variant-numeric: tabular-nums;
+      line-height: 1;
+      text-shadow: 0 0 12px color-mix(in srgb, var(--sh-primary) 50%, transparent);
+    }
+
+    .sh-countdown__box small {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, .4);
+      letter-spacing: .08em;
+      font-weight: 600;
+    }
+
+    .sh-countdown__sep {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--sh-primary);
+      line-height: 1;
+      margin-top: -8px;
+    }
+
+    .sh-pricing__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem; /* Consistent gap */
+      align-items: start;
+      position: relative;
+      z-index: 1;
+    }
+
+    .sh-pricing__card {
+      background: rgba(255, 255, 255, 0.75);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: var(--sh-radius-card);
+      padding: 36px 28px;
+      text-align: center;
+      position: relative;
+      transition: all var(--sh-transition);
+      box-shadow: var(--sh-shadow); /* Apply soft shadow */
+    }
+
+    .sh-pricing__card:hover {
+      transform: translateY(var(--btn-hover-lift));
+      box-shadow: var(--sh-shadow-hover); /* Apply hover shadow */
+    }
+
+    .sh-pricing__card--pro {
+      transform: scale(1.04);
+      background: rgba(255, 255, 255, 0.9);
+      border: 2px solid transparent;
+      background-clip: padding-box;
+      box-shadow: 0 8px 40px color-mix(in srgb, var(--sh-primary) 12%, transparent);
+      position: relative;
+      z-index: 2;
+    }
+
+    .sh-pricing__card--pro::before {
+      content: '';
+      position: absolute;
+      inset: -2px;
+      border-radius: calc(var(--sh-radius-card) + 2px); /* Adjust for larger radius */
+      background: linear-gradient(var(--sh-angle, 0deg), var(--sh-primary), var(--sh-accent), color-mix(in srgb, var(--sh-primary) 50%, var(--sh-accent)));
+      z-index: -1;
+      animation: shRotateGrad 4s linear infinite;
+    }
+
+    @supports (animation-timeline:auto) {
+      @property --sh-angle {
+        syntax: '<angle>';
+        initial-value: 0deg;
+        inherits: false;
+      }
+    }
+
+    @keyframes shRotateGrad {
+      to {
+        --sh-angle: 360deg;
+      }
+    }
+
+    .sh-pricing__card--pro:hover {
+      transform: scale(1.04) translateY(var(--btn-hover-lift));
+      box-shadow: 0 16px 48px color-mix(in srgb, var(--sh-primary) 18%, transparent), 0 0 60px color-mix(in srgb, var(--sh-primary) 8%, transparent);
+    }
+
+    .sh-pricing__badge {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 5px 20px;
+      border-radius: 999px;
+      background: var(--sh-primary);
+      color: #fff;
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      white-space: nowrap;
+      box-shadow: 0 4px 16px color-mix(in srgb, var(--sh-primary) 30%, transparent);
+    }
+
+    .sh-pricing__header {
+      margin-bottom: 20px;
+    }
+
+    .sh-pricing__name {
+      font-size: 1.7rem;
+      font-weight: 800;
+      color: var(--sh-text);
+      margin-bottom: 4px;
+    }
+
+    .sh-pricing__meta {
+      font-size: 1.15rem;
+      color: var(--sh-text-muted);
+    }
+
+    .sh-pricing__price-block {
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 4px;
+    }
+
+    .sh-pricing__old {
+      font-size: 1.5rem;
+      text-decoration: line-through;
+      color: var(--sh-text-muted);
+    }
+
+    .sh-pricing__current {
+      font-size: 3.4rem;
+      font-weight: 900;
+      color: var(--sh-text);
+      letter-spacing: -.02em;
+    }
+
+    .sh-pricing__save {
+      padding: 3px 10px;
+      border-radius: 999px;
+      background: #dcfce7;
+      color: #16a34a;
+      font-size: 1.05rem;
+      font-weight: 600;
+    }
+
+    .sh-pricing__one-time {
+      font-size: 1.15rem;
+      color: var(--sh-text-muted);
+      margin-bottom: 24px;
+      font-weight: 500;
+    }
+
+    .sh-pricing__features {
+      list-style: none;
+      text-align: left;
+      margin-bottom: 28px;
+    }
+
+    .sh-pricing__features li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 0;
+      font-size: 1.3rem;
+      border-bottom: 1px solid rgba(0, 0, 0, .03);
+    }
+
+    .sh-pricing__features li:last-child {
+      border-bottom: none;
+    }
+
+    .sh-pricing__feat-icon {
+      display: flex;
+      flex-shrink: 0;
+    }
+
+    .sh-pricing__feat--yes .sh-pricing__feat-icon {
+      color: var(--sh-primary);
+    }
+
+    .sh-pricing__feat--no .sh-pricing__feat-icon {
+      color: var(--sh-text-muted);
+      opacity: .4;
+    }
+
+    .sh-pricing__cta {
+      width: 100%;
+    }
+
+    @media(max-width:968px) {
+      .sh-pricing__grid {
+        grid-template-columns: 1fr 1fr;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .sh-pricing__card--pro {
+        grid-column: 1/-1;
+        max-width: 360px;
+        justify-self: center;
+      }
+    }
+
+    .sh-toast {
+      position: fixed;
+      bottom: 24px;
+      left: 24px;
+      z-index: 500;
+      opacity: 0;
+      transform: translateX(-100%) translateY(10px);
+      transition: all .4s cubic-bezier(.4, 0, .2, 1);
+      pointer-events: none;
+    }
+
+    .sh-toast--visible {
+      opacity: 1;
+      transform: translateX(0) translateY(0);
+      pointer-events: auto;
+    }
+
+    .sh-toast__inner {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 14px 18px;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(20px) saturate(180%);
+      -webkit-backdrop-filter: blur(20px) saturate(180%);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: 14px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, .1), 0 0 0 1px rgba(0, 0, 0, .02);
+      min-width: 260px;
+      max-width: 340px;
+      position: relative;
+    }
+
+    .sh-toast__close {
+      position: absolute;
+      top: 8px;
+      right: 10px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--sh-text-muted);
+      display: flex;
+      padding: 2px;
+      opacity: .5;
+      transition: opacity .2s;
+    }
+
+    .sh-toast__close:hover {
+      opacity: 1;
+    }
+
+    .sh-toast__icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, color-mix(in srgb, var(--sh-primary) 12%, #fff), color-mix(in srgb, var(--sh-accent) 12%, #fff));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--sh-primary);
+      flex-shrink: 0;
+    }
+
+    .sh-toast__body {
+      flex: 1;
+      line-height: 1.4;
+    }
+
+    .sh-toast__body strong {
+      display: block;
+      font-size: 1.25rem;
+      color: var(--sh-text);
+    }
+
+    .sh-toast__body span {
+      font-size: 1.1rem;
+      color: var(--sh-text-light);
+    }
+
+    .sh-toast__body small {
+      display: block;
+      font-size: 1rem;
+      color: var(--sh-text-muted);
+      margin-top: 2px;
+    }
+
+    .sp-breadcrumb {
+      padding: 14px 0;
+      font-size: 1.2rem;
+      color: var(--sh-text-muted);
+      border-bottom: 1px solid var(--sh-border);
+    }
+
+    .sp-breadcrumb a {
+      color: var(--sh-text-muted);
+      transition: color .2s;
+    }
+
+    .sp-breadcrumb a:hover {
+      color: var(--sh-primary);
+    }
+
+    .sp-breadcrumb span {
+      margin: 0 6px;
+    }
+
+    .sp-breadcrumb__current {
+      color: var(--sh-text);
+      font-weight: 500;
+    }
+
+    .sp-hero {
+      padding: clamp(3rem, 6vw, 5rem) 0 var(--sh-section-spacing); /* Adjusted top padding */
+    }
+
+    .sp-hero__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(32px, 5vw, 56px);
+      align-items: start;
+    }
+
+    .sp-gallery__main {
+      position: relative;
+      border-radius: var(--sh-radius-card); /* Consistent card radius */
+      overflow: hidden;
+      background: #f8f8f8;
+      box-shadow: var(--sh-shadow); /* Apply soft shadow */
+    }
+
+    .sp-gallery__img {
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+      cursor: zoom-in;
+      transition: transform .3s;
+    }
+
+    .sp-gallery__img:hover {
+      transform: scale(1.02);
+    }
+
+    .sp-gallery__empty {
+      aspect-ratio: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f8f8f8;
+    }
+
+    .sp-gallery__badge {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      background: var(--sh-primary);
+      color: #fff;
+      padding: 6px 16px;
+      border-radius: 999px;
+      font-size: 1.15rem;
+      font-weight: 700;
+    }
+
+    .sp-gallery__thumbs {
+      display: flex;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .sp-gallery__thumb {
+      width: 68px;
+      height: 68px;
+      object-fit: cover;
+      border-radius: 10px;
+      cursor: pointer;
+      border: 2px solid transparent;
+      opacity: .5;
+      transition: all .2s;
+    }
+
+    .sp-gallery__thumb:hover {
+      opacity: .8;
+    }
+
+    .sp-gallery__thumb.active {
+      opacity: 1;
+      border-color: var(--sh-primary);
+    }
+
+    .sp-info__title {
+      font-size: clamp(2.25rem, 5vw, 4rem); /* Large H1 */
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: var(--heading-letter-spacing);
+      margin-bottom: 8px;
+      color: var(--sh-text);
+    }
+
+    .sp-info__tagline {
+      font-size: 1.45rem;
+      color: var(--sh-text-light);
+      margin-bottom: 16px;
+      line-height: 1.5;
+    }
+
+    .sp-info__rating {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 1.2rem;
+      color: var(--sh-text-muted);
+      margin-bottom: 18px;
+    }
+
+    .sp-stars {
+      display: flex;
+      gap: 2px;
+    }
+
+    .sp-info__price {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .sp-price {
+      font-size: 3rem;
+      font-weight: 800;
+      color: var(--sh-text);
+      letter-spacing: -.02em;
+    }
+
+    .sp-price--old {
+      font-size: 1.7rem;
+      text-decoration: line-through;
+      color: var(--sh-text-muted);
+    }
+
+    .sp-save {
+      padding: 4px 12px;
+      border-radius: 999px;
+      background: #dcfce7;
+      color: #16a34a;
+      font-size: 1.15rem;
+      font-weight: 600;
+    }
+
+    .sp-info__desc {
+      font-size: 1.5rem;
+      line-height: 1.65;
+      color: var(--sh-text-light);
+      margin-bottom: 20px;
+    }
+
+    .sp-info__checklist {
+      margin-bottom: 24px;
+    }
+
+    .sp-check {
+      font-size: 1.4rem;
+      padding: 5px 0;
+      color: var(--sh-text);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .sp-check__icon {
+      color: var(--sh-primary);
+      display: flex;
+      flex-shrink: 0;
+    }
+
+    /* Removed .sp-atc styles, replaced by sh-btn classes */
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .sp-spin {
+      animation: spin .8s linear infinite;
+    }
+
+    .sp-trust {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      font-size: 1.15rem;
+      color: var(--sh-text-muted);
+      margin-bottom: 16px;
+    }
+
+    .sp-trust span {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .sp-trust svg {
+      flex-shrink: 0;
+    }
+
+    .sp-pays {
+      display: flex;
+      gap: 8px;
+      opacity: .4;
+    }
+
+    .sp-info__badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: #FEF2F2;
+      border: 1px solid #FECACA;
+      color: #DC2626;
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      letter-spacing: .02em;
+    }
+
+    .sp-info__badge-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #DC2626;
+      animation: spPulse 2s ease-in-out infinite;
+    }
+
+    @keyframes spPulse {
+      0%, 100% {
+        box-shadow: 0 0 0 0 rgba(220, 38, 38, .5);
+      }
+      50% {
+        box-shadow: 0 0 0 6px rgba(220, 38, 38, 0);
+      }
+    }
+
+    .sp-info__savings-note {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #16A34A;
+      margin-top: -8px;
+      margin-bottom: 12px;
+    }
+
+    .sp-atc__micro {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      font-size: 1.15rem;
+      color: var(--sh-text-muted);
+      margin-bottom: 14px;
+    }
+
+    .sp-atc__micro svg {
+      width: 13px;
+      height: 13px;
+    }
+
+    .sp-rating-text {
+      font-weight: 500;
+    }
+
+    .sp-info__viewers {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 16px;
+      border-radius: 10px;
+      background: #FFF7ED;
+      border: 1px solid #FED7AA;
+      font-size: 1.15rem;
+      color: #9A3412;
+      font-weight: 500;
+      margin-top: 16px;
+    }
+
+    .sp-info__viewers-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #22c55e;
+      animation: spPulse2 2s ease-in-out infinite;
+    }
+
+    @keyframes spPulse2 {
+      0%, 100% {
+        box-shadow: 0 0 0 0 rgba(34, 197, 94, .5);
+      }
+      50% {
+        box-shadow: 0 0 0 6px rgba(34, 197, 94, 0);
+      }
+    }
+
+    .sp-includes {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+
+    .sp-include {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: #fff;
+      border: 1px solid var(--sh-border);
+      border-radius: 12px;
+      padding: 16px 18px;
+      font-size: 1.3rem;
+      font-weight: 500;
+      transition: border-color .2s;
+    }
+
+    .sp-include:hover {
+      border-color: var(--sh-primary);
+    }
+
+    .sp-include__icon {
+      color: var(--sh-primary);
+      display: flex;
+      flex-shrink: 0;
+    }
+
+    .sp-steps {
+      display: grid; /* Changed to grid for better responsiveness */
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem; /* Consistent gap */
+      align-items: start;
+      justify-content: center;
+      position: relative; /* For the line */
+    }
+    .sp-steps::before { /* Horizontal line for desktop */
+        content: '';
+        position: absolute;
+        top: 55px; /* Adjust based on icon/num position */
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: var(--sh-border);
+        z-index: 0;
+        margin: 0 10%; /* To not go fully edge to edge */
+        display: none; /* Hidden on mobile, shown on larger screens */
+    }
+
+    .sp-step {
+      text-align: center;
+      flex: 1;
+      max-width: 280px;
+      position: relative;
+      background: #fff; /* Make it a card */
+      border: 1px solid var(--sh-border);
+      border-radius: var(--sh-radius-card);
+      padding: 36px 24px;
+      box-shadow: var(--sh-shadow);
+      transition: all var(--sh-transition);
+      z-index: 1; /* Above the line */
+    }
+    .sp-step:hover {
+        transform: translateY(var(--btn-hover-lift));
+        box-shadow: var(--sh-shadow-hover);
+        border-color: var(--sh-primary);
+    }
+
+    .sp-step__num {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--sh-dark);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      font-weight: 800;
+      margin: 0 auto 14px;
+      position: absolute; /* Position relative to step card */
+      top: -24px; /* Half of height to sit on the border */
+      left: 50%;
+      transform: translateX(-50%);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    }
+
+    .sp-step h3 {
+      font-size: 1.55rem;
+      font-weight: 700;
+      margin-top: 24px; /* Space for the number */
+      margin-bottom: 6px;
+      color: var(--sh-text);
+    }
+
+    .sp-step p {
+      font-size: 1.35rem;
+      color: var(--sh-text-light);
+      line-height: 1.5;
+    }
+
+    .sp-step__line {
+      display: none; /* Hide the individual lines between steps as we'll use a single line for the grid */
+    }
+
+    .sp-guarantee {
+      padding: var(--sh-section-spacing) 0; /* Consistent section spacing */
+      background: var(--sh-bg-light);
+    }
+
+    .sp-guarantee__box {
+      max-width: 520px;
+      margin: 0 auto;
+      text-align: center;
+      background: #fff;
+      border: 1px solid var(--sh-border);
+      border-radius: var(--sh-radius-card); /* Consistent card radius */
+      padding: 40px;
+      box-shadow: var(--sh-shadow); /* Apply soft shadow */
+    }
+
+    .sp-guarantee__icon {
+      color: var(--sh-primary);
+      margin-bottom: 16px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .sp-guarantee__box h3 {
+      font-size: 2rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+      color: var(--sh-text);
+    }
+
+    .sp-guarantee__box p {
+      font-size: 1.45rem;
+      color: var(--sh-text-light);
+      line-height: 1.6;
+    }
+
+    .sp-lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background: rgba(0, 0, 0, .9);
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .sp-lightbox.active {
+      display: flex;
+    }
+
+    .sp-lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      object-fit: contain;
+      border-radius: 12px;
+    }
+
+    .sp-lightbox__x {
+      position: absolute;
+      top: 20px;
+      right: 28px;
+      background: none;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      display: flex;
+    }
+
+    @media(min-width:769px) { /* Show horizontal line on larger screens */
+        .sp-steps::before {
+            display: block;
+        }
+    }
+
+    @media(max-width:968px) {
+      .sp-hero__grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .sp-gallery {
+        max-width: 500px;
+        margin: 0 auto;
+      }
+
+      .sp-includes {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .sp-steps {
+        grid-template-columns: 1fr; /* Stack steps on smaller screens */
+        max-width: 400px;
+        margin: 0 auto;
+      }
+      .sp-steps::before { /* Vertical line for mobile */
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 2px;
+          height: 100%;
+          background: var(--sh-border);
+          margin: 0;
+          display: block; /* Show vertical line on mobile */
+      }
+      .sp-step {
+          padding-top: 56px; /* Adjust padding for number on top */
+          margin-bottom: 1.5rem; /* Add spacing between stacked cards */
+      }
+      .sp-step:last-child {
+          margin-bottom: 0;
+      }
+      .sp-step__num {
+          top: -24px;
+      }
+
+      .sh-compare {
+        grid-template-columns: 1fr; /* Changed to 1 column on mobile */
+      }
+    }
+
+    @media(max-width:640px) {
+      .sh-compare {
+        grid-template-columns: 1fr;
+      }
+
+      .sh-compare__side {
+        padding: 16px 12px;
+      }
+
+      .sh-compare__side h3 {
+        font-size: 1.15rem;
+      }
+
+      .sh-compare__row {
+        font-size: 1.1rem;
+      }
+
+      .sp-includes {
+        grid-template-columns: 1fr;
+      }
+
+      .sp-trust {
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      body {
+        padding-bottom: 66px;
+      }
+    }
+
+    .cd-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0);
+      z-index: 9990;
+      pointer-events: none;
+      transition: background var(--sh-transition);
+    }
+
+    .cd-overlay.is-active {
+      background: rgba(0, 0, 0, .45);
+      pointer-events: auto;
+      backdrop-filter: blur(2px);
+      -webkit-backdrop-filter: blur(2px);
+    }
+
+    .cd-drawer {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 420px;
+      max-width: 92vw;
+      background: var(--sh-bg); /* Use main background color */
+      z-index: 9991;
+      display: flex;
+      flex-direction: column;
+      transform: translateX(100%);
+      transition: transform .4s cubic-bezier(.32, .72, 0, 1);
+      box-shadow: -8px 0 32px rgba(0, 0, 0, .12);
+      overflow: hidden;
+    }
+
+    .cd-drawer.is-open {
+      transform: translateX(0);
+    }
+
+    [dir="rtl"] .cd-drawer {
+      right: auto;
+      left: 0;
+      transform: translateX(-100%);
+    }
+
+    [dir="rtl"] .cd-drawer.is-open {
+      transform: translateX(0);
+    }
+
+    @media(max-width:480px) {
+      .cd-drawer {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+
+    .cd-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid var(--sh-border);
+      flex-shrink: 0;
+    }
+
+    .cd-header__left {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+    }
+
+    .cd-header__title {
+      font-family: var(--sh-font-heading);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--sh-text);
+      margin: 0;
+    }
+
+    .cd-header__count {
+      font-size: .85rem;
+      color: var(--sh-text-muted);
+      font-weight: 400;
+    }
+
+    .cd-close {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: .375rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--sh-text);
+      transition: background var(--sh-transition);
+    }
+
+    .cd-close:hover {
+      background: var(--sh-bg-light);
+    }
+
+    .cd-shipping-bar {
+      padding: .625rem 1.25rem;
+      background: var(--sh-bg-light);
+      border-bottom: 1px solid var(--sh-border);
+      flex-shrink: 0;
+    }
+
+    .cd-shipping-bar__text {
+      font-size: .78rem;
+      color: var(--sh-text);
+      text-align: center;
+      margin-bottom: .375rem;
+      font-weight: 500;
+    }
+
+    .cd-shipping-bar__text.is-unlocked {
+      color: #16a34a;
+      font-weight: 600;
+    }
+
+    .cd-shipping-bar__track {
+      height: 4px;
+      background: var(--sh-border);
+      border-radius: 99px;
+      overflow: hidden;
+    }
+
+    .cd-shipping-bar__fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--sh-primary), var(--sh-accent)); /* Use brand colors */
+      border-radius: 99px;
+      transition: width .6s cubic-bezier(.4, 0, .2, 1);
+      min-width: 0;
+    }
+
+    .cd-shipping-bar__fill.is-full {
+      background: #16a34a;
+    }
+
+    .cd-toast {
+      display: flex;
+      align-items: center;
+      gap: .625rem;
+      padding: .75rem 1.25rem;
+      background: #ecfdf5;
+      border-bottom: 1px solid #bbf7d0;
+      transform: translateY(-100%);
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: all .4s cubic-bezier(.4, 0, .2, 1);
+    }
+
+    .cd-toast.is-visible {
+      transform: translateY(0);
+      max-height: 60px;
+      opacity: 1;
+    }
+
+    .cd-toast__icon {
+      flex-shrink: 0;
+      width: 24px;
+      height: 24px;
+      background: #16a34a;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+    }
+
+    .cd-toast__text {
+      font-size: .82rem;
+      color: #166534;
+      line-height: 1.3;
+    }
+
+    .cd-toast__text strong {
+      display: block;
+      font-size: .85rem;
+    }
+
+    .cd-toast__text span {
+      opacity: .8;
+    }
+
+    .cd-body {
+      flex: 1;
+      overflow-y: auto;
+      overflow-x: hidden;
+      overscroll-behavior: contain;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .cd-body::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    .cd-body::-webkit-scrollbar-thumb {
+      background: var(--sh-border);
+      border-radius: 2px;
+    }
+
+    .cd-empty {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      min-height: 50vh;
+    }
+
+    .cd-empty__icon {
+      margin-bottom: 1rem;
+      color: var(--sh-text-muted);
+    }
+
+    .cd-empty__title {
+      font-family: var(--sh-font-heading);
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--sh-text);
+      margin: 0 0 .375rem;
+    }
+
+    .cd-empty__sub {
+      font-size: .85rem;
+      color: var(--sh-text-muted);
+      margin: 0 0 1.5rem;
+    }
+
+    .cd-items {
+      padding: .5rem 0;
+    }
+
+    .cd-item {
+      display: flex;
+      gap: .875rem;
+      padding: .875rem 1.25rem;
+      border-bottom: 1px solid var(--sh-border-light);
+      animation: cdSlideIn .35s ease;
+    }
+
+    @keyframes cdSlideIn {
+      from {
+        opacity: 0;
+        transform: translateX(20px);
+      }
+      to {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    .cd-item__img-wrap {
+      width: 72px;
+      height: 72px;
+      flex-shrink: 0;
+      border-radius: calc(var(--sh-radius-sm) / 2);
+      overflow: hidden;
+      background: var(--sh-bg-light);
+      border: 1px solid var(--sh-border);
+    }
+
+    .cd-item__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .cd-item__details {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-width: 0;
+    }
+
+    .cd-item__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: .5rem;
+    }
+
+    .cd-item__name {
+      font-size: .88rem;
+      font-weight: 600;
+      color: var(--sh-text);
+      margin: 0;
+      line-height: 1.3;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+
+    .cd-item__remove {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: .25rem;
+      color: var(--sh-text-muted);
+      border-radius: 4px;
+      flex-shrink: 0;
+      transition: color var(--sh-transition), background var(--sh-transition);
+    }
+
+    .cd-item__remove:hover {
+      color: #ef4444;
+      background: #fef2f2;
+    }
+
+    .cd-item__variant {
+      font-size: .78rem;
+      color: var(--sh-text-muted);
+      margin: .125rem 0;
+    }
+
+    .cd-item__bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: .25rem;
+    }
+
+    .cd-item__qty {
+      display: flex;
+      align-items: center;
+      border: 1px solid var(--sh-border);
+      border-radius: calc(var(--sh-radius-sm) / 2);
+      overflow: hidden;
+    }
+
+    .cd-item__qty-btn {
+      width: 28px;
+      height: 28px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--sh-text-light);
+      transition: background .15s;
+    }
+
+    .cd-item__qty-btn:hover {
+      background: var(--sh-bg-light);
+    }
+
+    .cd-item__qty-val {
+      min-width: 28px;
+      text-align: center;
+      font-size: .82rem;
+      font-weight: 600;
+      color: var(--sh-text);
+    }
+
+    .cd-item__price {
+      font-size: .92rem;
+      font-weight: 700;
+      color: var(--sh-primary);
+    }
+
+    .cd-urgency {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      padding: .5rem 1.25rem;
+      background: #fffbeb;
+      border-top: 1px solid #fde68a;
+      font-size: .78rem;
+      color: #92400e;
+    }
+
+    .cd-urgency__dot {
+      width: 6px;
+      height: 6px;
+      background: #f59e0b;
+      border-radius: 50%;
+      animation: cdPulse 1.5s infinite;
+    }
+
+    @keyframes cdPulse {
+      0%, 100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: .4;
+      }
+    }
+
+    .cd-footer {
+      flex-shrink: 0;
+      border-top: 1px solid var(--sh-border);
+      padding: 1rem 1.25rem;
+      background: var(--sh-bg);
+    }
+
+    .cd-savings {
+      background: #ecfdf5;
+      border-radius: calc(var(--sh-radius-sm) / 2);
+      padding: .5rem .75rem;
+      margin-bottom: .75rem;
+      text-align: center;
+    }
+
+    .cd-savings__text {
+      font-size: .82rem;
+      color: #166534;
+    }
+
+    .cd-subtotal {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: .5rem;
+    }
+
+    .cd-subtotal__label {
+      font-size: .9rem;
+      color: var(--sh-text);
+      font-weight: 500;
+    }
+
+    .cd-subtotal__price {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--sh-primary);
+    }
+
+    .cd-delivery {
+      display: flex;
+      align-items: center;
+      gap: .375rem;
+      font-size: .78rem;
+      color: var(--sh-text-muted);
+      margin-bottom: .75rem;
+    }
+
+    .cd-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: .5rem;
+      width: 100%;
+      padding: .8rem 1rem;
+      border: none;
+      border-radius: var(--sh-radius-sm);
+      font-size: .95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all var(--sh-transition);
+      text-decoration: none;
+      text-align: center;
+      line-height: 1.4;
+    }
+
+    .cd-btn--primary {
+      background: var(--sh-primary);
+      color: #fff;
+    }
+
+    .cd-btn--primary:hover {
+      opacity: .9;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
+    }
+
+    .cd-btn--outline {
+      background: transparent;
+      border: 2px solid var(--sh-primary);
+      color: var(--sh-primary);
+    }
+
+    .cd-btn--outline:hover {
+      background: var(--sh-primary);
+      color: #fff;
+    }
+
+    .cd-btn--ghost {
+      background: none;
+      border: none;
+      color: var(--sh-text-muted);
+      font-size: .82rem;
+      padding: .375rem;
+      text-decoration: underline;
+      font-weight: 400;
+    }
+
+    .cd-btn--ghost:hover {
+      color: var(--sh-text);
+    }
+
+    .cd-btn--primary.is-pulsing {
+      animation: cdCheckoutPulse 2s infinite;
+    }
+
+    @keyframes cdCheckoutPulse {
+      0%, 100% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, .15);
+      }
+      50% {
+        box-shadow: 0 0 0 8px rgba(0, 0, 0, 0);
+      }
+    }
+
+    .cd-trust {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .375rem;
+      justify-content: center;
+      margin-top: .75rem;
+      padding-top: .625rem;
+      border-top: 1px solid var(--sh-border-light);
+    }
+
+    .cd-trust__badge {
+      display: flex;
+      align-items: center;
+      gap: .25rem;
+      font-size: .7rem;
+      color: var(--sh-text-muted);
+      white-space: nowrap;
+    }
+
+    .cd-trust__badge svg {
+      color: #31A156; /* Green for trust badges */
+    }
+
+    .cd-social-proof {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: .5rem;
+      margin-top: .625rem;
+      font-size: .72rem;
+      color: var(--sh-text-muted);
+    }
+
+    .cd-social-proof__avatars {
+      display: flex;
+    }
+
+    .cd-avatar {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: var(--sh-primary);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: .55rem;
+      font-weight: 700;
+      border: 2px solid var(--sh-bg);
+      margin-left: -6px;
+    }
+
+    .cd-avatar:first-child {
+      margin-left: 0;
+    }
+
+    .cd-payment-methods {
+      display: flex;
+      justify-content: center;
+      gap: .375rem;
+      margin-top: .5rem;
+    }
+
+    .cd-pm {
+      font-size: .6rem;
+      padding: .15rem .375rem;
+      border: 1px solid var(--sh-border);
+      border-radius: 3px;
+      color: var(--sh-text-muted);
+      letter-spacing: .02em;
+    }
+
+    @media(max-width:480px) {
+      .cd-item__img-wrap {
+        width: 60px;
+        height: 60px;
+      }
+
+      .cd-header {
+        padding: .875rem 1rem;
+      }
+
+      .cd-footer {
+        padding: .875rem 1rem;
+      }
+
+      .cd-item {
+        padding: .75rem 1rem;
+      }
+
+      .cd-shipping-bar {
+        padding: .5rem 1rem;
+      }
+    }
+
+    .cd-item.is-removing {
+      animation: cdSlideOut .3s ease forwards;
+    }
+
+    @keyframes cdSlideOut {
+      to {
+        opacity: 0;
+        transform: translateX(30px);
+        max-height: 0;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+      }
+    }
+  </style>
+  
+</head>
+<body>
+  
+  <!-- Announcement Bar -->
+  <div class="sh-announce" id="announcementBar">
+    <div class="sh-announce__track">
+      <div class="sh-announce__slide active">🎉 Unlock 60% OFF: Your Dream Wedding, Perfectly Planned & Stress-Free!</div>
+      <div class="sh-announce__slide">✨ Instant Download. Zero Shipping. Start Planning in Minutes!</div>
+      <div class="sh-announce__slide">✅ Love Your Planner or Get 100% Your Money Back – Guaranteed!</div>
+    </div>
+  </div>
+
+  <header class="sh-header">
+    <div class="sh-header__inner">
+      <button class="sh-header__hamburger" id="menuToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <a href="index.html" class="sh-header__logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 242 44" width="242" height="44" role="img" aria-label="WeddingPlannerPro">
+  <defs>
+    <linearGradient id="lG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B76E79"/>
+      <stop offset="100%" stop-color="#D4A574"/>
+    </linearGradient>
+    <filter id="lS" x="-15%" y="-15%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#B76E79" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <!-- Icon mark -->
+  <g filter="url(#lS)">
+    <rect x="1" y="3" width="38" height="38" rx="10" fill="url(#lG)"/>
+  </g>
+  <g transform="translate(10, 12) scale(0.833)" fill="#fff">
+    <path d="M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="50" y="23" dominant-baseline="central" font-family="'Playfair Display',serif" font-weight="700" font-size="19" letter-spacing="-0.03em" fill="currentColor">WeddingPlannerPro</text>
+</svg></a>
+      <nav class="sh-header__nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="product/wedding-planner-spreadsheet-for-google-budget-tracker-guest-list-seating-plan-ch.html">Product</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="sh-header__right">
+        <div class="sh-lang" id="langDropdown">
+          <button class="sh-lang__btn" id="langToggle" aria-label="Language" aria-expanded="false">
+            <svg width="18" height="13" viewBox="0 0 18 13"><rect width="18" height="13" rx="1.5" fill="#012169"/><path d="M0 0l18 13M18 0L0 13" stroke="#fff" stroke-width="2"/><path d="M0 0l18 13M18 0L0 13" stroke="#C8102E" stroke-width="1"/><path d="M9 0v13M0 6.5h18" stroke="#fff" stroke-width="3.5"/><path d="M9 0v13M0 6.5h18" stroke="#C8102E" stroke-width="2"/></svg>
+            <span class="sh-lang__label">EN</span>
+            <svg class="sh-lang__chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="sh-lang__menu" id="langMenu">
+            <a class="sh-lang__option" href="/fr/index.html"><svg width="18" height="13" viewBox="0 0 18 13"><rect width="6" height="13" fill="#002395"/><rect x="6" width="6" height="13" fill="#fff"/><rect x="12" width="6" height="13" fill="#ED2939"/></svg><span>FR</span></a>
+<a class="sh-lang__option" href="/es/index.html"><svg width="18" height="13" viewBox="0 0 18 13"><rect width="18" height="3.25" fill="#AA151B"/><rect y="3.25" width="18" height="6.5" fill="#F1BF00"/><rect y="9.75" width="18" height="3.25" fill="#AA151B"/></svg><span>ES</span></a>
+          </div>
+        </div>
+        <button class="sh-header__cart" onclick="window.openCartDrawer && openCartDrawer(false)" aria-label="Cart">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          <span class="sh-header__cart-count" id="cartBadge" style="display:none">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="sp-breadcrumb">
+    <div class="sh-container">
+      <a href="index.html">Home</a> <span>›</span> <span class="sp-breadcrumb__current">The Ultimate Wedding Planner Spreadsheet</span>
+    </div>
+  </div>
+
+  <section class="sp-hero">
+    <div class="sh-container sp-hero__grid">
+      <!-- Gallery -->
+      <div class="sp-gallery">
+        <div class="sp-gallery__main">
+          <img id="mainImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjY3NSIgdmlld0JveD0iMCAwIDEyMDAgNjc1Ij4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiMxRTQwQUYiLz4KICAgICAgICA8c3RvcCBvZmZzZXQ9IjU1JSIgc3R5bGU9InN0b3AtY29sb3I6IzFFNDBBRiIvPgogICAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6I0Y1OUUwQiIvPgogICAgICA8L2xpbmVhcUdyYWRpZW50PgogICAgPC9kZWZzPgogICAgPHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNnKSIvPgogICAgPHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSInUG9wcGlucycsQXJpYWwsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZm9udC13ZWlnaHQ9IjYwMCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjYpIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIj5Qcm9kdWN0IE1vY2t1cDwvdGV4dD4KICA8L3N2Zz4=" alt="The Ultimate Wedding Planner Spreadsheet for Google Sheets and Excel" class="sp-gallery__img" onclick="openLB()" />
+          <div class="sp-gallery__badge">60% OFF</div>
+        </div>
+        
+      </div>
+
+      <!-- Product Info -->
+      <div class="sp-info">
+        <div class="sp-info__badge"><span class="sp-info__badge-dot"></span>FLASH SALE: 60% OFF Your Dream Wedding Planner!</div>
+        <h1 class="sp-info__title">Plan Your Dream Wedding Flawlessly, Without the Stress</h1>
+        <p class="sp-info__tagline">Unlock the secret to an effortlessly organized wedding with this all-in-one digital toolkit. Say goodbye to scattered notes and hello to calm confidence.</p>
+
+        <div class="sp-info__rating">
+          <span class="sp-stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></span>
+          <span class="sp-rating-text">Trusted by 12,000+ Engaged Couples. 4.9/5 Stars!</span>
+        </div>
+
+        <div class="sp-info__price">
+          <span class="sp-price">$9.99</span>
+          <span class="sp-price--old">$24.99</span>
+          <span class="sp-save">Save 60%</span>
+        </div>
+        <div class="sp-info__savings-note">You save $15.00 today! Invest in peace of mind. That's less than a single fancy latte for your *entire* wedding, perfectly organized and stress-free.</div>
+
+        <div class="sp-info__desc"><p>Imagine your wedding planning journey transformed: no more overwhelming tabs, no more missed deadlines, just serene confidence. The Ultimate Wedding Planner Spreadsheet is your personal digital command center, meticulously crafted for engaged couples like you. This powerful, all-in-one file features 47 pre-built, interconnected tabs, an auto-calculating budget, capacity for 500+ guests, and a unique 'Smart Calendar' for crystal-clear visual timeline tracking. Fully editable in both Google Sheets and Microsoft Excel, it's ready to turn your wedding overwhelm into pure, unadulterated joy – instantly.</p></div>
+
+        <div class="sp-info__checklist">
+          <div class="sp-check"><span class="sp-check__icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></span> 💰 <strong>Master Your Budget:</strong> Automatically track every expense, auto-calculate categories, and instantly see where every dollar goes – no more overspending surprises.</div>
+<div class="sp-check"><span class="sp-check__icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></span> 👥 <strong>Effortless Guest Management:</strong> Seamlessly track 500+ RSVPs, dietary restrictions, and gifts. Simplify seating plans and communication with a single click.</div>
+<div class="sp-check"><span class="sp-check__icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></span> ✅ <strong>Vendor Control:</strong> Never miss a payment or contract deadline again. Track all vendor details, deposits, and due dates in one organized dashboard.</div>
+<div class="sp-check"><span class="sp-check__icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></span> 🗓️ <strong>Flawless Day-Of Execution:</strong> Generate a concise, printable day-of guide in seconds, ensuring every moment flows perfectly on your special day.</div>
+<div class="sp-check"><span class="sp-check__icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></span> ✨ <strong>Visual Timeline Mastery:</strong> See your entire planning journey at a glance with the intuitive 'Smart Calendar' timeline, making big-picture planning a breeze.</div>
+<div class="sp-check"><span class="sp-check__icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></span> 📝 <strong>Complete Task Checklist:</strong> Stay ahead with a pre-populated, 200+ task checklist, organized month-by-month to guarantee nothing is forgotten.</div>
+        </div>
+
+        <button class="sh-btn sh-btn--dark sh-btn--lg sh-btn--pulse" id="atcBtn" onclick="doATC()">
+          <span id="atcLabel">Get Instant Access & Plan Your Dream Day! — $9.99</span>
+          <span id="atcSpin" style="display:none"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" class="sp-spin"><path d="M12 2v4m0 12v4m-7.07-3.93l2.83-2.83m8.48-8.48l2.83-2.83M2 12h4m12 0h4"/></svg></span>
+          <span id="atcOk" style="display:none">Added to Cart!</span>
+        </button>
+        <p class="sp-atc__micro"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10"/></svg> ⚡️ Instant Download • No Recurring Fees • Lifetime Access & Updates</p>
+
+        <div class="sp-trust">
+          <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> 🔒 100% Secure & Encrypted Checkout</span>
+          <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10"/></svg> ⚡️ Instant Digital Access</span>
+          <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg> ✅ 30-Day 'Love It or Your Money Back' Guarantee</span>
+        </div>
+
+        <div class="sp-pays">
+          <svg viewBox="0 0 48 32" width="38" height="24"><rect width="48" height="32" rx="4" fill="#1A1F71"/><text x="24" y="20" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">VISA</text></svg>
+          <svg viewBox="0 0 48 32" width="38" height="24"><rect width="48" height="32" rx="4" fill="#252525"/><circle cx="18" cy="16" r="8" fill="#EB001B"/><circle cx="30" cy="16" r="8" fill="#F79E1B"/></svg>
+          <svg viewBox="0 0 48 32" width="38" height="24"><rect width="48" height="32" rx="4" fill="#003087"/><text x="24" y="20" text-anchor="middle" fill="#fff" font-size="9" font-weight="bold">PayPal</text></svg>
+          <svg viewBox="0 0 48 32" width="38" height="24"><rect width="48" height="32" rx="4" fill="#635BFF"/><text x="24" y="20" text-anchor="middle" fill="#fff" font-size="9" font-weight="bold">Stripe</text></svg>
+          <svg width="38" height="24" viewBox="0 0 48 32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="48" height="32" rx="4" fill="#000"/><path d="M37.6418 15.6946C37.6418 14.0772 38.9958 13.0642 40.7186 13.0642C42.3486 13.0642 43.606 14.0308 43.606 15.6012C43.606 16.4866 43.1678 17.0788 42.1548 17.561L42.1548 17.6074C43.7314 18.2912 44.5926 19.394 44.5926 21.1648C44.5926 23.327 42.775 24.8458 40.4074 24.8458C38.1362 24.8458 36.3186 23.3734 36.3186 21.2112C36.3186 20.3258 36.7568 19.7336 37.7698 19.2514L37.7698 19.205C36.1934 18.5212 35.3322 17.4184 35.3322 15.6946H37.6418ZM40.7186 14.7176C40.0348 14.7176 39.5002 15.1558 39.5002 15.748C39.5002 16.3402 40.0348 16.7238 40.7186 16.7238C41.4024 16.7238 41.937 16.3402 41.937 15.748C41.937 15.1558 41.4024 14.7176 40.7186 14.7176ZM40.4074 23.1924C41.1396 23.1924 41.6742 22.709 41.6742 22.1168C41.6742 21.5246 41.1396 21.1398 40.4074 21.1398C39.6752 21.1398 39.1406 21.5246 39.1406 22.1168C39.1406 22.709 39.6752 23.1924 40.4074 23.1924ZM23.8342 13.0642H26.0962L25.0342 24.8458H22.7722L23.8342 13.0642ZM17.481 24.8458H15.1714L15.9926 13.0642H18.2546L17.481 24.8458ZM10.231 13.0642L6.3778 24.8458H8.8418L10.231 19.2514L11.6202 24.8458H14.0842L10.231 13.0642ZM0.000244141 13.0642H2.31084L4.02024 21.9212L5.68164 13.0642H7.99224L4.02024 24.8458H1.70964L0.000244141 13.0642Z" fill="#fff"/></svg>
+          <svg width="38" height="24" viewBox="0 0 48 32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="48" height="32" rx="4" fill="#000"/><path d="M37.6418 15.6946C37.6418 14.0772 38.9958 13.0642 40.7186 13.0642C42.3486 13.0642 43.606 14.0308 43.606 15.6012C43.606 16.4866 43.1678 17.0788 42.1548 17.561L42.1548 17.6074C43.7314 18.2912 44.5926 19.394 44.5926 21.1648C44.5926 23.327 42.775 24.8458 40.4074 24.8458C38.1362 24.8458 36.3186 23.3734 36.3186 21.2112C36.3186 20.3258 36.7568 19.7336 37.7698 19.2514L37.7698 19.205C36.1934 18.5212 35.3322 17.4184 35.3322 15.6946H37.6418ZM40.7186 14.7176C40.0348 14.7176 39.5002 15.1558 39.5002 15.748C39.5002 16.3402 40.0348 16.7238 40.7186 16.7238C41.4024 16.7238 41.937 16.3402 41.937 15.748C41.937 15.1558 41.4024 14.7176 40.7186 14.7176ZM40.4074 23.1924C41.1396 23.1924 41.6742 22.709 41.6742 22.1168C41.6742 21.5246 41.1396 21.1398 40.4074 21.1398C39.6752 21.1398 39.1406 21.5246 39.1406 22.1168C39.1406 22.709 39.6752 23.1924 40.4074 23.1924ZM23.8342 13.0642H26.0962L25.0342 24.8458H22.7722L23.8342 13.0642ZM17.481 24.8458H15.1714L15.9926 13.0642H18.2546L17.481 24.8458ZM10.231 13.0642L6.3778 24.8458H8.8418L10.231 19.2514L11.6202 24.8458H14.0842L10.231 13.0642ZM0.000244141 13.0642H2.31084L4.02024 21.9212L5.68164 13.0642H7.99224L4.02024 24.8458H1.70964L0.000244141 13.0642Z" fill="#fff"/></svg>
+        </div>
+
+        <!-- Viewing now indicator -->
+        <div class="sp-info__viewers">
+          <span class="sp-info__viewers-dot"></span>
+          <span id="liveVisitors">34</span> couples are planning their perfect wedding right now!
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sh-section sh-section--white" data-reveal>
+    <div class="sh-container">
+      <div class="sh-section__header">
+        <span class="sh-pill">Your Journey to a Perfect Day</span>
+        <h2 class="sh-section__title">Your Dream Wedding, Just 3 Simple Steps Away</h2>
+      </div>
+      <div class="sp-steps">
+        
+        
+        <div class="sp-step" data-reveal>
+          <div class="sp-step__num">1</div>
+          <h3>1. Instant Access to Your Toolkit</h3>
+          <p>Receive your Ultimate Wedding Planner Spreadsheet for Google Sheets or Excel immediately after purchase. No waiting, no fuss – start planning in minutes!</p>
+        </div>
+
+        <div class="sp-step__line"></div>
+        <div class="sp-step" data-reveal data-delay="150">
+          <div class="sp-step__num">2</div>
+          <h3>2. Personalize with Ease</h3>
+          <p>Effortlessly input your unique guest list, preferred vendors, budget specifics, and all your wedding details into the intuitive, pre-built tabs.</p>
+        </div>
+
+        <div class="sp-step__line"></div>
+        <div class="sp-step" data-reveal data-delay="300">
+          <div class="sp-step__num">3</div>
+          <h3>3. Plan with Unrivaled Confidence</h3>
+          <p>Watch as your spreadsheet intelligently auto-calculates, tracks, and organizes every element. Enjoy a stress-free journey to your beautifully coordinated wedding day.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sh-section sh-section--light" data-reveal>
+    <div class="sh-container">
+      <div class="sh-section__header">
+        <span class="sh-pill">The Clear Choice</span>
+        <h2 class="sh-section__title">Still Hesitating? Here's the Stark Reality.</h2>
+      </div>
+      <div class="sh-compare">
+        <div class="sh-compare__side sh-compare__side--bad" data-reveal data-delay="0">
+          <h3><span class="sh-compare__icon sh-compare__icon--bad"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span> ❌ The Old Way: Stress, Chaos & Overwhelm</h3>
+          <div class="sh-compare__row"><span class="sh-compare__bullet sh-compare__bullet--bad"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>Endless scattered notes, 10+ open tabs, and clunky, disconnected templates.</div>
+<div class="sh-compare__row"><span class="sh-compare__bullet sh-compare__bullet--bad"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>Hours wasted on manual data entry, risking costly errors and forgotten details.</div>
+<div class="sh-compare__row"><span class="sh-compare__bullet sh-compare__bullet--bad"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>Struggling to track 50+ guests, let alone their dietary needs and RSVPs.</div>
+<div class="sh-compare__row"><span class="sh-compare__bullet sh-compare__bullet--bad"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>Generic checklists that offer no real progress insight, leaving you feeling lost.</div>
+<div class="sh-compare__row"><span class="sh-compare__bullet sh-compare__bullet--bad"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>Frantically creating a day-of schedule from scratch, prone to last-minute panic.</div>
+<div class="sh-compare__row"><span class="sh-compare__bullet sh-compare__bullet--bad"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>Stuck with incompatible files or buggy conversions between Google Sheets and Excel.</div>
+        </div>
+        <div class="sh-compare__side sh-compare__side--good" data-reveal data-delay="100">
+          <h3><span class="sh-compare__icon sh-compare__icon--good"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></span> ✅ The New Way: Effortless Control & Pure Joy</h3>
+          <div class="sh-compare__row"><span class="sh-compare__bullet sh-compare__bullet--good"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></span>Your entire wedding centralized in 47 intuitive, interconnected tabs.</div>
+<div class="sh-compare__row"><span class="sh-compare__bullet sh-compare__bullet--good"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></span>Automated budget tracking, RSVP management, and critical deadline alerts.</div>
+<div class="sh-compare__row"><span class="sh-compare__bullet sh-compare__bullet--good"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></span>Effortlessly manage 500+ guests, including RSVPs, dietary needs, and seating.</div>
+<div class="sh-compare__row"><span class="sh-compare__bullet sh-compare__bullet--good"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></span>A 'Smart Calendar' for a visual, crystal-clear overview of your entire timeline.</div>
+<div class="sh-compare__row"><span class="sh-compare__bullet sh-compare__bullet--good"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></span>One-click generation of elegant, printable day-of guides for a seamless event.</div>
+<div class="sh-compare__row"><span class="sh-compare__bullet sh-compare__bullet--good"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></span>Full compatibility with both Google Sheets and Microsoft Excel for ultimate flexibility.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sh-section sh-section--white" data-reveal>
+    <div class="sh-container">
+      <div class="sh-section__header">
+        <span class="sh-pill">Reviews</span>
+        <h2 class="sh-section__title">What 12,000+ Happy Couples Are Raving About!</h2>
+        <p class="sh-section__sub">Real reviews from verified purchasers who transformed their wedding planning.</p>
+      </div>
+      <div class="sh-testimonials">
+        
+        <div class="sh-testimonial" data-reveal data-delay="0">
+          <div class="sh-testimonial__top">
+            <div class="sh-testimonial__stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+            <span class="sh-testimonial__verified"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg> Verified</span>
+          </div>
+          <h4 class="sh-testimonial__title">Literally Saved Our Wedding!</h4>
+          <p class="sh-testimonial__text">"Before, I was drowning in tabs. After WeddingPlannerPro, we not only organized our 250-guest wedding effortlessly but also stayed $1,200 UNDER budget! A true lifesaver."</p>
+          <div class="sh-testimonial__footer">
+            <div class="sh-testimonial__author">
+              <img class="sh-testimonial__avatar-img" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=80&h=80&fit=crop&crop=faces&auto=format" alt="Sarah P." loading="lazy" />
+              <div><strong>Sarah P.</strong><br><small>Austin</small></div>
+            </div>
+            <span class="sh-testimonial__date">2d ago</span>
+          </div>
+        </div>
+
+        <div class="sh-testimonial" data-reveal data-delay="80">
+          <div class="sh-testimonial__top">
+            <div class="sh-testimonial__stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+            <span class="sh-testimonial__verified"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg> Verified</span>
+          </div>
+          <h4 class="sh-testimonial__title">Transformed Our Planning Experience!</h4>
+          <p class="sh-testimonial__text">"This spreadsheet was a game-changer. Tracking 15 vendors and all payments went from a nightmare to completely seamless. Everything in one place, total peace of mind!"</p>
+          <div class="sh-testimonial__footer">
+            <div class="sh-testimonial__author">
+              <img class="sh-testimonial__avatar-img" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=faces&auto=format" alt="Michael &amp; Jen S." loading="lazy" />
+              <div><strong>Michael &amp; Jen S.</strong><br><small>New York</small></div>
+            </div>
+            <span class="sh-testimonial__date">5d ago</span>
+          </div>
+        </div>
+
+        <div class="sh-testimonial" data-reveal data-delay="160">
+          <div class="sh-testimonial__top">
+            <div class="sh-testimonial__stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#e5e7eb"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+            <span class="sh-testimonial__verified"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg> Verified</span>
+          </div>
+          <h4 class="sh-testimonial__title">Guest List? No Problem!</h4>
+          <p class="sh-testimonial__text">"I used to dread guest list management, but this spreadsheet made tracking 180 RSVPs and dietary needs an absolute breeze. It's a godsend for any bride!"</p>
+          <div class="sh-testimonial__footer">
+            <div class="sh-testimonial__author">
+              <img class="sh-testimonial__avatar-img" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=80&h=80&fit=crop&crop=faces&auto=format" alt="Emily R." loading="lazy" />
+              <div><strong>Emily R.</strong><br><small>Denver</small></div>
+            </div>
+            <span class="sh-testimonial__date">8d ago</span>
+          </div>
+        </div>
+
+        <div class="sh-testimonial" data-reveal data-delay="240">
+          <div class="sh-testimonial__top">
+            <div class="sh-testimonial__stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+            <span class="sh-testimonial__verified"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg> Verified</span>
+          </div>
+          <h4 class="sh-testimonial__title">Flawless Day-Of Timeline!</h4>
+          <p class="sh-testimonial__text">"Building our wedding day timeline was so clear and organized with this tool. Far superior to any other template I tried; it brought genuine calm to the final weeks."</p>
+          <div class="sh-testimonial__footer">
+            <div class="sh-testimonial__author">
+              <img class="sh-testimonial__avatar-img" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&fit=crop&crop=faces&auto=format" alt="David L." loading="lazy" />
+              <div><strong>David L.</strong><br><small>Chicago</small></div>
+            </div>
+            <span class="sh-testimonial__date">14d ago</span>
+          </div>
+        </div>
+
+        <div class="sh-testimonial" data-reveal data-delay="320">
+          <div class="sh-testimonial__top">
+            <div class="sh-testimonial__stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+            <span class="sh-testimonial__verified"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg> Verified</span>
+          </div>
+          <h4 class="sh-testimonial__title">Saved Us Thousands!</h4>
+          <p class="sh-testimonial__text">"I tracked over $30,000 in wedding expenses with ease. This spreadsheet single-handedly saved us from hiring a full-time planner and kept our finances perfectly transparent. Beyond expectations!"</p>
+          <div class="sh-testimonial__footer">
+            <div class="sh-testimonial__author">
+              <img class="sh-testimonial__avatar-img" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=faces&auto=format" alt="Jessica M." loading="lazy" />
+              <div><strong>Jessica M.</strong><br><small>Los Angeles</small></div>
+            </div>
+            <span class="sh-testimonial__date">21d ago</span>
+          </div>
+        </div>
+
+        <div class="sh-testimonial" data-reveal data-delay="400">
+          <div class="sh-testimonial__top">
+            <div class="sh-testimonial__stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#e5e7eb"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+            <span class="sh-testimonial__verified"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg> Verified</span>
+          </div>
+          <h4 class="sh-testimonial__title">DIY Bride's Best Friend!</h4>
+          <p class="sh-testimonial__text">"As a DIY bride, the 200+ task checklist was my secret weapon. I felt confident and in control, knowing absolutely nothing would be forgotten. Truly perfect!"</p>
+          <div class="sh-testimonial__footer">
+            <div class="sh-testimonial__author">
+              <img class="sh-testimonial__avatar-img" src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=80&h=80&fit=crop&crop=faces&auto=format" alt="Chloe B." loading="lazy" />
+              <div><strong>Chloe B.</strong><br><small>Miami</small></div>
+            </div>
+            <span class="sh-testimonial__date">30d ago</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sh-section sh-section--light" data-reveal>
+    <div class="sh-container sh-container--narrow">
+      <div class="sh-section__header">
+        <span class="sh-pill">FAQ</span>
+        <h2 class="sh-section__title">Frequently Asked Questions</h2>
+      </div>
+      <div class="sh-faq">
+        
+        <details class="sh-faq__item" data-reveal data-delay="0">
+          <summary class="sh-faq__q">
+            <span>I'm not a tech wizard. Is this spreadsheet easy to use?</span>
+            <svg class="sh-faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="sh-faq__a">Not at all! We designed this spreadsheet for *everyone*, regardless of tech skill. It features clear, step-by-step instructions and an intuitive, user-friendly layout. If you can use Google Sheets or Excel, you can master your wedding planning with this tool.</div>
+        </details>
+
+        <details class="sh-faq__item" data-reveal data-delay="80">
+          <summary class="sh-faq__q">
+            <span>Can't I just find a free template online?</span>
+            <svg class="sh-faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="sh-faq__a">While many basic free templates exist, none offer the comprehensive, auto-calculated, and fully integrated solution found here. We've spent hundreds of hours perfecting this all-in-one system, saving you from the frustration of piecing together disjointed, error-prone files. This is an investment in your peace of mind and precious time.</div>
+        </details>
+
+        <details class="sh-faq__item" data-reveal data-delay="160">
+          <summary class="sh-faq__q">
+            <span>How much time will this *really* save me?</span>
+            <svg class="sh-faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="sh-faq__a">Absolutely, it's designed to save you *hundreds* of hours. Our automated tracking, pre-built formulas, and centralized 47-tab system eliminate the need for manual calculations and constant cross-referencing. Imagine focusing on enjoying your engagement, not endless data entry. That's the power of WeddingPlannerPro.</div>
+        </details>
+
+        <details class="sh-faq__item" data-reveal data-delay="240">
+          <summary class="sh-faq__q">
+            <span>Is this digital planner really worth the investment?</span>
+            <svg class="sh-faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="sh-faq__a">Consider this a tiny investment that protects you from potentially *thousands* in costly mistakes, budget overruns, and immense stress. For less than the price of a single latte, you gain complete control and peace of mind for your entire wedding planning journey. It's an invaluable asset.</div>
+        </details>
+
+        <details class="sh-faq__item" data-reveal data-delay="320">
+          <summary class="sh-faq__q">
+            <span>My wedding is unique. Is this customizable?</span>
+            <svg class="sh-faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="sh-faq__a">Yes, 100%! Every single section is fully editable and adaptable in both Google Sheets and Excel. You can effortlessly tailor it to fit your unique vision, guest list size, vendor choices, and personal preferences. It's your wedding, your way, with our unparalleled organization.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="sp-guarantee" data-reveal>
+    <div class="sh-container">
+      <div class="sp-guarantee__box">
+        <div class="sp-guarantee__icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></div>
+        <h3>Your Peace of Mind, Our Ironclad Promise.</h3>
+        <p>We are so absolutely confident that the Ultimate Wedding Planner Spreadsheet will transform your planning experience that we back it with an <strong>Ironclad 30-Day Money-Back Guarantee.</strong> If you don't feel more organized, less stressed, and completely empowered in your planning, we'll refund every penny. No questions asked. No awkward emails. Your peace of mind is our highest priority.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sh-cta sh-cta--gradient" data-reveal>
+    <div class="sh-cta__bg-pattern" aria-hidden="true"></div>
+    <div class="sh-container sh-cta__inner">
+      <div class="sh-cta__urgency-strip">
+        <span class="sh-cta__urgency-dot"></span>
+        🔥 <span id="ctaLiveViewers">24</span> Couples Are Planning Their Dream Day Right Now! Offer Ends in <span id="ctaCountdown" data-countdown>00:00:00</span>
+      </div>
+      <h2 class="sh-cta__title">Stop Drowning in Details. Start Planning Your Dream Wedding with JOY!</h2>
+      <p class="sh-cta__sub">One-time investment. Lifetime access. Zero hidden fees. Your perfect day awaits.</p>
+      <div class="sh-cta__price">
+        <span class="sh-cta__price-old">$24.99</span>
+        <span class="sh-cta__price-current">$9.99</span>
+        <span class="sh-cta__price-save">Save 60%</span>
+      </div>
+      <button class="sh-btn sh-btn--dark sh-btn--lg sh-btn--pulse" onclick="doATC()">Yes, I Want My Stress-Free Wedding Planner!</button>
+      <p class="sh-cta__micro">Instant Download. No Recurring Costs. Lifetime Access & Future Updates.</p>
+      <div class="sh-cta__badges">
+        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> 🔒 Secure & Encrypted Checkout</span>
+        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10"/></svg> ⚡️ Instant Digital Delivery</span>
+        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg> ✅ Our 30-Day 'Love It' Guarantee</span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="sh-footer">
+    <div class="sh-container sh-footer__grid">
+      <div>
+        <span class="sh-footer__brand">WeddingPlannerPro</span>
+        <p class="sh-footer__desc">WeddingPlannerPro — Empowering engaged couples to plan their perfect day with confidence, clarity, and joy. Your partner for stress-free celebrations.</p>
+        <div class="sh-footer__pays" style="opacity: 1;">
+          <svg viewBox="0 0 48 32" width="38" height="24"><rect width="48" height="32" rx="4" fill="#1A1F71"/><text x="24" y="20" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">VISA</text></svg>
+          <svg viewBox="0 0 48 32" width="38" height="24"><rect width="48" height="32" rx="4" fill="#252525"/><circle cx="18" cy="16" r="8" fill="#EB001B"/><circle cx="30" cy="16" r="8" fill="#F79E1B"/></svg>
+          <svg viewBox="0 0 48 32" width="38" height="24"><rect width="48" height="32" rx="4" fill="#003087"/><text x="24" y="20" text-anchor="middle" fill="#fff" font-size="9" font-weight="bold">PayPal</text></svg>
+          <svg viewBox="0 0 48 32" width="38" height="24"><rect width="48" height="32" rx="4" fill="#635BFF"/><text x="24" y="20" text-anchor="middle" fill="#fff" font-size="9" font-weight="bold">Stripe</text></svg>
+          <svg width="38" height="24" viewBox="0 0 48 32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="48" height="32" rx="4" fill="#000"/><path d="M37.6418 15.6946C37.6418 14.0772 38.9958 13.0642 40.7186 13.0642C42.3486 13.0642 43.606 14.0308 43.606 15.6012C43.606 16.4866 43.1678 17.0788 42.1548 17.561L42.1548 17.6074C43.7314 18.2912 44.5926 19.394 44.5926 21.1648C44.5926 23.327 42.775 24.8458 40.4074 24.8458C38.1362 24.8458 36.3186 23.3734 36.3186 21.2112C36.3186 20.3258 36.7568 19.7336 37.7698 19.2514L37.7698 19.205C36.1934 18.5212 35.3322 17.4184 35.3322 15.6946H37.6418ZM40.7186 14.7176C40.0348 14.7176 39.5002 15.1558 39.5002 15.748C39.5002 16.3402 40.0348 16.7238 40.7186 16.7238C41.4024 16.7238 41.937 16.3402 41.937 15.748C41.937 15.1558 41.4024 14.7176 40.7186 14.7176ZM40.4074 23.1924C41.1396 23.1924 41.6742 22.709 41.6742 22.1168C41.6742 21.5246 41.1396 21.1398 40.4074 21.1398C39.6752 21.1398 39.1406 21.5246 39.1406 22.1168C39.1406 22.709 39.6752 23.1924 40.4074 23.1924ZM23.8342 13.0642H26.0962L25.0342 24.8458H22.7722L23.8342 13.0642ZM17.481 24.8458H15.1714L15.9926 13.0642H18.2546L17.481 24.8458ZM10.231 13.0642L6.3778 24.8458H8.8418L10.231 19.2514L11.6202 24.8458H14.0842L10.231 13.0642ZM0.000244141 13.0642H2.31084L4.02024 21.9212L5.68164 13.0642H7.99224L4.02024 24.8458H1.70964L0.000244141 13.0642Z" fill="#fff"/></svg>
+        </div>
+        <div class="sh-footer__trust-row">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg> 30-Day Money-Back Guarantee
+        </div>
+      </div>
+      <div class="sh-footer__col">
+        <h4>Navigation</h4>
+        <a href="index.html">Home</a>
+        <a href="product/wedding-planner-spreadsheet-for-google-budget-tracker-guest-list-seating-plan-ch.html">Product</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="sh-footer__col">
+        <h4>Legal</h4>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="refund-policy.html">Refund Policy</a>
+      </div>
+    </div>
+    <div class="sh-footer__bottom">
+      <div class="sh-container">© 2026 WeddingPlannerPro. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <div class="sh-sticky-bar" id="stickyBar">
+    <span class="sh-sticky-bar__price">$9.99 <s>$24.99</s></span>
+    <button class="sh-btn sh-btn--dark sh-btn--sm" onclick="doATC()">Unlock My Dream Wedding</button>
+  </div>
+
+  <div class="sp-lightbox" id="lb" onclick="closeLB()">
+    <img id="lbImg" src="" alt="" />
+    <button class="sp-lightbox__x" onclick="closeLB()">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+
+<!-- Exit Intent Popup -->
+<div class="sh-popup" id="exitPopup">
+  <div class="sh-popup__bg"></div>
+  <div class="sh-popup__box">
+    <button class="sh-popup__close" onclick="closeExitPopup()">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <h3>Wait! Don't Miss Your Chance for a Stress-Free Wedding!</h3>
+    <p>You're just one click away from transforming wedding overwhelm into pure planning joy. Don't let this limited-time 60% OFF offer vanish! Claim your Ultimate Wedding Planner Spreadsheet now and plan your dream day with absolute confidence.</p>
+    <button class="sh-btn sh-btn--primary sh-btn--lg" onclick="doATC(); closeExitPopup();">Yes! Unlock My 60% OFF & Plan with Ease!</button>
+  </div>
+</div>
+
+<!-- Review Toast -->
+<div class="sh-toast" id="reviewToast">
+  <div class="sh-toast__inner">
+    <button class="sh-toast__close" onclick="document.getElementById('reviewToast').classList.remove('sh-toast--visible')">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="sh-toast__icon">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+    </div>
+    <div class="sh-toast__body">
+      <strong>Chloe from Miami just purchased!</strong>
+      <span>The Ultimate Wedding Planner Spreadsheet</span>
+      <small>2 minutes ago</small>
+    </div>
+  </div>
+</div>
+
+<!-- Cart Drawer Overlay -->
+<div class="cd-overlay" id="cd-overlay" aria-hidden="true"></div>
+
+<!-- Cart Drawer -->
+<aside class="cd-drawer" id="cd-drawer" role="dialog" aria-label="Your Cart" aria-hidden="true">
+
+  <!-- Header -->
+  <div class="cd-header">
+    <div class="cd-header__left">
+      <h2 class="cd-header__title">Your Cart</h2>
+      <span class="cd-header__count" id="cd-item-count">(0)</span>
+    </div>
+    <button class="cd-close" id="cd-close" aria-label="Close"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+  </div>
+
+  <!-- Free Shipping Progress Bar -->
+  <div class="cd-shipping-bar" id="cd-shipping-bar">
+    <div class="cd-shipping-bar__text" id="cd-shipping-text">You're $50 away from **FREE Digital Bonuses!**</div>
+    <div class="cd-shipping-bar__track">
+      <div class="cd-shipping-bar__fill" id="cd-shipping-fill" style="width:0%"></div>
+    </div>
+  </div>
+
+  <!-- Added confirmation toast (shown briefly) -->
+  <div class="cd-toast" id="cd-toast" aria-live="polite">
+    <span class="cd-toast__icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+    <div class="cd-toast__text">
+      <strong>Added to Cart!</strong>
+      <span>Great choice!</span>
+    </div>
+  </div>
+
+  <!-- Cart Items Container -->
+  <div class="cd-body" id="cd-body">
+    <!-- Empty state -->
+    <div class="cd-empty" id="cd-empty">
+      <div class="cd-empty__icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" opacity=".35"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></div>
+      <p class="cd-empty__title">Your cart is empty</p>
+      <p class="cd-empty__sub">Discover our products and treat yourself</p>
+      <a href="/" class="cd-btn cd-btn--outline">Start Shopping</a>
+    </div>
+
+    <!-- Items (populated by JS) -->
+    <div class="cd-items" id="cd-items"></div>
+  </div>
+
+  <!-- Urgency bar -->
+  <div class="cd-urgency" id="cd-urgency" style="display:none">
+    <span class="cd-urgency__dot"></span>
+    <span class="cd-urgency__text"><strong id="cd-viewers">14</strong> people have this in their cart</span>
+  </div>
+
+  <!-- Footer -->
+  <div class="cd-footer" id="cd-footer" style="display:none">
+    <!-- Savings callout -->
+    <div class="cd-savings" id="cd-savings" style="display:none">
+      <span class="cd-savings__text">You saved <strong id="cd-savings-amount"></strong></span>
+    </div>
+
+    <!-- Subtotal -->
+    <div class="cd-subtotal">
+      <span class="cd-subtotal__label">Subtotal</span>
+      <span class="cd-subtotal__price" id="cd-subtotal-price">$0.00</span>
+    </div>
+
+    <!-- Estimated delivery -->
+    <div class="cd-delivery">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg> <span>Estimated Delivery: <strong>Instant Digital Download</strong></span>
+    </div>
+
+    <!-- Checkout button -->
+    <a href="/checkout" class="cd-btn cd-btn--primary" id="cd-checkout-btn">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Checkout
+    </a>
+
+    <!-- Continue shopping -->
+    <button class="cd-btn cd-btn--ghost" id="cd-continue">Continue Shopping</button>
+
+    <!-- Trust badges -->
+    <div class="cd-trust">
+      <span class="cd-trust__badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> 100% Secure Checkout</span>
+      <span class="cd-trust__badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> 30-Day Money Back Guarantee</span>
+      <span class="cd-trust__badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg> 🔒 Certified Secure Checkout</span>
+    </div>
+
+    <!-- Social proof -->
+    <div class="cd-social-proof">
+      <div class="cd-social-proof__avatars">
+        <span class="cd-avatar">S</span>
+        <span class="cd-avatar">M</span>
+        <span class="cd-avatar">A</span>
+      </div>
+      <span class="cd-social-proof__text">Loved by <strong>12,000+</strong> Happy Couples</span>
+    </div>
+
+    <!-- Payment methods -->
+    <div class="cd-payment-methods">
+      <span class="cd-pm">Visa</span>
+      <span class="cd-pm">Mastercard</span>
+      <span class="cd-pm">Amex</span>
+      <span class="cd-pm">PayPal</span>
+      <span class="cd-pm">Apple Pay</span>
+      <span class="cd-pm">Google Pay</span>
+    </div>
+  </div>
+</aside>
+
+<!-- Cart Drawer Item Template (hidden, cloned by JS) -->
+<template id="cd-item-tpl">
+  <div class="cd-item" data-variant-id="">
+    <div class="cd-item__img-wrap">
+      <img class="cd-item__img" src="" alt="" loading="lazy">
+    </div>
+    <div class="cd-item__details">
+      <div class="cd-item__top">
+        <h4 class="cd-item__name"></h4>
+        <button class="cd-item__remove" aria-label="Remove"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></button>
+      </div>
+      <p class="cd-item__variant"></p>
+      <div class="cd-item__bottom">
+        <div class="cd-item__qty">
+          <button class="cd-item__qty-btn cd-item__qty-minus" aria-label="-"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+          <span class="cd-item__qty-val">1</span>
+          <button class="cd-item__qty-btn cd-item__qty-plus" aria-label="+"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2
